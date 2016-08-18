@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head><title>Geocaching near and far, by county</title>
+<style>
+
+* {
+	font-family:"Helvetica",helvetica,arial,sans-serif;
+}
+.states {
+  fill: none;
+  stroke: #000;
+  stroke-linejoin: round;
+}
+
+#container {
+	display:block;
+	margin:auto;
+	width:1000px;
+}
+
+ul {
+	list-style-type: none
+}
+
+li {
+	display:inline;
+	margin-left:5px;
+	margin-right:5px;
+}
+
+span {
+	padding:10px;
+}
+</style>
+</head>
+<body>
+	<div id="container">
+	<h3>Year of first geocache find by county</h3>
+	<p>(Click to zoom)</p>
+	<div id="map"></div>
+	<p>
+		<ul>
+			<li><span style="background-color:#a65628;color:white">2016</span></li>
+			<li><span style="background-color:#f781bf;color:white">2015</span></li>
+			<li><span style="background-color:#e41a1c;color:white">2014</span></li>
+			<li><span style="background-color:#377eb8;color:white">2013</span></li>
+			<li><span style="background-color:#4daf4a;color:white">2012</span></li>
+			<li><span style="background-color:#984ea3;color:white">2011</span></li>
+			<li><span style="background-color:#ff7f00;color:white">2010</span></li>
+			<li><span style="background-color:#ffff33">2007</span></li>
+		</ul>
+	</p>
+	</div>
+	<script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+	<script src="d3.v3.min.js"></script>
+	<script src="http://d3js.org/d3.geo.projection.v0.min.js"></script>
+	<script src="queue.v1.min.js"></script>
+	<script src="topojson.v1.min.js"></script>
+	<script>
+
+	var width = 1000,
+	    height = 570,
+	    centered;
+
+	var path = d3.geo.path();
+
+	var svg = d3.select("#map").append("svg")
+	    .attr("width", width)
+	    .attr("height", height)
+	    .attr("viewBox", "0 0 1000 575");
+
+	queue()
+	    .defer(d3.json, "us.json")
+	    .defer(d3.tsv, "caching.tsv")
+	    .await(ready);
+
+	function ready(error, us, counties) {
+	  var colorById = {};
+	  var nameById = {};
+	  var countById = {};
+
+	  counties.forEach(function(d) { colorById[d.id] = d.code; countById[d.id] = d.count; nameById[d.id] = d.county });
+
+	  svg.append("g")
+	      .attr("class", "counties")
+	    .selectAll("path")
+	      .data(topojson.feature(us, us.objects.counties).features)
+	    .enter().append("path")
+	      .attr("d", path)
+	      .style("fill", function(d) { return colorById[d.id] ? colorById[d.id] : "#ffffff"; })
+	      .style("stroke","#555555")
+	      .style("stroke-width","0.5")
+	      .on("click", clicked)
+	      .append("title")
+	      	.text(function(d) {
+	      		return (nameById[d.id] ? nameById[d.id] : "")
+	      		+ "\n" + (countById[d.id] ? countById[d.id] : "0" )
+	      		+ " find"
+	      		+ (countById[d.id] ? (countById[d.id] != 1 ? "s" : "") : "s");
+	      	});
+
+	  svg.select("g").append("path")
+	      .datum(topojson.mesh(us, us.objects.states, function(a, b) { return a.id !== b.id; }))
+	      .attr("class", "states")
+	      .attr("d", path);
+	}
+
+	function clicked(d) {
+	  var x, y, k;
+
+	  var g = svg.select("g");
+
+	  if (d && centered !== d) {
+	    var centroid = path.centroid(d);
+	    x = centroid[0];
+	    y = centroid[1];
+	    k = 4;
+	    centered = d;
+	  } else {
+	    x = width / 2;
+	    y = height / 2;
+	    k = 1;
+	    centered = null;
+	  }
+
+	  g.selectAll("path")
+	      .classed("active", centered && function(d) { return d === centered; });
+
+	  g.transition()
+	      .duration(750)
+	      .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")scale(" + k + ")translate(" + -x + "," + -y + ")")
+	      .style("stroke-width", 1.5 / k + "px");
+	}
+	</script>
+</body>
+</html>

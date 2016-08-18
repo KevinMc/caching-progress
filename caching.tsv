@@ -1,0 +1,771 @@
+id	code	county	count
+37057	#a65628	Davidson, North Carolina	2
+37167	#a65628	Stanly, North Carolina	1
+37123	#a65628	Montgomery, North Carolina	1
+37151	#a65628	Randolph, North Carolina	1
+37179	#a65628	Union, North Carolina	1
+45091	#a65628	York, South Carolina	1
+37071	#a65628	Gaston, North Carolina	1
+37119	#a65628	Mecklenburg, North Carolina	8
+37097	#a65628	Iredell, North Carolina	1
+37159	#a65628	Rowan, North Carolina	1
+37025	#a65628	Cabarrus, North Carolina	1
+15003	#a65628	Honolulu, Hawaii	43
+15001	#a65628	Hawaii, Hawaii	45
+41015	#a65628	Curry, Oregon	1
+6015	#a65628	Del Norte, California	20
+1107	#a65628	Pickens, Alabama	1
+1075	#a65628	Lamar, Alabama	1
+1127	#a65628	Walker, Alabama	1
+1057	#a65628	Fayette, Alabama	1
+1125	#a65628	Tuscaloosa, Alabama	1
+1043	#a65628	Cullman, Alabama	1
+1117	#a65628	Shelby, Alabama	1
+1007	#a65628	Bibb, Alabama	1
+39099	#a65628	Mahoning, Ohio	3
+39153	#a65628	Summit, Ohio	3
+39151	#a65628	Stark, Ohio	1
+39085	#a65628	Lake, Ohio	1
+39035	#a65628	Cuyahoga, Ohio	1
+39155	#a65628	Trumbull, Ohio	1
+39103	#a65628	Medina, Ohio	1
+39055	#a65628	Geauga, Ohio	1
+39133	#a65628	Portage, Ohio	1
+39007	#a65628	Ashtabula, Ohio	1
+17067	#f781bf	Hancock, Illinois	2
+17009	#f781bf	Brown, Illinois	1
+29127	#f781bf	Marion, Missouri	1
+17109	#f781bf	McDonough, Illinois	1
+29111	#f781bf	Lewis, Missouri	1
+17001	#f781bf	Adams, Illinois	1
+17169	#f781bf	Schuyler, Illinois	1
+19033	#f781bf	Cerro Gordo, Iowa	4
+19131	#f781bf	Mitchell, Iowa	2
+19195	#f781bf	Worth, Iowa	2
+27047	#f781bf	Freeborn, Minnesota	1
+19081	#f781bf	Hancock, Iowa	1
+19067	#f781bf	Floyd, Iowa	1
+19189	#f781bf	Winnebago, Iowa	1
+27099	#f781bf	Mower, Minnesota	1
+19023	#f781bf	Butler, Iowa	1
+19197	#f781bf	Wright, Iowa	1
+19069	#f781bf	Franklin, Iowa	1
+6089	#f781bf	Shasta, California	13
+6105	#f781bf	Trinity, California	5
+6093	#f781bf	Siskiyou, California	5
+6049	#f781bf	Modoc, California	2
+53073	#f781bf	Whatcom, Washington	1
+53055	#f781bf	San Juan, Washington	17
+53057	#f781bf	Skagit, Washington	3
+53061	#f781bf	Snohomish, Washington	1
+53029	#f781bf	Island, Washington	1
+12037	#f781bf	Franklin, Florida	21
+12033	#f781bf	Escambia, Florida	1
+12131	#f781bf	Walton, Florida	1
+12077	#f781bf	Liberty, Florida	1
+12013	#f781bf	Calhoun, Florida	1
+12063	#f781bf	Jackson, Florida	1
+12113	#f781bf	Santa Rosa, Florida	1
+12091	#f781bf	Okaloosa, Florida	1
+12059	#f781bf	Holmes, Florida	1
+12005	#f781bf	Bay, Florida	1
+12133	#f781bf	Washington, Florida	1
+12045	#f781bf	Gulf, Florida	1
+12073	#f781bf	Leon, Florida	2
+12129	#f781bf	Wakulla, Florida	1
+12039	#f781bf	Gadsden, Florida	1
+12065	#f781bf	Jefferson, Florida	2
+12047	#f781bf	Hamilton, Florida	2
+12121	#f781bf	Suwannee, Florida	1
+12123	#f781bf	Taylor, Florida	1
+12079	#f781bf	Madison, Florida	1
+12029	#f781bf	Dixie, Florida	1
+12023	#f781bf	Columbia, Florida	1
+12041	#f781bf	Gilchrist, Florida	1
+12067	#f781bf	Lafayette, Florida	1
+12075	#f781bf	Levy, Florida	1
+47045	#f781bf	Dyer, Tennessee	2
+47095	#f781bf	Lake, Tennessee	2
+47131	#f781bf	Obion, Tennessee	2
+47097	#f781bf	Lauderdale, Tennessee	1
+47183	#f781bf	Weakley, Tennessee	1
+47075	#f781bf	Haywood, Tennessee	1
+47167	#f781bf	Tipton, Tennessee	1
+47079	#f781bf	Henry, Tennessee	1
+29155	#f781bf	Pemiscot, Missouri	1
+47017	#f781bf	Carroll, Tennessee	1
+21075	#f781bf	Fulton, Kentucky	1
+47053	#f781bf	Gibson, Tennessee	1
+47033	#f781bf	Crockett, Tennessee	1
+47113	#f781bf	Madison, Tennessee	5
+47085	#f781bf	Humphreys, Tennessee	1
+47023	#f781bf	Chester, Tennessee	1
+47039	#f781bf	Decatur, Tennessee	1
+47077	#f781bf	Henderson, Tennessee	1
+47005	#f781bf	Benton, Tennessee	1
+47135	#f781bf	Perry, Tennessee	1
+47081	#f781bf	Hickman, Tennessee	1
+47101	#f781bf	Lewis, Tennessee	1
+47145	#f781bf	Roane, Tennessee	1
+47153	#f781bf	Sequatchie, Tennessee	1
+47123	#f781bf	Monroe, Tennessee	1
+47107	#f781bf	McMinn, Tennessee	1
+47139	#f781bf	Polk, Tennessee	1
+47129	#f781bf	Morgan, Tennessee	1
+47009	#f781bf	Blount, Tennessee	1
+47093	#f781bf	Knox, Tennessee	1
+47035	#f781bf	Cumberland, Tennessee	1
+47175	#f781bf	Van Buren, Tennessee	1
+47105	#f781bf	Loudon, Tennessee	1
+47007	#f781bf	Bledsoe, Tennessee	1
+47185	#f781bf	White, Tennessee	1
+47001	#f781bf	Anderson, Tennessee	1
+47143	#f781bf	Rhea, Tennessee	1
+47121	#f781bf	Meigs, Tennessee	1
+48427	#f781bf	Starr, Texas	2
+48505	#f781bf	Zapata, Texas	2
+48247	#f781bf	Jim Hogg, Texas	2
+48047	#f781bf	Brooks, Texas	1
+48061	#f781bf	Cameron, Texas	1
+48249	#f781bf	Jim Wells, Texas	1
+48479	#f781bf	Webb, Texas	1
+48273	#f781bf	Kleberg, Texas	1
+48489	#f781bf	Willacy, Texas	1
+48355	#f781bf	Nueces, Texas	1
+48297	#f781bf	Live Oak, Texas	1
+48261	#f781bf	Kenedy, Texas	1
+48215	#f781bf	Hidalgo, Texas	1
+48131	#f781bf	Duval, Texas	1
+48025	#f781bf	Bee, Texas	1
+48007	#f781bf	Aransas, Texas	1
+48239	#f781bf	Jackson, Texas	1
+48391	#f781bf	Refugio, Texas	1
+48469	#f781bf	Victoria, Texas	1
+48057	#f781bf	Calhoun, Texas	1
+48409	#f781bf	San Patricio, Texas	1
+48321	#f781bf	Matagorda, Texas	1
+22017	#f781bf	Caddo Parish, Louisiana	2
+48245	#f781bf	Jefferson, Texas	2
+48347	#f781bf	Nacogdoches, Texas	1
+48203	#f781bf	Harrison, Texas	1
+48419	#f781bf	Shelby, Texas	1
+48401	#f781bf	Rusk, Texas	1
+48365	#f781bf	Panola, Texas	1
+48183	#f781bf	Gregg, Texas	1
+48351	#f781bf	Newton, Texas	1
+48403	#f781bf	Sabine, Texas	1
+48361	#f781bf	Orange, Texas	1
+48405	#f781bf	San Augustine, Texas	1
+48241	#f781bf	Jasper, Texas	1
+6023	#f781bf	Humboldt, California	26
+13313	#f781bf	Whitfield, Georgia	1
+47011	#f781bf	Bradley, Tennessee	1
+13233	#f781bf	Polk, Georgia	2
+1111	#f781bf	Randolph, Alabama	1
+13223	#f781bf	Paulding, Georgia	1
+13149	#f781bf	Heard, Georgia	1
+1055	#f781bf	Etowah, Alabama	1
+13097	#f781bf	Douglas, Georgia	1
+13115	#f781bf	Floyd, Georgia	1
+13055	#f781bf	Chattooga, Georgia	1
+1019	#f781bf	Cherokee, Alabama	1
+13143	#f781bf	Haralson, Georgia	1
+1049	#f781bf	DeKalb, Alabama	1
+1029	#f781bf	Cleburne, Alabama	1
+13045	#f781bf	Carroll, Georgia	1
+1121	#f781bf	Talladega, Alabama	1
+1015	#f781bf	Calhoun, Alabama	1
+47051	#f781bf	Franklin, Tennessee	5
+47031	#f781bf	Coffee, Tennessee	2
+47003	#f781bf	Bedford, Tennessee	2
+47177	#f781bf	Warren, Tennessee	2
+47061	#f781bf	Grundy, Tennessee	2
+47015	#f781bf	Cannon, Tennessee	1
+47127	#f781bf	Moore, Tennessee	1
+28081	#f781bf	Lee, Mississippi	4
+47157	#f781bf	Shelby, Tennessee	2
+5035	#f781bf	Crittenden, Arkansas	2
+47047	#f781bf	Fayette, Tennessee	1
+28009	#f781bf	Benton, Mississippi	1
+1093	#f781bf	Marion, Alabama	1
+28033	#f781bf	DeSoto, Mississippi	1
+47069	#f781bf	Hardeman, Tennessee	1
+28115	#f781bf	Pontotoc, Mississippi	1
+1059	#f781bf	Franklin, Alabama	1
+28117	#f781bf	Prentiss, Mississippi	1
+28057	#f781bf	Itawamba, Mississippi	1
+28139	#f781bf	Tippah, Mississippi	1
+28093	#f781bf	Marshall, Mississippi	1
+28145	#f781bf	Union, Mississippi	1
+1133	#f781bf	Winston, Alabama	1
+13063	#f781bf	Clayton, Georgia	3
+8031	#e41a1c	Denver, Colorado	1
+45041	#e41a1c	Florence, South Carolina	2
+45031	#e41a1c	Darlington, South Carolina	1
+45069	#e41a1c	Marlboro, South Carolina	1
+45067	#e41a1c	Marion, South Carolina	1
+45033	#e41a1c	Dillon, South Carolina	1
+29117	#e41a1c	Livingston, Missouri	2
+29171	#e41a1c	Putnam, Missouri	1
+29025	#e41a1c	Caldwell, Missouri	1
+29063	#e41a1c	DeKalb, Missouri	1
+29211	#e41a1c	Sullivan, Missouri	1
+29049	#e41a1c	Clinton, Missouri	1
+29061	#e41a1c	Daviess, Missouri	1
+29115	#e41a1c	Linn, Missouri	1
+29079	#e41a1c	Grundy, Missouri	1
+12021	#e41a1c	Collier, Florida	5
+12051	#e41a1c	Hendry, Florida	1
+12087	#e41a1c	Monroe, Florida	1
+12011	#e41a1c	Broward, Florida	2
+12099	#e41a1c	Palm Beach, Florida	2
+12086	#e41a1c	Miami-Dade, Florida	1
+53059	#e41a1c	Skamania, Washington	1
+41027	#e41a1c	Hood River, Oregon	1
+41007	#e41a1c	Clatsop, Oregon	3
+53069	#e41a1c	Wahkiakum, Washington	2
+53049	#e41a1c	Pacific, Washington	2
+41067	#e41a1c	Washington, Oregon	2
+41057	#e41a1c	Tillamook, Oregon	1
+41009	#e41a1c	Columbia, Oregon	1
+41005	#e41a1c	Clackamas, Oregon	3
+19085	#e41a1c	Harrison, Iowa	2
+19133	#e41a1c	Monona, Iowa	2
+19047	#e41a1c	Crawford, Iowa	1
+31177	#e41a1c	Washington, Nebraska	1
+31021	#e41a1c	Burt, Nebraska	1
+19145	#e41a1c	Page, Iowa	1
+19159	#e41a1c	Ringgold, Iowa	1
+31153	#e41a1c	Sarpy, Nebraska	1
+19173	#e41a1c	Taylor, Iowa	1
+19071	#e41a1c	Fremont, Iowa	1
+19129	#e41a1c	Mills, Iowa	2
+19003	#e41a1c	Adams, Iowa	1
+19137	#e41a1c	Montgomery, Iowa	1
+19175	#e41a1c	Union, Iowa	1
+12071	#e41a1c	Lee, Florida	3
+12081	#e41a1c	Manatee, Florida	1
+12015	#e41a1c	Charlotte, Florida	1
+12115	#e41a1c	Sarasota, Florida	1
+12027	#e41a1c	DeSoto, Florida	1
+12049	#e41a1c	Hardee, Florida	1
+12001	#e41a1c	Alachua, Florida	9
+12089	#e41a1c	Nassau, Florida	1
+12003	#e41a1c	Baker, Florida	1
+12109	#e41a1c	St. Johns, Florida	1
+12107	#e41a1c	Putnam, Florida	1
+12031	#e41a1c	Duval, Florida	1
+12007	#e41a1c	Bradford, Florida	1
+12019	#e41a1c	Clay, Florida	1
+12125	#e41a1c	Union, Florida	1
+13047	#e41a1c	Catoosa, Georgia	6
+47065	#e41a1c	Hamilton, Tennessee	2
+13295	#e41a1c	Walker, Georgia	1
+13083	#e41a1c	Dade, Georgia	1
+47115	#e41a1c	Marion, Tennessee	1
+47071	#e41a1c	Hardin, Tennessee	1
+28141	#e41a1c	Tishomingo, Mississippi	1
+47181	#e41a1c	Wayne, Tennessee	1
+47109	#e41a1c	McNairy, Tennessee	1
+28003	#e41a1c	Alcorn, Mississippi	1
+47149	#e41a1c	Rutherford, Tennessee	1
+47099	#e41a1c	Lawrence, Tennessee	1
+13151	#e41a1c	Henry, Georgia	2
+13193	#e41a1c	Macon, Georgia	1
+13171	#e41a1c	Lamar, Georgia	1
+13207	#e41a1c	Monroe, Georgia	1
+13225	#e41a1c	Peach, Georgia	1
+13307	#e41a1c	Webster, Georgia	1
+13255	#e41a1c	Spalding, Georgia	1
+13261	#e41a1c	Sumter, Georgia	1
+13053	#e41a1c	Chattahoochee, Georgia	1
+13021	#e41a1c	Bibb, Georgia	1
+13215	#e41a1c	Muscogee, Georgia	1
+13035	#e41a1c	Butts, Georgia	1
+13153	#e41a1c	Houston, Georgia	1
+13121	#e41a1c	Fulton, Georgia	3
+13119	#e41a1c	Franklin, Georgia	1
+13311	#e41a1c	White, Georgia	1
+13137	#e41a1c	Habersham, Georgia	1
+13187	#e41a1c	Lumpkin, Georgia	1
+13285	#e41a1c	Troup, Georgia	1
+13213	#e41a1c	Murray, Georgia	1
+13227	#e41a1c	Pickens, Georgia	1
+13011	#e41a1c	Banks, Georgia	1
+13015	#e41a1c	Bartow, Georgia	1
+45073	#e41a1c	Oconee, South Carolina	1
+13123	#e41a1c	Gilmer, Georgia	1
+13157	#e41a1c	Jackson, Georgia	1
+13145	#e41a1c	Harris, Georgia	1
+13077	#e41a1c	Coweta, Georgia	1
+13085	#e41a1c	Dawson, Georgia	1
+13139	#e41a1c	Hall, Georgia	1
+13257	#e41a1c	Stephens, Georgia	1
+13129	#e41a1c	Gordon, Georgia	1
+13013	#e41a1c	Barrow, Georgia	1
+13057	#e41a1c	Cherokee, Georgia	1
+13067	#e41a1c	Cobb, Georgia	1
+13147	#e41a1c	Hart, Georgia	1
+13113	#e41a1c	Fayette, Georgia	1
+13117	#e41a1c	Forsyth, Georgia	4
+12085	#e41a1c	Martin, Florida	2
+13089	#e41a1c	DeKalb, Georgia	2
+12111	#e41a1c	St. Lucie, Florida	1
+12055	#e41a1c	Highlands, Florida	1
+12061	#e41a1c	Indian River, Florida	1
+12093	#e41a1c	Okeechobee, Florida	1
+12043	#e41a1c	Glades, Florida	1
+13135	#e41a1c	Gwinnett, Georgia	1
+12035	#e41a1c	Flagler, Florida	2
+48281	#e41a1c	Lampasas, Texas	1
+48477	#e41a1c	Washington, Texas	1
+48331	#e41a1c	Milam, Texas	1
+48287	#e41a1c	Lee, Texas	1
+48491	#e41a1c	Williamson, Texas	1
+35053	#e41a1c	Socorro, New Mexico	1
+35061	#e41a1c	Valencia, New Mexico	1
+35051	#e41a1c	Sierra, New Mexico	1
+35049	#e41a1c	Santa Fe, New Mexico	1
+35006	#e41a1c	Cibola, New Mexico	1
+35043	#e41a1c	Sandoval, New Mexico	1
+35001	#e41a1c	Bernalillo, New Mexico	1
+48141	#e41a1c	El Paso, Texas	2
+48229	#e41a1c	Hudspeth, Texas	2
+12009	#e41a1c	Brevard, Florida	147
+12127	#e41a1c	Volusia, Florida	4
+12117	#e41a1c	Seminole, Florida	2
+12095	#e41a1c	Orange, Florida	22
+12105	#e41a1c	Polk, Florida	6
+12083	#e41a1c	Marion, Florida	4
+12069	#e41a1c	Lake, Florida	4
+12103	#e41a1c	Pinellas, Florida	3
+12101	#e41a1c	Pasco, Florida	2
+12097	#e41a1c	Osceola, Florida	2
+12119	#e41a1c	Sumter, Florida	2
+12053	#e41a1c	Hernando, Florida	1
+12057	#e41a1c	Hillsborough, Florida	1
+12017	#e41a1c	Citrus, Florida	1
+55111	#e41a1c	Sauk, Wisconsin	2
+55103	#e41a1c	Richland, Wisconsin	1
+55123	#e41a1c	Vernon, Wisconsin	1
+55023	#e41a1c	Crawford, Wisconsin	1
+17089	#377eb8	Kane, Illinois	1
+17095	#377eb8	Knox, Illinois	1
+17063	#377eb8	Grundy, Illinois	1
+17073	#377eb8	Henry, Illinois	1
+17105	#377eb8	Livingston, Illinois	1
+17037	#377eb8	DeKalb, Illinois	1
+17093	#377eb8	Kendall, Illinois	1
+17175	#377eb8	Stark, Illinois	1
+17123	#377eb8	Marshall, Illinois	1
+17187	#377eb8	Warren, Illinois	1
+17043	#377eb8	DuPage, Illinois	1
+17155	#377eb8	Putnam, Illinois	1
+17197	#377eb8	Will, Illinois	1
+17131	#377eb8	Mercer, Illinois	1
+17071	#377eb8	Henderson, Illinois	1
+17011	#377eb8	Bureau, Illinois	1
+17099	#377eb8	LaSalle, Illinois	1
+29199	#377eb8	Scotland, Missouri	1
+29045	#377eb8	Clark, Missouri	1
+42017	#377eb8	Bucks, Pennsylvania	1
+34007	#377eb8	Camden, New Jersey	1
+34011	#377eb8	Cumberland, New Jersey	1
+34033	#377eb8	Salem, New Jersey	1
+34021	#377eb8	Mercer, New Jersey	1
+34001	#377eb8	Atlantic, New Jersey	1
+34025	#377eb8	Monmouth, New Jersey	1
+34029	#377eb8	Ocean, New Jersey	1
+34009	#377eb8	Cape May, New Jersey	1
+34015	#377eb8	Gloucester, New Jersey	1
+34023	#377eb8	Middlesex, New Jersey	1
+42095	#377eb8	Northampton, Pennsylvania	1
+34035	#377eb8	Somerset, New Jersey	1
+34017	#377eb8	Hudson, New Jersey	1
+34003	#377eb8	Bergen, New Jersey	1
+34031	#377eb8	Passaic, New Jersey	1
+34019	#377eb8	Hunterdon, New Jersey	1
+34037	#377eb8	Sussex, New Jersey	1
+34013	#377eb8	Essex, New Jersey	1
+36047	#377eb8	Kings, New York	1
+36081	#377eb8	Queens, New York	1
+34039	#377eb8	Union, New Jersey	1
+34027	#377eb8	Morris, New Jersey	1
+36085	#377eb8	Richmond, New York	1
+34041	#377eb8	Warren, New Jersey	1
+19143	#377eb8	Osceola, Iowa	2
+19147	#377eb8	Palo Alto, Iowa	1
+19109	#377eb8	Kossuth, Iowa	1
+19167	#377eb8	Sioux, Iowa	1
+19151	#377eb8	Pocahontas, Iowa	1
+19059	#377eb8	Dickinson, Iowa	1
+19041	#377eb8	Clay, Iowa	1
+19063	#377eb8	Emmet, Iowa	1
+19141	#377eb8	O'Brien, Iowa	1
+19187	#377eb8	Webster, Iowa	1
+19091	#377eb8	Humboldt, Iowa	1
+19119	#377eb8	Lyon, Iowa	1
+46083	#377eb8	Lincoln, South Dakota	1
+6091	#377eb8	Sierra, California	2
+6035	#377eb8	Lassen, California	5
+6103	#377eb8	Tehama, California	4
+6063	#377eb8	Plumas, California	9
+2261	#377eb8	Valdez-Cordova, Alaska	4
+2122	#377eb8	Kenai Peninsula, Alaska	7
+2020	#377eb8	Anchorage, Alaska	9
+2170	#377eb8	Matanuska-Susitna, Alaska	7
+26021	#377eb8	Berrien, Michigan	2
+18127	#377eb8	Porter, Indiana	1
+18089	#377eb8	Lake, Indiana	1
+18091	#377eb8	LaPorte, Indiana	1
+53009	#377eb8	Clallam, Washington	2
+53053	#377eb8	Pierce, Washington	1
+53045	#377eb8	Mason, Washington	1
+53035	#377eb8	Kitsap, Washington	1
+53031	#377eb8	Jefferson, Washington	1
+53033	#377eb8	King, Washington	13
+41051	#377eb8	Multnomah, Oregon	9
+53015	#377eb8	Cowlitz, Washington	1
+53067	#377eb8	Thurston, Washington	1
+53011	#377eb8	Clark, Washington	1
+53041	#377eb8	Lewis, Washington	1
+6045	#377eb8	Mendocino, California	11
+6033	#377eb8	Lake, California	1
+48053	#377eb8	Burnet, Texas	2
+48299	#377eb8	Llano, Texas	1
+48019	#377eb8	Bandera, Texas	1
+48031	#377eb8	Blanco, Texas	1
+48091	#377eb8	Comal, Texas	1
+48319	#377eb8	Mason, Texas	1
+48171	#377eb8	Gillespie, Texas	1
+48267	#377eb8	Kimble, Texas	1
+48259	#377eb8	Kendall, Texas	1
+48325	#377eb8	Medina, Texas	1
+48265	#377eb8	Kerr, Texas	1
+48029	#377eb8	Bexar, Texas	4
+48149	#377eb8	Fayette, Texas	2
+48473	#377eb8	Waller, Texas	1
+48481	#377eb8	Wharton, Texas	1
+48015	#377eb8	Austin, Texas	1
+48187	#377eb8	Guadalupe, Texas	1
+48285	#377eb8	Lavaca, Texas	1
+48157	#377eb8	Fort Bend, Texas	1
+48089	#377eb8	Colorado, Texas	1
+48493	#377eb8	Wilson, Texas	1
+48177	#377eb8	Gonzales, Texas	1
+48039	#377eb8	Brazoria, Texas	1
+48071	#377eb8	Chambers, Texas	1
+48471	#377eb8	Walker, Texas	1
+48339	#377eb8	Montgomery, Texas	1
+48041	#377eb8	Brazos, Texas	1
+48407	#377eb8	San Jacinto, Texas	1
+48051	#377eb8	Burleson, Texas	1
+48185	#377eb8	Grimes, Texas	1
+48291	#377eb8	Liberty, Texas	1
+55025	#377eb8	Dane, Wisconsin	3
+55021	#377eb8	Columbia, Wisconsin	2
+17085	#377eb8	Jo Daviess, Illinois	1
+17177	#377eb8	Stephenson, Illinois	1
+55055	#377eb8	Jefferson, Wisconsin	1
+19127	#377eb8	Marshall, Iowa	1
+17015	#377eb8	Carroll, Illinois	1
+55045	#377eb8	Green, Wisconsin	1
+55009	#4daf4a	Brown, Wisconsin	1
+55135	#4daf4a	Waupaca, Wisconsin	1
+55087	#4daf4a	Outagamie, Wisconsin	1
+55043	#4daf4a	Grant, Wisconsin	2
+55065	#4daf4a	Lafayette, Wisconsin	1
+55049	#4daf4a	Iowa, Wisconsin	1
+55027	#4daf4a	Dodge, Wisconsin	1
+36061	#4daf4a	New York, New York	5
+19155	#4daf4a	Pottawattamie, Iowa	3
+19165	#4daf4a	Shelby, Iowa	1
+19009	#4daf4a	Audubon, Iowa	1
+19077	#4daf4a	Guthrie, Iowa	1
+19001	#4daf4a	Adair, Iowa	1
+19029	#4daf4a	Cass, Iowa	1
+47147	#4daf4a	Robertson, Tennessee	1
+47165	#4daf4a	Sumner, Tennessee	1
+21213	#4daf4a	Simpson, Kentucky	1
+47187	#4daf4a	Williamson, Tennessee	1
+47037	#4daf4a	Davidson, Tennessee	1
+47119	#4daf4a	Maury, Tennessee	1
+47189	#4daf4a	Wilson, Tennessee	1
+47117	#4daf4a	Marshall, Tennessee	1
+1073	#4daf4a	Jefferson, Alabama	2
+1115	#4daf4a	St. Clair, Alabama	1
+1009	#4daf4a	Blount, Alabama	1
+6025	#4daf4a	Imperial, California	1
+1079	#4daf4a	Lawrence, Alabama	1
+1103	#4daf4a	Morgan, Alabama	1
+1033	#4daf4a	Colbert, Alabama	1
+1077	#4daf4a	Lauderdale, Alabama	1
+1071	#4daf4a	Jackson, Alabama	4
+1095	#4daf4a	Marshall, Alabama	1
+1089	#4daf4a	Madison, Alabama	63
+1083	#4daf4a	Limestone, Alabama	2
+47103	#4daf4a	Lincoln, Tennessee	1
+47055	#4daf4a	Giles, Tennessee	1
+51121	#4daf4a	Montgomery, Virginia	2
+37169	#4daf4a	Stokes, North Carolina	1
+37067	#4daf4a	Forsyth, North Carolina	1
+51063	#4daf4a	Floyd, Virginia	1
+51141	#4daf4a	Patrick, Virginia	1
+51197	#4daf4a	Wythe, Virginia	1
+51035	#4daf4a	Carroll, Virginia	1
+37081	#4daf4a	Guilford, North Carolina	1
+37171	#4daf4a	Surry, North Carolina	1
+19011	#4daf4a	Benton, Iowa	10
+19113	#4daf4a	Linn, Iowa	5
+19061	#4daf4a	Dubuque, Iowa	3
+19105	#4daf4a	Jones, Iowa	2
+19097	#4daf4a	Jackson, Iowa	1
+19043	#4daf4a	Clayton, Iowa	1
+19055	#4daf4a	Delaware, Iowa	1
+19079	#4daf4a	Hamilton, Iowa	1
+19185	#4daf4a	Wayne, Iowa	24
+29081	#4daf4a	Harrison, Missouri	1
+6007	#4daf4a	Butte, California	7
+6113	#4daf4a	Yolo, California	7
+6011	#4daf4a	Colusa, California	6
+6101	#4daf4a	Sutter, California	5
+6021	#4daf4a	Glenn, California	4
+6115	#4daf4a	Yuba, California	2
+6061	#4daf4a	Placer, California	22
+6017	#4daf4a	El Dorado, California	11
+6057	#4daf4a	Nevada, California	4
+6009	#4daf4a	Calaveras, California	3
+6005	#4daf4a	Amador, California	2
+6043	#4daf4a	Mariposa, California	17
+32031	#4daf4a	Washoe, Nevada	12
+6109	#4daf4a	Tuolumne, California	9
+6077	#4daf4a	San Joaquin, California	7
+6051	#4daf4a	Mono, California	4
+6099	#4daf4a	Stanislaus, California	3
+32005	#4daf4a	Douglas, Nevada	1
+32510	#4daf4a	Carson City, Nevada	1
+6003	#4daf4a	Alpine, California	1
+6041	#4daf4a	Marin, California	24
+6067	#4daf4a	Sacramento, California	14
+6097	#4daf4a	Sonoma, California	12
+6095	#4daf4a	Solano, California	9
+6055	#4daf4a	Napa, California	8
+6069	#4daf4a	San Benito, California	10
+6083	#4daf4a	Santa Barbara, California	26
+6053	#4daf4a	Monterey, California	23
+6111	#4daf4a	Ventura, California	18
+6079	#4daf4a	San Luis Obispo, California	17
+6073	#4daf4a	San Diego, California	9
+6037	#4daf4a	Los Angeles, California	14
+6059	#4daf4a	Orange, California	11
+6047	#4daf4a	Merced, California	5
+6039	#4daf4a	Madera, California	4
+6019	#4daf4a	Fresno, California	3
+6029	#4daf4a	Kern, California	2
+6031	#4daf4a	Kings, California	2
+6107	#4daf4a	Tulare, California	2
+6001	#4daf4a	Alameda, California	172
+6013	#4daf4a	Contra Costa, California	30
+6087	#4daf4a	Santa Cruz, California	29
+6075	#4daf4a	San Francisco, California	265
+6081	#4daf4a	San Mateo, California	349
+6085	#4daf4a	Santa Clara, California	1092
+19111	#4daf4a	Lee, Iowa	4
+17019	#4daf4a	Champaign, Illinois	3
+39049	#4daf4a	Franklin, Ohio	1
+39119	#4daf4a	Muskingum, Ohio	1
+18011	#4daf4a	Boone, Indiana	1
+42133	#4daf4a	York, Pennsylvania	3
+42055	#4daf4a	Franklin, Pennsylvania	1
+24027	#4daf4a	Howard, Maryland	1
+42001	#4daf4a	Adams, Pennsylvania	1
+24005	#4daf4a	Baltimore, Maryland	1
+24013	#4daf4a	Carroll, Maryland	1
+11001	#4daf4a	District of Columbia, District of Columbia	14
+24003	#4daf4a	Anne Arundel, Maryland	1
+10005	#4daf4a	Sussex, Delaware	1
+24510	#4daf4a	Baltimore City, Maryland	1
+10001	#4daf4a	Kent, Delaware	1
+10003	#4daf4a	New Castle, Delaware	1
+24035	#4daf4a	Queen Anne's, Maryland	1
+42101	#4daf4a	Philadelphia, Pennsylvania	3
+42099	#4daf4a	Perry, Pennsylvania	2
+42061	#4daf4a	Huntingdon, Pennsylvania	2
+34005	#4daf4a	Burlington, New Jersey	1
+42071	#4daf4a	Lancaster, Pennsylvania	1
+42011	#4daf4a	Berks, Pennsylvania	1
+42067	#4daf4a	Juniata, Pennsylvania	1
+42043	#4daf4a	Dauphin, Pennsylvania	1
+42045	#4daf4a	Delaware, Pennsylvania	1
+42091	#4daf4a	Montgomery, Pennsylvania	1
+42087	#4daf4a	Mifflin, Pennsylvania	1
+42029	#4daf4a	Chester, Pennsylvania	1
+42075	#4daf4a	Lebanon, Pennsylvania	1
+42041	#4daf4a	Cumberland, Pennsylvania	1
+42009	#4daf4a	Bedford, Pennsylvania	1
+42049	#4daf4a	Erie, Pennsylvania	11
+42123	#4daf4a	Warren, Pennsylvania	5
+42083	#4daf4a	McKean, Pennsylvania	3
+42053	#4daf4a	Forest, Pennsylvania	2
+36013	#4daf4a	Chautauqua, New York	2
+42047	#4daf4a	Elk, Pennsylvania	1
+42111	#4daf4a	Somerset, Pennsylvania	5
+24023	#4daf4a	Garrett, Maryland	5
+54049	#4daf4a	Marion, West Virginia	3
+42059	#4daf4a	Greene, Pennsylvania	2
+54061	#4daf4a	Monongalia, West Virginia	2
+54051	#4daf4a	Marshall, West Virginia	2
+54103	#4daf4a	Wetzel, West Virginia	1
+54077	#4daf4a	Preston, West Virginia	1
+42085	#4daf4a	Mercer, Pennsylvania	6
+42121	#4daf4a	Venango, Pennsylvania	5
+42031	#4daf4a	Clarion, Pennsylvania	4
+42065	#4daf4a	Jefferson, Pennsylvania	2
+42039	#4daf4a	Crawford, Pennsylvania	2
+42073	#4daf4a	Lawrence, Pennsylvania	1
+42019	#4daf4a	Butler, Pennsylvania	2
+48055	#4daf4a	Caldwell, Texas	5
+48021	#4daf4a	Bastrop, Texas	3
+48209	#4daf4a	Hays, Texas	1
+48453	#4daf4a	Travis, Texas	9
+48167	#4daf4a	Galveston, Texas	11
+48201	#4daf4a	Harris, Texas	40
+29001	#4daf4a	Adair, Missouri	1
+29197	#4daf4a	Schuyler, Missouri	1
+19017	#4daf4a	Bremer, Iowa	4
+19171	#4daf4a	Tama, Iowa	2
+55121	#4daf4a	Trempealeau, Wisconsin	2
+27169	#4daf4a	Winona, Minnesota	1
+55077	#4daf4a	Marquette, Wisconsin	1
+55047	#4daf4a	Green Lake, Wisconsin	1
+19089	#4daf4a	Howard, Iowa	1
+19005	#4daf4a	Allamakee, Iowa	1
+19037	#4daf4a	Chickasaw, Iowa	1
+19019	#4daf4a	Buchanan, Iowa	1
+55139	#4daf4a	Winnebago, Wisconsin	1
+55081	#4daf4a	Monroe, Wisconsin	1
+55137	#4daf4a	Waushara, Wisconsin	1
+55011	#4daf4a	Buffalo, Wisconsin	1
+55053	#4daf4a	Jackson, Wisconsin	1
+55063	#4daf4a	La Crosse, Wisconsin	1
+55001	#4daf4a	Adams, Wisconsin	1
+19191	#4daf4a	Winneshiek, Iowa	1
+27055	#4daf4a	Houston, Minnesota	1
+19065	#4daf4a	Fayette, Iowa	1
+55057	#4daf4a	Juneau, Wisconsin	1
+55071	#4daf4a	Manitowoc, Wisconsin	1
+55117	#4daf4a	Sheboygan, Wisconsin	1
+55015	#4daf4a	Calumet, Wisconsin	1
+55039	#4daf4a	Fond du Lac, Wisconsin	1
+55079	#984ea3	Milwaukee, Wisconsin	12
+17141	#984ea3	Ogle, Illinois	2
+17201	#984ea3	Winnebago, Illinois	1
+55131	#984ea3	Washington, Wisconsin	1
+55133	#984ea3	Waukesha, Wisconsin	1
+17007	#984ea3	Boone, Illinois	1
+55089	#984ea3	Ozaukee, Wisconsin	1
+17111	#984ea3	McHenry, Illinois	1
+17097	#984ea3	Lake, Illinois	1
+55105	#984ea3	Rock, Wisconsin	1
+17195	#984ea3	Whiteside, Illinois	1
+55101	#984ea3	Racine, Wisconsin	1
+55127	#984ea3	Walworth, Wisconsin	1
+55059	#984ea3	Kenosha, Wisconsin	1
+17103	#984ea3	Lee, Illinois	1
+19177	#984ea3	Van Buren, Iowa	2
+19007	#984ea3	Appanoose, Iowa	20
+19051	#984ea3	Davis, Iowa	13
+17031	#984ea3	Cook, Illinois	13
+19031	#984ea3	Cedar, Iowa	4
+19045	#984ea3	Clinton, Iowa	2
+19163	#984ea3	Scott, Iowa	2
+17161	#984ea3	Rock Island, Illinois	1
+19101	#984ea3	Jefferson, Iowa	2
+19139	#984ea3	Muscatine, Iowa	1
+19115	#984ea3	Louisa, Iowa	1
+42013	#984ea3	Blair, Pennsylvania	6
+42063	#984ea3	Indiana, Pennsylvania	5
+42129	#984ea3	Westmoreland, Pennsylvania	4
+42021	#984ea3	Cambria, Pennsylvania	3
+42005	#984ea3	Armstrong, Pennsylvania	2
+31055	#984ea3	Douglas, Nebraska	5
+19087	#984ea3	Henry, Iowa	3
+18059	#984ea3	Hancock, Indiana	2
+19057	#984ea3	Des Moines, Iowa	1
+17203	#984ea3	Woodford, Illinois	1
+18165	#984ea3	Vermillion, Indiana	1
+17039	#984ea3	De Witt, Illinois	1
+39135	#984ea3	Preble, Ohio	1
+19095	#984ea3	Iowa, Iowa	4
+19107	#984ea3	Keokuk, Iowa	3
+19103	#984ea3	Johnson, Iowa	3
+19157	#984ea3	Poweshiek, Iowa	2
+19183	#984ea3	Washington, Iowa	2
+19125	#984ea3	Marion, Iowa	35
+19153	#984ea3	Polk, Iowa	26
+19015	#984ea3	Boone, Iowa	2
+19049	#984ea3	Dallas, Iowa	2
+19073	#984ea3	Greene, Iowa	1
+19013	#984ea3	Black Hawk, Iowa	5
+19075	#984ea3	Grundy, Iowa	1
+19083	#984ea3	Hardin, Iowa	1
+19135	#984ea3	Monroe, Iowa	6
+19117	#984ea3	Lucas, Iowa	3
+19053	#984ea3	Decatur, Iowa	2
+29013	#984ea3	Bates, Missouri	1
+19039	#984ea3	Clarke, Iowa	1
+40081	#984ea3	Lincoln, Oklahoma	1
+29095	#984ea3	Jackson, Missouri	1
+29097	#984ea3	Jasper, Missouri	1
+35015	#984ea3	Eddy, New Mexico	1
+40057	#984ea3	Harmon, Oklahoma	1
+35035	#984ea3	Otero, New Mexico	1
+48101	#984ea3	Cottle, Texas	1
+48345	#984ea3	Motley, Texas	1
+40027	#984ea3	Cleveland, Oklahoma	1
+35005	#984ea3	Chaves, New Mexico	1
+40109	#984ea3	Oklahoma, Oklahoma	1
+40075	#984ea3	Kiowa, Oklahoma	1
+48075	#984ea3	Childress, Texas	1
+40031	#984ea3	Comanche, Oklahoma	1
+35025	#984ea3	Lea, New Mexico	1
+48107	#984ea3	Crosby, Texas	1
+40065	#984ea3	Jackson, Oklahoma	1
+48153	#984ea3	Floyd, Texas	1
+48303	#984ea3	Lubbock, Texas	1
+35013	#984ea3	Dona Ana, New Mexico	4
+4003	#984ea3	Cochise, Arizona	3
+4021	#984ea3	Pinal, Arizona	2
+35017	#984ea3	Grant, New Mexico	1
+35029	#984ea3	Luna, New Mexico	1
+35023	#984ea3	Hidalgo, New Mexico	1
+4012	#984ea3	La Paz, Arizona	19
+6065	#984ea3	Riverside, California	15
+6071	#984ea3	San Bernardino, California	5
+4027	#984ea3	Yuma, Arizona	4
+4015	#984ea3	Mohave, Arizona	1
+42003	#984ea3	Allegheny, Pennsylvania	420
+54069	#984ea3	Ohio, West Virginia	2
+49025	#984ea3	Kane, Utah	1
+42051	#984ea3	Fayette, Pennsylvania	3
+42125	#984ea3	Washington, Pennsylvania	2
+42007	#984ea3	Beaver, Pennsylvania	11
+54029	#984ea3	Hancock, West Virginia	2
+39081	#984ea3	Jefferson, Ohio	1
+39029	#984ea3	Columbiana, Ohio	1
+54009	#984ea3	Brooke, West Virginia	1
+32003	#ff7f00	Clark, Nevada	15
+6027	#ff7f00	Inyo, California	7
+32023	#ff7f00	Nye, Nevada	4
+32009	#ff7f00	Esmeralda, Nevada	2
+19121	#ff7f00	Madison, Iowa	4
+19181	#ff7f00	Warren, Iowa	2
+19123	#ff7f00	Mahaska, Iowa	8
+19169	#ff7f00	Story, Iowa	5
+19099	#ff7f00	Jasper, Iowa	1
+19179	#ff7f00	Wapello, Iowa	238
+4005	#ff7f00	Coconino, Arizona	26
+4025	#ff7f00	Yavapai, Arizona	10
+4019	#ff7f00	Pima, Arizona	2
+20193	#ff7f00	Thomas, Kansas	1
+4013	#ffff33	Maricopa, Arizona	354
