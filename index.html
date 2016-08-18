@@ -59,8 +59,8 @@ li.year {
 </head>
 <body>
     <div id="container">
-    <h3>Year of first geocache find by county</h3>
-    <p>(Click to zoom; hover for details)</p>
+    <h3>Geocache finds by county</h3>
+    <p>(Click to zoom and filter; click on an empty county to reset)</p>
     <div id="map"></div>
     <div id="ul-container">
         <ul>
@@ -107,12 +107,45 @@ li.year {
     <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
     <script>
 
-    var width = 1000,
+    var table = $('#caches').DataTable({
+        "ajax": "county_data.json",
+        "columnDefs": [
+            {
+                "targets":[0],
+                "visible":false,
+                "searchable":false
+            },
+            {
+                "targets":[4],
+                "orderData":[4,3],
+            },
+            {
+                "targets":[5],
+                "orderData":[5,0],
+                "className":"dt-body-right"
+            },
+            {
+                "targets":[1],
+                "render":function(data){
+                    return '<a target="_blank" href="http://coord.info/' + data + '">' + data + '</a>';
+                }
+            },
+        ],
+        "lengthMenu":[[25,50,100,-1],[25,50,100,"All"]],
+        "order":[[5,"asc"]]
+    });
+
+    $('[id*=filter20]').on('click',function(){
+        table.columns(5).search($(this).attr("id").substr(6),true,false).draw();
+    })
+    
+        var width = 1000,
         height = 570,
         centered;
 
     var path = d3.geo.path();
 
+    var globalNameById = {}
     var svg = d3.select("#map").append("svg")
         .attr("width", width)
         .attr("height", height)
@@ -128,7 +161,7 @@ li.year {
       var nameById = {};
       var countById = {};
 
-      counties.forEach(function(d) { colorById[d.id] = d.code; countById[d.id] = d.count; nameById[d.id] = d.county });
+      counties.forEach(function(d) { colorById[d.id] = d.code; countById[d.id] = d.count; nameById[d.id] = d.county; globalNameById[d.id] = d.county; });
 
       svg.append("g")
           .attr("class", "counties")
@@ -155,6 +188,16 @@ li.year {
     }
 
     function clicked(d) {
+      if (d.id in globalNameById) {
+          var fullName = globalNameById[d.id];
+          var countyName = fullName.substr(0,fullName.indexOf(', '));
+          var stateName = fullName.substr(fullName.lastIndexOf(', ')+2)
+          table.columns(3).search(countyName).draw();
+          table.columns(4).search(stateName).draw();
+      }
+      else {
+        table.search('').columns().search('').draw();
+      }
       var x, y, k;
 
       var g = svg.select("g");
@@ -180,41 +223,6 @@ li.year {
           .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")scale(" + k + ")translate(" + -x + "," + -y + ")")
           .style("stroke-width", 1.5 / k + "px");
     }
-
-
-
-    $(document).ready(function() {
-        var table = $('#caches').DataTable({
-            "ajax": "county_data.json",
-            "columnDefs": [
-                {
-                    "targets":[0],
-                    "visible":false,
-                    "searchable":false
-                },
-                {
-                    "targets":[4],
-                    "orderData":[4,3],
-                },
-                {
-                    "targets":[5],
-                    "orderData":[5,0],
-                    "className":"dt-body-right"
-                },
-                {
-                    "targets":[1],
-                    "render":function(data){
-                        return '<a target="_blank" href="http://coord.info/' + data + '">' + data + '</a>';
-                    }
-                },
-            ],
-            "lengthMenu":[[25,50,100,-1],[25,50,100,"All"]]
-        });
-
-        $('[id*=filter20]').on('click',function(){
-            table.columns(5).search($(this).attr("id").substr(6),true,false).draw();
-        })
-    });
     </script>
 </body>
 </html>
