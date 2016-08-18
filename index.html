@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <head><title>Geocaching near and far, by county</title>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
 <style>
 
 * {
@@ -31,14 +32,35 @@ li {
 span {
 	padding:10px;
 }
+
+#ul-container {
+	margin-bottom:20px;
+	height:36px;
+}
+
+#footer::before {
+	width: 60px;
+	content: '';
+	display: inline-block;
+	height: 1px;
+	margin: 0 0 13px;
+	background-color: #000
+}
+
+#footer {
+	font-size:0.875em;
+}
+
+
+
 </style>
 </head>
 <body>
 	<div id="container">
 	<h3>Year of first geocache find by county</h3>
-	<p>(Click to zoom)</p>
+	<p>(Click to zoom; hover for details)</p>
 	<div id="map"></div>
-	<p>
+	<div id="ul-container">
 		<ul>
 			<li><span style="background-color:#a65628;color:white">2016</span></li>
 			<li><span style="background-color:#f781bf;color:white">2015</span></li>
@@ -49,13 +71,801 @@ span {
 			<li><span style="background-color:#ff7f00;color:white">2010</span></li>
 			<li><span style="background-color:#ffff33">2007</span></li>
 		</ul>
-	</p>
 	</div>
-	<script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+	<table id="caches" class="hover" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+            	<th>Log #</th>
+                <th>GC Code</th>
+                <th>Name</th>
+                <th>County</th>
+                <th>State</th>
+                <th>Date Found</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr><td>126129718</td><td>GCG059</td><td>Mat274</td><td>Maricopa</td><td>Arizona</td><td>2007-12-07</td></tr>
+<tr><td>126564070</td><td>GC30</td><td>Mingo</td><td>Thomas</td><td>Kansas</td><td>2010-08-16</td></tr>
+<tr><td>126129334</td><td>GC22QYC</td><td>Silence of the Shelves Scavenger Hunt</td><td>Pima</td><td>Arizona</td><td>2010-09-05</td></tr>
+<tr><td>130458213</td><td>GC1VYTY</td><td>DogRack</td><td>Yavapai</td><td>Arizona</td><td>2010-10-09</td></tr>
+<tr><td>130458365</td><td>GC19CXD</td><td>Home On The Porch</td><td>Coconino</td><td>Arizona</td><td>2010-10-09</td></tr>
+<tr><td>135478919</td><td>GC1W35X</td><td>RAGBRAI "09" RB 2009</td><td>Wapello</td><td>Iowa</td><td>2010-11-12</td></tr>
+<tr><td>135695634</td><td>GC15HVY</td><td>E.T. Phone Home</td><td>Mahaska</td><td>Iowa</td><td>2010-11-13</td></tr>
+<tr><td>135695749</td><td>GC2DV2N</td><td>Exit Twenty Five</td><td>Jasper</td><td>Iowa</td><td>2010-11-13</td></tr>
+<tr><td>135695859</td><td>GC1DVHQ</td><td>Still Lichen it!</td><td>Story</td><td>Iowa</td><td>2010-11-13</td></tr>
+<tr><td>135862351</td><td>GC1W20A</td><td>Ragbrai09: Gabbys</td><td>Warren</td><td>Iowa</td><td>2010-11-14</td></tr>
+<tr><td>135862656</td><td>GC1B01Q</td><td>"Y" Not?</td><td>Madison</td><td>Iowa</td><td>2010-11-14</td></tr>
+<tr><td>138370546</td><td>GCXYRM</td><td>Light of Justice</td><td>Clark</td><td>Nevada</td><td>2010-12-11</td></tr>
+<tr><td>138370600</td><td>GC1N44B</td><td>No Film Required</td><td>Nye</td><td>Nevada</td><td>2010-12-11</td></tr>
+<tr><td>138371575</td><td>GCHQT6</td><td>DVD</td><td>Inyo</td><td>California</td><td>2010-12-11</td></tr>
+<tr><td>138373141</td><td>GC2K6GG</td><td>The Silver State</td><td>Esmeralda</td><td>Nevada</td><td>2010-12-11</td></tr>
+<tr><td>150923208</td><td>GC21MKM</td><td>Beaver Parking</td><td>Beaver</td><td>Pennsylvania</td><td>2011-03-25</td></tr>
+<tr><td>150923404</td><td>GC1G8ME</td><td>What Time is it?</td><td>Columbiana</td><td>Ohio</td><td>2011-03-25</td></tr>
+<tr><td>150923555</td><td>GC2F97Q</td><td>Dr. David S. Pugh Overlook</td><td>Hancock</td><td>West Virginia</td><td>2011-03-25</td></tr>
+<tr><td>150923714</td><td>GC1YXHP</td><td>The JC</td><td>Jefferson</td><td>Ohio</td><td>2011-03-25</td></tr>
+<tr><td>150923820</td><td>GC1JYHK</td><td>Team Lost Needs a Rest</td><td>Brooke</td><td>West Virginia</td><td>2011-03-25</td></tr>
+<tr><td>151158535</td><td>GC2PBMA</td><td>O’Have Israel</td><td>Fayette</td><td>Pennsylvania</td><td>2011-03-26</td></tr>
+<tr><td>151158784</td><td>GCJGEK</td><td>10 Mile GeoCache</td><td>Washington</td><td>Pennsylvania</td><td>2011-03-26</td></tr>
+<tr><td>163489764</td><td>GC2B4VN</td><td>A Red Halter</td><td>Kane</td><td>Utah</td><td>2011-05-28</td></tr>
+<tr><td>166359884</td><td>GC234TP</td><td>Center Market</td><td>Ohio</td><td>West Virginia</td><td>2011-06-12</td></tr>
+<tr><td>166360288</td><td>GC2JRKX</td><td>Everybody Loves Blue 9</td><td>Allegheny</td><td>Pennsylvania</td><td>2011-06-12</td></tr>
+<tr><td>171761740</td><td>GC1JN5N</td><td>Bouse Assay</td><td>La Paz</td><td>Arizona</td><td>2011-07-09</td></tr>
+<tr><td>171762338</td><td>GCGKXE</td><td>Bill Williams River</td><td>Mohave</td><td>Arizona</td><td>2011-07-09</td></tr>
+<tr><td>171764115</td><td>GC1MJCF</td><td>Wyatt</td><td>San Bernardino</td><td>California</td><td>2011-07-09</td></tr>
+<tr><td>171765131</td><td>GC1BFHV</td><td>Lost Lake</td><td>Riverside</td><td>California</td><td>2011-07-09</td></tr>
+<tr><td>171768756</td><td>GC1MJCB</td><td>An Udder Twee</td><td>Yuma</td><td>Arizona</td><td>2011-07-09</td></tr>
+<tr><td>177640086</td><td>GC241MV</td><td>The Arizona DGP Challenge</td><td>Pinal</td><td>Arizona</td><td>2011-08-05</td></tr>
+<tr><td>177640239</td><td>GC1EZM9</td><td>Welcome to Benson</td><td>Cochise</td><td>Arizona</td><td>2011-08-05</td></tr>
+<tr><td>177640451</td><td>GC167CB</td><td>Front 40 FJ</td><td>Hidalgo</td><td>New Mexico</td><td>2011-08-05</td></tr>
+<tr><td>177640594</td><td>GC1M742</td><td>"Wickiup"</td><td>Grant</td><td>New Mexico</td><td>2011-08-05</td></tr>
+<tr><td>177640639</td><td>GC1NBK1</td><td>mimbres valley travel bug inn</td><td>Luna</td><td>New Mexico</td><td>2011-08-05</td></tr>
+<tr><td>177640820</td><td>GC25KP3</td><td>Free Parking</td><td>Dona Ana</td><td>New Mexico</td><td>2011-08-05</td></tr>
+<tr><td>177877055</td><td>GC2RBAQ</td><td>Do You Want Fries With That?</td><td>Otero</td><td>New Mexico</td><td>2011-08-06</td></tr>
+<tr><td>177877182</td><td>GCF616</td><td>Middle o' Nowhere</td><td>Chaves</td><td>New Mexico</td><td>2011-08-06</td></tr>
+<tr><td>177882567</td><td>GC2QF1H</td><td>PAINT YOUR WAGON</td><td>Eddy</td><td>New Mexico</td><td>2011-08-06</td></tr>
+<tr><td>177882699</td><td>GC2P0FC</td><td>Hollywood Hedgehog</td><td>Lea</td><td>New Mexico</td><td>2011-08-06</td></tr>
+<tr><td>177883033</td><td>GCTQJN</td><td>Dealer Row</td><td>Lubbock</td><td>Texas</td><td>2011-08-06</td></tr>
+<tr><td>177883328</td><td>GC2N35Q</td><td>CCWF MET #3</td><td>Crosby</td><td>Texas</td><td>2011-08-06</td></tr>
+<tr><td>177883408</td><td>GC11XHY</td><td>On Your Way Out....or In</td><td>Floyd</td><td>Texas</td><td>2011-08-06</td></tr>
+<tr><td>177883577</td><td>GC252JT</td><td>62/70 HH Campbell Rest Area (Motley Co.)</td><td>Motley</td><td>Texas</td><td>2011-08-06</td></tr>
+<tr><td>177883672</td><td>GC13AA8</td><td>Out of Service Cottle County</td><td>Cottle</td><td>Texas</td><td>2011-08-06</td></tr>
+<tr><td>177883762</td><td>GC206J4</td><td>South Bank of the Red   ( NML)</td><td>Childress</td><td>Texas</td><td>2011-08-06</td></tr>
+<tr><td>177883881</td><td>GC2HN7J</td><td>I See Dead People...in Gould</td><td>Harmon</td><td>Oklahoma</td><td>2011-08-06</td></tr>
+<tr><td>177884094</td><td>GC2521F</td><td>Phillips 66</td><td>Jackson</td><td>Oklahoma</td><td>2011-08-06</td></tr>
+<tr><td>177884169</td><td>GC1K57P</td><td>Snyder's travel bug hotel</td><td>Kiowa</td><td>Oklahoma</td><td>2011-08-06</td></tr>
+<tr><td>177884381</td><td>GCHQWB</td><td>Gurantee</td><td>Comanche</td><td>Oklahoma</td><td>2011-08-06</td></tr>
+<tr><td>177884509</td><td>GC124PV</td><td>Out of Business Redux</td><td>Oklahoma</td><td>Oklahoma</td><td>2011-08-06</td></tr>
+<tr><td>177884707</td><td>GC1HZ0D</td><td>Water You Waiting For?</td><td>Cleveland</td><td>Oklahoma</td><td>2011-08-06</td></tr>
+<tr><td>178221080</td><td>GC1GRBK</td><td>Turner - Eastbound 1</td><td>Lincoln</td><td>Oklahoma</td><td>2011-08-07</td></tr>
+<tr><td>178221283</td><td>GC2YHPC</td><td>Salem Golden Eye</td><td>Jasper</td><td>Missouri</td><td>2011-08-07</td></tr>
+<tr><td>178221438</td><td>GC25DFX</td><td>Plum out of Town</td><td>Bates</td><td>Missouri</td><td>2011-08-07</td></tr>
+<tr><td>178221853</td><td>GC37</td><td>Missouri's First - Watts Mill</td><td>Jackson</td><td>Missouri</td><td>2011-08-07</td></tr>
+<tr><td>178225663</td><td>GC1HTTP</td><td>Iowa Side 2</td><td>Decatur</td><td>Iowa</td><td>2011-08-07</td></tr>
+<tr><td>178226424</td><td>GC111PC</td><td>H45 Micro</td><td>Clarke</td><td>Iowa</td><td>2011-08-07</td></tr>
+<tr><td>178226482</td><td>GC1TNX7</td><td>RAGBRAI "09" Greenbelt</td><td>Lucas</td><td>Iowa</td><td>2011-08-07</td></tr>
+<tr><td>178226672</td><td>GC1MQYZ</td><td>Hill Folk's 40th Anniversary Cache</td><td>Monroe</td><td>Iowa</td><td>2011-08-07</td></tr>
+<tr><td>178480836</td><td>GC1ZMXK</td><td>Train's End</td><td>Hardin</td><td>Iowa</td><td>2011-08-08</td></tr>
+<tr><td>178480903</td><td>GCQQNC</td><td>C.E. Shearn Memorial Park</td><td>Grundy</td><td>Iowa</td><td>2011-08-08</td></tr>
+<tr><td>178480993</td><td>GC2QWA4</td><td>Cool Chillie peppers</td><td>Black Hawk</td><td>Iowa</td><td>2011-08-08</td></tr>
+<tr><td>178597362</td><td>GC2CCTP</td><td>Cedar Trio</td><td>Boone</td><td>Iowa</td><td>2011-08-09</td></tr>
+<tr><td>178598534</td><td>GC2BYZM</td><td>Woodward Trail...Rest Area</td><td>Dallas</td><td>Iowa</td><td>2011-08-09</td></tr>
+<tr><td>178599977</td><td>GC1YWKA</td><td>Lincoln View</td><td>Greene</td><td>Iowa</td><td>2011-08-09</td></tr>
+<tr><td>178600341</td><td>GC1VFCT</td><td>Foul!</td><td>Polk</td><td>Iowa</td><td>2011-08-09</td></tr>
+<tr><td>180097479</td><td>GC26ZV7</td><td>45 DOTS</td><td>Marion</td><td>Iowa</td><td>2011-08-15</td></tr>
+<tr><td>180530654</td><td>GC1EGDN</td><td>Hilltop view</td><td>Keokuk</td><td>Iowa</td><td>2011-08-17</td></tr>
+<tr><td>180530962</td><td>GC1W8R6</td><td>The Buck Oops, Bus Stops Here</td><td>Washington</td><td>Iowa</td><td>2011-08-17</td></tr>
+<tr><td>180531058</td><td>GC24BER</td><td>Coral Ridge Mallzzle</td><td>Johnson</td><td>Iowa</td><td>2011-08-17</td></tr>
+<tr><td>180531130</td><td>GC1FCGP</td><td>Willkommen (TB Hotel)</td><td>Iowa</td><td>Iowa</td><td>2011-08-17</td></tr>
+<tr><td>180545591</td><td>GC13845</td><td>Lincoln Wildlife #3</td><td>Poweshiek</td><td>Iowa</td><td>2011-08-17</td></tr>
+<tr><td>180886929</td><td>GC2FKDZ</td><td>MTP - PG</td><td>Henry</td><td>Iowa</td><td>2011-08-19</td></tr>
+<tr><td>180886985</td><td>GC2PJWZ</td><td>Six and 163</td><td>Des Moines</td><td>Iowa</td><td>2011-08-19</td></tr>
+<tr><td>180887229</td><td>GC13BYW</td><td>Alone NoMore</td><td>Woodford</td><td>Illinois</td><td>2011-08-19</td></tr>
+<tr><td>180887373</td><td>GC1WVR4</td><td>Eggrolls, Pirates, and Truckers</td><td>De Witt</td><td>Illinois</td><td>2011-08-19</td></tr>
+<tr><td>180887526</td><td>GC13QV7</td><td>I-74 east bug motel</td><td>Vermillion</td><td>Indiana</td><td>2011-08-19</td></tr>
+<tr><td>180887973</td><td>GCPR6F</td><td>I gotta go...</td><td>Hancock</td><td>Indiana</td><td>2011-08-19</td></tr>
+<tr><td>180888016</td><td>GC15C3J</td><td>Rest Stop - I-70 Eastbound - Oddball Rocker Joint</td><td>Preble</td><td>Ohio</td><td>2011-08-19</td></tr>
+<tr><td>195182144</td><td>GC19R8P</td><td>U? V? .. The Hides of March</td><td>Douglas</td><td>Nebraska</td><td>2011-10-27</td></tr>
+<tr><td>197092468</td><td>GC2X1C1</td><td>ACGT The Gathering of Women</td><td>Armstrong</td><td>Pennsylvania</td><td>2011-11-05</td></tr>
+<tr><td>197094239</td><td>GC4075</td><td>PHILADELPHIA STREET PHOLLEY</td><td>Indiana</td><td>Pennsylvania</td><td>2011-11-05</td></tr>
+<tr><td>197095525</td><td>GC31D21</td><td>Big League</td><td>Cambria</td><td>Pennsylvania</td><td>2011-11-05</td></tr>
+<tr><td>197096450</td><td>GC372YY</td><td>Country Feelings - Buckhorn</td><td>Blair</td><td>Pennsylvania</td><td>2011-11-05</td></tr>
+<tr><td>197098524</td><td>GC33J9A</td><td>No Pets!?</td><td>Westmoreland</td><td>Pennsylvania</td><td>2011-11-05</td></tr>
+<tr><td>200395602</td><td>GC1502F</td><td>Hy,s Cheap Date</td><td>Muscatine</td><td>Iowa</td><td>2011-11-23</td></tr>
+<tr><td>200395730</td><td>GC16JFE</td><td>Swing or Sit, Who Gives A Flip!</td><td>Louisa</td><td>Iowa</td><td>2011-11-23</td></tr>
+<tr><td>200396429</td><td>GC280E</td><td>Generation Gap</td><td>Jefferson</td><td>Iowa</td><td>2011-11-23</td></tr>
+<tr><td>200861505</td><td>GC28NHX</td><td>Stanwood Park</td><td>Cedar</td><td>Iowa</td><td>2011-11-26</td></tr>
+<tr><td>200861685</td><td>GC2ZBMK</td><td>WHAT HAPPENED???</td><td>Clinton</td><td>Iowa</td><td>2011-11-26</td></tr>
+<tr><td>200861847</td><td>GC37KY4</td><td>Princeton South</td><td>Scott</td><td>Iowa</td><td>2011-11-26</td></tr>
+<tr><td>200861928</td><td>GC354P5</td><td>Halloween 17: Ride?</td><td>Rock Island</td><td>Illinois</td><td>2011-11-26</td></tr>
+<tr><td>203646119</td><td>GC1NXXG</td><td>Tucked Away Downtown</td><td>Cook</td><td>Illinois</td><td>2011-12-18</td></tr>
+<tr><td>204374441</td><td>GC1TTRR</td><td>RAGBRAI "09" Out Here on Soap Creek</td><td>Appanoose</td><td>Iowa</td><td>2011-12-25</td></tr>
+<tr><td>204375021</td><td>GC2T8XV</td><td>Paris Cemetery</td><td>Davis</td><td>Iowa</td><td>2011-12-25</td></tr>
+<tr><td>205021117</td><td>GC34KNT</td><td>The Empty Grave</td><td>Van Buren</td><td>Iowa</td><td>2011-12-28</td></tr>
+<tr><td>205532961</td><td>GC2E7E9</td><td>Lil Bandit I</td><td>Whiteside</td><td>Illinois</td><td>2011-12-30</td></tr>
+<tr><td>205533136</td><td>GC1BC9H</td><td>Big Bang 5</td><td>Lee</td><td>Illinois</td><td>2011-12-30</td></tr>
+<tr><td>205533201</td><td>GC2R4BV</td><td>O3's Crib!</td><td>Ogle</td><td>Illinois</td><td>2011-12-30</td></tr>
+<tr><td>205533355</td><td>GC1B48P</td><td>Ace Of Diamonds / days gone by #4</td><td>Winnebago</td><td>Illinois</td><td>2011-12-30</td></tr>
+<tr><td>205533449</td><td>GC35PDE</td><td>Belvidere Past #3</td><td>Boone</td><td>Illinois</td><td>2011-12-30</td></tr>
+<tr><td>205533472</td><td>GCJXD1</td><td>Ole's Sign</td><td>Rock</td><td>Wisconsin</td><td>2011-12-30</td></tr>
+<tr><td>205533602</td><td>GC2FFE8</td><td>WSQ HILLSIDE</td><td>Walworth</td><td>Wisconsin</td><td>2011-12-30</td></tr>
+<tr><td>205533640</td><td>GC358DE</td><td>Let's go play....Hide and seek</td><td>McHenry</td><td>Illinois</td><td>2011-12-30</td></tr>
+<tr><td>205533820</td><td>GC3934Y</td><td>"Just Cheese Me!" A Slice of Cache</td><td>Lake</td><td>Illinois</td><td>2011-12-30</td></tr>
+<tr><td>205533851</td><td>GC34982</td><td>Bristol Park View</td><td>Kenosha</td><td>Wisconsin</td><td>2011-12-30</td></tr>
+<tr><td>205533884</td><td>GC16EWG</td><td>WSQ Union Grove</td><td>Racine</td><td>Wisconsin</td><td>2011-12-30</td></tr>
+<tr><td>205533943</td><td>GC28T73</td><td>WSQ Drought</td><td>Waukesha</td><td>Wisconsin</td><td>2011-12-30</td></tr>
+<tr><td>205533954</td><td>GC2ZQCR</td><td>PNG #13</td><td>Milwaukee</td><td>Wisconsin</td><td>2011-12-30</td></tr>
+<tr><td>205533966</td><td>GC2CF82</td><td>North Trinity Lutheran</td><td>Ozaukee</td><td>Wisconsin</td><td>2011-12-30</td></tr>
+<tr><td>205533975</td><td>GC2BQTY</td><td>Under God's Watchful Eye</td><td>Washington</td><td>Wisconsin</td><td>2011-12-30</td></tr>
+<tr><td>206409260</td><td>GC2X07T</td><td>Rotary Riverfront</td><td>Sheboygan</td><td>Wisconsin</td><td>2012-01-03</td></tr>
+<tr><td>206409404</td><td>GC1EWX8</td><td>Soccer Field</td><td>Manitowoc</td><td>Wisconsin</td><td>2012-01-03</td></tr>
+<tr><td>206409436</td><td>GC26VD1</td><td>WSQ St. Anna</td><td>Calumet</td><td>Wisconsin</td><td>2012-01-03</td></tr>
+<tr><td>206409498</td><td>GC1GCEC</td><td>Wolf Lake Park Cache</td><td>Fond du Lac</td><td>Wisconsin</td><td>2012-01-03</td></tr>
+<tr><td>206586678</td><td>GC1D6CZ</td><td>T11 - KFZ899</td><td>Winnebago</td><td>Wisconsin</td><td>2012-01-04</td></tr>
+<tr><td>206586748</td><td>GC1GEY8</td><td>WSQ Shead Island</td><td>Waushara</td><td>Wisconsin</td><td>2012-01-04</td></tr>
+<tr><td>206586796</td><td>GC2DYD7</td><td>BPL: Home Town Ties</td><td>Green Lake</td><td>Wisconsin</td><td>2012-01-04</td></tr>
+<tr><td>206586829</td><td>GC8587</td><td>Wells Point Park</td><td>Marquette</td><td>Wisconsin</td><td>2012-01-04</td></tr>
+<tr><td>206586891</td><td>GC2FJK8</td><td>WSQ Olin Cemetery</td><td>Adams</td><td>Wisconsin</td><td>2012-01-04</td></tr>
+<tr><td>206586961</td><td>GC2FMMC</td><td>WSQ Town of Marion Cemetery</td><td>Juneau</td><td>Wisconsin</td><td>2012-01-04</td></tr>
+<tr><td>206586993</td><td>GCVX7Z</td><td>Gillette Park</td><td>Monroe</td><td>Wisconsin</td><td>2012-01-04</td></tr>
+<tr><td>206587039</td><td>GC2K4BK</td><td>Oh no! It's a tank hide!</td><td>Jackson</td><td>Wisconsin</td><td>2012-01-04</td></tr>
+<tr><td>206587104</td><td>GC17MZJ</td><td>WSQ Burr Oak Veteran: Company F</td><td>La Crosse</td><td>Wisconsin</td><td>2012-01-04</td></tr>
+<tr><td>206587229</td><td>GC16BXN</td><td>Decorah Peak</td><td>Trempealeau</td><td>Wisconsin</td><td>2012-01-04</td></tr>
+<tr><td>206587445</td><td>GC1YRWQ</td><td>Gr8 River Road: Crane Spotting 2.0</td><td>Buffalo</td><td>Wisconsin</td><td>2012-01-04</td></tr>
+<tr><td>206587488</td><td>GC2ZFW4</td><td>From a Seed a Cache is Grown</td><td>Winona</td><td>Minnesota</td><td>2012-01-04</td></tr>
+<tr><td>206587538</td><td>GC220FC</td><td>cornered MN style</td><td>Houston</td><td>Minnesota</td><td>2012-01-04</td></tr>
+<tr><td>206587835</td><td>GC22ZGD</td><td>welcome to New Albin</td><td>Allamakee</td><td>Iowa</td><td>2012-01-04</td></tr>
+<tr><td>206587857</td><td>GC1H4X0</td><td>Lunch in the Park - Decorah</td><td>Winneshiek</td><td>Iowa</td><td>2012-01-04</td></tr>
+<tr><td>206587923</td><td>GC13V6M</td><td>Towns of Turkey Valley # 4  Protivin</td><td>Howard</td><td>Iowa</td><td>2012-01-04</td></tr>
+<tr><td>206587949</td><td>GC2A5D7</td><td>Curse of the FTF #4 (Chickasaw County)</td><td>Chickasaw</td><td>Iowa</td><td>2012-01-04</td></tr>
+<tr><td>206587979</td><td>GC151MB</td><td>History House</td><td>Bremer</td><td>Iowa</td><td>2012-01-04</td></tr>
+<tr><td>206588006</td><td>GC15AB9</td><td>GADR Cache</td><td>Fayette</td><td>Iowa</td><td>2012-01-04</td></tr>
+<tr><td>206588062</td><td>GC375JA</td><td>Tour of Fairbank - The Library</td><td>Buchanan</td><td>Iowa</td><td>2012-01-04</td></tr>
+<tr><td>206588343</td><td>GC2Q0HH</td><td>You Light Up My Park</td><td>Tama</td><td>Iowa</td><td>2012-01-04</td></tr>
+<tr><td>206961193</td><td>GCHH9H</td><td>Moses and the Indians</td><td>Schuyler</td><td>Missouri</td><td>2012-01-07</td></tr>
+<tr><td>206968787</td><td>GCQTG8</td><td>Softball RulZ ver 2.0</td><td>Adair</td><td>Missouri</td><td>2012-01-07</td></tr>
+<tr><td>211973418</td><td>GC1T4A5</td><td>If You Knew Sushi Like I Knew Sushi</td><td>Harris</td><td>Texas</td><td>2012-02-08</td></tr>
+<tr><td>212066912</td><td>GC34EYH</td><td>Grabbing a Slice</td><td>Galveston</td><td>Texas</td><td>2012-02-09</td></tr>
+<tr><td>217193838</td><td>GC2MD3E</td><td>Moonlight Tower #1 - RIP</td><td>Travis</td><td>Texas</td><td>2012-03-08</td></tr>
+<tr><td>218560993</td><td>GC2VB07</td><td>Texas Spirit Quest #34: Niederwald Cemetery</td><td>Caldwell</td><td>Texas</td><td>2012-03-14</td></tr>
+<tr><td>218561031</td><td>GC2MW2G</td><td>V in the sky</td><td>Hays</td><td>Texas</td><td>2012-03-14</td></tr>
+<tr><td>218562655</td><td>GC3BRWX</td><td>GW James Daughtrey</td><td>Bastrop</td><td>Texas</td><td>2012-03-14</td></tr>
+<tr><td>218730592</td><td>GC1J7NH</td><td>Childhood Memories #1</td><td>Butler</td><td>Pennsylvania</td><td>2012-03-15</td></tr>
+<tr><td>222442609</td><td>GC23BGN</td><td>I-80 Travel Bug, Pathtag, and Geocoin Hotel</td><td>Clarion</td><td>Pennsylvania</td><td>2012-03-31</td></tr>
+<tr><td>222443154</td><td>GC107Q7</td><td>Hog Heaven</td><td>Lawrence</td><td>Pennsylvania</td><td>2012-03-31</td></tr>
+<tr><td>222443179</td><td>GC2RZW3</td><td>Kings of Comfort</td><td>Mercer</td><td>Pennsylvania</td><td>2012-03-31</td></tr>
+<tr><td>222443352</td><td>GC1B2C3</td><td>Petes Place</td><td>Crawford</td><td>Pennsylvania</td><td>2012-03-31</td></tr>
+<tr><td>222443420</td><td>GC208DB</td><td>Lupher Cemetery</td><td>Venango</td><td>Pennsylvania</td><td>2012-03-31</td></tr>
+<tr><td>222443683</td><td>GC147NW</td><td>Peeking at You</td><td>Jefferson</td><td>Pennsylvania</td><td>2012-03-31</td></tr>
+<tr><td>224487478</td><td>GC3EVWQ</td><td>Morris Twp Community Center</td><td>Greene</td><td>Pennsylvania</td><td>2012-04-07</td></tr>
+<tr><td>224487842</td><td>GC19E7F</td><td>Highland Cemetery</td><td>Marshall</td><td>West Virginia</td><td>2012-04-07</td></tr>
+<tr><td>224488153</td><td>GC1EZ1K</td><td>Hundred Cache</td><td>Wetzel</td><td>West Virginia</td><td>2012-04-07</td></tr>
+<tr><td>224488351</td><td>GC2DHA5</td><td>Cornered at the FD</td><td>Marion</td><td>West Virginia</td><td>2012-04-07</td></tr>
+<tr><td>224490588</td><td>GC12XRT</td><td>Micro at the Lair</td><td>Monongalia</td><td>West Virginia</td><td>2012-04-07</td></tr>
+<tr><td>224490914</td><td>GC1VNJ9</td><td>WV JOE EXIT 23</td><td>Preston</td><td>West Virginia</td><td>2012-04-07</td></tr>
+<tr><td>224491154</td><td>GC31V85</td><td>Friendsville</td><td>Garrett</td><td>Maryland</td><td>2012-04-07</td></tr>
+<tr><td>224492821</td><td>GC1RHXG</td><td>Georgia On My Mind</td><td>Somerset</td><td>Pennsylvania</td><td>2012-04-07</td></tr>
+<tr><td>226572097</td><td>GC304AK</td><td>Venango-Forest Kidz Kache Trail - Marienville</td><td>Forest</td><td>Pennsylvania</td><td>2012-04-14</td></tr>
+<tr><td>226572553</td><td>GCVX2N</td><td>Gingers Wagon Wheel</td><td>Elk</td><td>Pennsylvania</td><td>2012-04-14</td></tr>
+<tr><td>226573163</td><td>GCP41B</td><td>St.  Callistus  Cemetery Micro</td><td>McKean</td><td>Pennsylvania</td><td>2012-04-14</td></tr>
+<tr><td>226573877</td><td>GC2VRD5</td><td>Chocolate and Wine Cache 3</td><td>Warren</td><td>Pennsylvania</td><td>2012-04-14</td></tr>
+<tr><td>226575590</td><td>GC2QZR9</td><td>#44 Hey there is no benchmark here</td><td>Erie</td><td>Pennsylvania</td><td>2012-04-14</td></tr>
+<tr><td>226575670</td><td>GC2AK79</td><td>Clymer Cemetery</td><td>Chautauqua</td><td>New York</td><td>2012-04-14</td></tr>
+<tr><td>231986145</td><td>GC16FHR</td><td>The S.S. Grand View Hotel</td><td>Bedford</td><td>Pennsylvania</td><td>2012-05-05</td></tr>
+<tr><td>234036442</td><td>GC2KWAZ</td><td>J.C. Blair Building</td><td>Huntingdon</td><td>Pennsylvania</td><td>2012-05-13</td></tr>
+<tr><td>234036502</td><td>GC2CXP8</td><td>Frist Date</td><td>Mifflin</td><td>Pennsylvania</td><td>2012-05-13</td></tr>
+<tr><td>234036522</td><td>GC2C559</td><td>Doggie Wash... What??</td><td>Juniata</td><td>Pennsylvania</td><td>2012-05-13</td></tr>
+<tr><td>234036541</td><td>GCYEPE</td><td>Eastbound</td><td>Perry</td><td>Pennsylvania</td><td>2012-05-13</td></tr>
+<tr><td>234036597</td><td>GCH85D</td><td>WORM-hole</td><td>Cumberland</td><td>Pennsylvania</td><td>2012-05-13</td></tr>
+<tr><td>234036615</td><td>GC22NXJ</td><td>In The Market For a Huge Cache #4</td><td>Dauphin</td><td>Pennsylvania</td><td>2012-05-13</td></tr>
+<tr><td>234036648</td><td>GC3FGM0</td><td>A place to be alone in your mind</td><td>Lebanon</td><td>Pennsylvania</td><td>2012-05-13</td></tr>
+<tr><td>234036669</td><td>GC2J8JR</td><td>LOST81 (1.0/2.0) Toll Please</td><td>Lancaster</td><td>Pennsylvania</td><td>2012-05-13</td></tr>
+<tr><td>234036692</td><td>GC2CC2K</td><td>Made-To-Cache</td><td>Berks</td><td>Pennsylvania</td><td>2012-05-13</td></tr>
+<tr><td>234036709</td><td>GC1NMDB</td><td>Barcodes in the Sky</td><td>Chester</td><td>Pennsylvania</td><td>2012-05-13</td></tr>
+<tr><td>234036734</td><td>GC3C5FE</td><td>St. David's Community Park - Redux</td><td>Delaware</td><td>Pennsylvania</td><td>2012-05-13</td></tr>
+<tr><td>234036756</td><td>GC2TBYE</td><td>Rio</td><td>Montgomery</td><td>Pennsylvania</td><td>2012-05-13</td></tr>
+<tr><td>234036774</td><td>GC2TFW6</td><td>Tunnel overlook.</td><td>Philadelphia</td><td>Pennsylvania</td><td>2012-05-13</td></tr>
+<tr><td>234056214</td><td>GC2QH3E</td><td>Swimtime with Paulie</td><td>Burlington</td><td>New Jersey</td><td>2012-05-13</td></tr>
+<tr><td>234451397</td><td>GCMYN7</td><td>New Castle Chandlery</td><td>New Castle</td><td>Delaware</td><td>2012-05-15</td></tr>
+<tr><td>234451417</td><td>GC1HC75</td><td>Under Construction</td><td>Kent</td><td>Delaware</td><td>2012-05-15</td></tr>
+<tr><td>234451464</td><td>GC15HTX</td><td>Billy Goats Gruff</td><td>Sussex</td><td>Delaware</td><td>2012-05-15</td></tr>
+<tr><td>234451480</td><td>GC1YCC0</td><td>Repello Muggletum Junction</td><td>Queen Anne's</td><td>Maryland</td><td>2012-05-15</td></tr>
+<tr><td>234451490</td><td>GC360FT</td><td>Safe is the way to be</td><td>Anne Arundel</td><td>Maryland</td><td>2012-05-15</td></tr>
+<tr><td>234451498</td><td>GC3DA55</td><td>Science with a View</td><td>Baltimore City</td><td>Maryland</td><td>2012-05-15</td></tr>
+<tr><td>234597572</td><td>GCBB8F</td><td>I am the God of Leaky Caches and Soggy Log Books</td><td>District of Columbia</td><td>District of Columbia</td><td>2012-05-16</td></tr>
+<tr><td>234861901</td><td>GC35KAN</td><td>Shiva</td><td>Howard</td><td>Maryland</td><td>2012-05-17</td></tr>
+<tr><td>234861938</td><td>GC1V9JF</td><td>Are ya to yella tah find me??</td><td>Baltimore</td><td>Maryland</td><td>2012-05-17</td></tr>
+<tr><td>234861965</td><td>GC1AMYP</td><td>Just Another Park & Cache</td><td>Carroll</td><td>Maryland</td><td>2012-05-17</td></tr>
+<tr><td>234861974</td><td>GC3B6VH</td><td>Back Lot</td><td>York</td><td>Pennsylvania</td><td>2012-05-17</td></tr>
+<tr><td>234862008</td><td>GC1JND1</td><td>Gettysburg Cache-N-Dash #2</td><td>Adams</td><td>Pennsylvania</td><td>2012-05-17</td></tr>
+<tr><td>234862069</td><td>GCMZFM</td><td>Lincoln Marker - Scouts Honor</td><td>Franklin</td><td>Pennsylvania</td><td>2012-05-17</td></tr>
+<tr><td>236119746</td><td>GC2339T</td><td>Trackables LOVE this place</td><td>Muskingum</td><td>Ohio</td><td>2012-05-21</td></tr>
+<tr><td>236148879</td><td>GC25QYX</td><td>Penny Trading Post</td><td>Franklin</td><td>Ohio</td><td>2012-05-21</td></tr>
+<tr><td>236205873</td><td>GC1N9WW</td><td>The Old 'Shell Game'</td><td>Boone</td><td>Indiana</td><td>2012-05-21</td></tr>
+<tr><td>236232655</td><td>GC2F3TV</td><td>Circle, Circle, Dot Not! 2</td><td>Champaign</td><td>Illinois</td><td>2012-05-21</td></tr>
+<tr><td>236368782</td><td>GC2C6Y7</td><td>Wever Juction</td><td>Lee</td><td>Iowa</td><td>2012-05-22</td></tr>
+<tr><td>236741799</td><td>GC36WKV</td><td>Fuzzy Logic, Not</td><td>Santa Clara</td><td>California</td><td>2012-05-24</td></tr>
+<tr><td>237086173</td><td>GC2ZX9C</td><td>SafeBusters!!</td><td>San Mateo</td><td>California</td><td>2012-05-26</td></tr>
+<tr><td>237589798</td><td>GC2DNC4</td><td>Legal Eagles with Training Wheels</td><td>San Francisco</td><td>California</td><td>2012-05-27</td></tr>
+<tr><td>239207773</td><td>GC21PCZ</td><td>Shark Bite: Scott Creek Beach Secret Trailhead</td><td>Santa Cruz</td><td>California</td><td>2012-06-02</td></tr>
+<tr><td>239594566</td><td>GC3J6HY</td><td>Rubber Duck Inn 2</td><td>Alameda</td><td>California</td><td>2012-06-03</td></tr>
+<tr><td>239594750</td><td>GC385W3</td><td>Swim Club</td><td>Contra Costa</td><td>California</td><td>2012-06-03</td></tr>
+<tr><td>242458342</td><td>GC37DP8</td><td>Rusty Pipes</td><td>Tulare</td><td>California</td><td>2012-06-16</td></tr>
+<tr><td>242484062</td><td>GC3M4AM</td><td>Gawn fishin'</td><td>Merced</td><td>California</td><td>2012-06-16</td></tr>
+<tr><td>242498289</td><td>GC2XT5P</td><td>Fossil Find!</td><td>Madera</td><td>California</td><td>2012-06-16</td></tr>
+<tr><td>242498290</td><td>GC1AMXB</td><td>Bushes? Lots!</td><td>Fresno</td><td>California</td><td>2012-06-16</td></tr>
+<tr><td>242498292</td><td>GCJ7TW</td><td>Cell Tree View</td><td>Kings</td><td>California</td><td>2012-06-16</td></tr>
+<tr><td>242498296</td><td>GC1D67D</td><td>Driver, Turnaround!</td><td>Kern</td><td>California</td><td>2012-06-16</td></tr>
+<tr><td>242498299</td><td>GC3H36V</td><td>Don't Do A Handstand Cache</td><td>Los Angeles</td><td>California</td><td>2012-06-16</td></tr>
+<tr><td>242510534</td><td>GC1Q19E</td><td>Where I Go caches cause me headaches</td><td>Orange</td><td>California</td><td>2012-06-16</td></tr>
+<tr><td>242910716</td><td>GC22HGK</td><td>Thing 1</td><td>San Diego</td><td>California</td><td>2012-06-17</td></tr>
+<tr><td>242910721</td><td>GC20Z1A</td><td>Ugly Duckling</td><td>Ventura</td><td>California</td><td>2012-06-17</td></tr>
+<tr><td>242910723</td><td>GC2XCKD</td><td>An Anapamu For You</td><td>Santa Barbara</td><td>California</td><td>2012-06-17</td></tr>
+<tr><td>242910727</td><td>GC3A48W</td><td>Let's park!</td><td>San Luis Obispo</td><td>California</td><td>2012-06-17</td></tr>
+<tr><td>242910729</td><td>GC1NCN7</td><td>Key to San Ardo</td><td>Monterey</td><td>California</td><td>2012-06-17</td></tr>
+<tr><td>242910878</td><td>GC3A9DH</td><td>Where's San Juan?</td><td>San Benito</td><td>California</td><td>2012-06-18</td></tr>
+<tr><td>244075124</td><td>GC21CFM</td><td>Park & Cache #12: Manzanita</td><td>Marin</td><td>California</td><td>2012-06-23</td></tr>
+<tr><td>244075141</td><td>GC19CBW</td><td>I Tree</td><td>Sonoma</td><td>California</td><td>2012-06-23</td></tr>
+<tr><td>244075159</td><td>GC1QYCH</td><td>Another County Line!</td><td>Napa</td><td>California</td><td>2012-06-23</td></tr>
+<tr><td>244075168</td><td>GC3FZTK</td><td>E.T. HWY</td><td>Solano</td><td>California</td><td>2012-06-23</td></tr>
+<tr><td>244075207</td><td>GC1CZ75</td><td>Windy Cove</td><td>Sacramento</td><td>California</td><td>2012-06-23</td></tr>
+<tr><td>249061296</td><td>GC3G2MW</td><td>KFCLPC</td><td>San Joaquin</td><td>California</td><td>2012-07-14</td></tr>
+<tr><td>249061308</td><td>GC1TTK8</td><td>The OC</td><td>Stanislaus</td><td>California</td><td>2012-07-14</td></tr>
+<tr><td>249061500</td><td>GC3D7KZ</td><td>Cow Wash</td><td>Tuolumne</td><td>California</td><td>2012-07-14</td></tr>
+<tr><td>249061540</td><td>GC13VHN</td><td>County Line - Mariposa</td><td>Mariposa</td><td>California</td><td>2012-07-14</td></tr>
+<tr><td>249061663</td><td>GC311MH</td><td>Wayapie</td><td>Mono</td><td>California</td><td>2012-07-14</td></tr>
+<tr><td>249061674</td><td>GC1F0KZ</td><td>Markleeville--An Alpine Gem</td><td>Alpine</td><td>California</td><td>2012-07-14</td></tr>
+<tr><td>249061688</td><td>GCP0VZ</td><td>Brockliss Road</td><td>Douglas</td><td>Nevada</td><td>2012-07-14</td></tr>
+<tr><td>249061770</td><td>GC2XHEQ</td><td>Arachnophobia</td><td>Carson City</td><td>Nevada</td><td>2012-07-14</td></tr>
+<tr><td>249061781</td><td>GC29Y08</td><td>Hey Batter Batter</td><td>Washoe</td><td>Nevada</td><td>2012-07-14</td></tr>
+<tr><td>249441116</td><td>GC1AC0T</td><td>County Line - Nevada (2)</td><td>Nevada</td><td>California</td><td>2012-07-15</td></tr>
+<tr><td>249441143</td><td>GC2YM14</td><td>Loose Goose or, Who Goosed the Moose</td><td>Placer</td><td>California</td><td>2012-07-15</td></tr>
+<tr><td>249441210</td><td>GC12QET</td><td>Mile Marker # 53</td><td>El Dorado</td><td>California</td><td>2012-07-15</td></tr>
+<tr><td>249441288</td><td>GC32PY8</td><td>Picnic Time</td><td>Amador</td><td>California</td><td>2012-07-15</td></tr>
+<tr><td>249441370</td><td>GCWERK</td><td>Welcome to Calaveras County</td><td>Calaveras</td><td>California</td><td>2012-07-15</td></tr>
+<tr><td>252691737</td><td>GC2P8QZ</td><td>Winters Quadrangle</td><td>Yolo</td><td>California</td><td>2012-07-28</td></tr>
+<tr><td>252791470</td><td>GC204XB</td><td>A Wonderful Afternoon in the Country</td><td>Colusa</td><td>California</td><td>2012-07-28</td></tr>
+<tr><td>252791476</td><td>GC1CNEW</td><td>Sul Norte</td><td>Glenn</td><td>California</td><td>2012-07-28</td></tr>
+<tr><td>252791481</td><td>GCYGKR</td><td>pacific island</td><td>Butte</td><td>California</td><td>2012-07-28</td></tr>
+<tr><td>252791485</td><td>GC10R94</td><td>haiku 3</td><td>Yuba</td><td>California</td><td>2012-07-28</td></tr>
+<tr><td>252791487</td><td>GC2NB9M</td><td>Countess Catherine</td><td>Sutter</td><td>California</td><td>2012-07-28</td></tr>
+<tr><td>257961404</td><td>GC1HTTV</td><td>MOrest</td><td>Harrison</td><td>Missouri</td><td>2012-08-15</td></tr>
+<tr><td>260012505</td><td>GC3C1ZN</td><td>My Ding-a-Ling!</td><td>Wayne</td><td>Iowa</td><td>2012-08-22</td></tr>
+<tr><td>261359156</td><td>GC3PMCM</td><td>Boondocks USA Travel Bug Motel</td><td>Hamilton</td><td>Iowa</td><td>2012-08-27</td></tr>
+<tr><td>262504624</td><td>GC3JJXE</td><td>STOP! and Get Down!</td><td>Benton</td><td>Iowa</td><td>2012-09-01</td></tr>
+<tr><td>262504638</td><td>GC1X85P</td><td>Love Cabin</td><td>Delaware</td><td>Iowa</td><td>2012-09-01</td></tr>
+<tr><td>262504651</td><td>GC323K6</td><td>Edgewood City Park</td><td>Clayton</td><td>Iowa</td><td>2012-09-01</td></tr>
+<tr><td>262504660</td><td>GC12FCR</td><td>DYERSVILLE's COMMERCIAL PARK</td><td>Dubuque</td><td>Iowa</td><td>2012-09-01</td></tr>
+<tr><td>262504676</td><td>GC3TYWN</td><td>Put in new info #1</td><td>Jackson</td><td>Iowa</td><td>2012-09-01</td></tr>
+<tr><td>262504689</td><td>GC195EP</td><td>Caulkin's Square</td><td>Jones</td><td>Iowa</td><td>2012-09-01</td></tr>
+<tr><td>262504696</td><td>GC2FGWC</td><td>Troop 19 Merit Badge Geocache</td><td>Linn</td><td>Iowa</td><td>2012-09-01</td></tr>
+<tr><td>266006190</td><td>GC3MY97</td><td>Is there a BIG Santee?- Gap series # 45</td><td>Guilford</td><td>North Carolina</td><td>2012-09-15</td></tr>
+<tr><td>266044764</td><td>GC2WQY1</td><td>I've Lost My Marbles</td><td>Surry</td><td>North Carolina</td><td>2012-09-15</td></tr>
+<tr><td>266044777</td><td>GCWBRT</td><td>Welcome to Virginia</td><td>Carroll</td><td>Virginia</td><td>2012-09-15</td></tr>
+<tr><td>266053666</td><td>GC2H423</td><td>Where'd Stuckey's Go, J.O.E.?</td><td>Wythe</td><td>Virginia</td><td>2012-09-15</td></tr>
+<tr><td>266448715</td><td>GC59C6</td><td>Ut Prosim</td><td>Montgomery</td><td>Virginia</td><td>2012-09-16</td></tr>
+<tr><td>266515443</td><td>GC3HDAA</td><td>Grand Slam</td><td>Floyd</td><td>Virginia</td><td>2012-09-16</td></tr>
+<tr><td>266549837</td><td>GC1NFR5</td><td>Weather Or Not</td><td>Patrick</td><td>Virginia</td><td>2012-09-16</td></tr>
+<tr><td>266582076</td><td>GC33TFQ</td><td>Thank goodness for the good ole LPC</td><td>Stokes</td><td>North Carolina</td><td>2012-09-16</td></tr>
+<tr><td>266587843</td><td>GC33TG2</td><td>Church Tree</td><td>Forsyth</td><td>North Carolina</td><td>2012-09-16</td></tr>
+<tr><td>268549019</td><td>GC15QQ7</td><td>L'hotel de bogue de voyage (The travel bug hotel)</td><td>Madison</td><td>Alabama</td><td>2012-09-24</td></tr>
+<tr><td>268553671</td><td>GC1M95J</td><td>DR. SALT and PEPPER</td><td>Lincoln</td><td>Tennessee</td><td>2012-09-24</td></tr>
+<tr><td>268557247</td><td>GC2E0HW</td><td>Austin Whitt Guard</td><td>Giles</td><td>Tennessee</td><td>2012-09-24</td></tr>
+<tr><td>268560621</td><td>GC16Q6Q</td><td>Welcome to... Saturn?</td><td>Limestone</td><td>Alabama</td><td>2012-09-24</td></tr>
+<tr><td>268713535</td><td>GC3X6HW</td><td>Noblest Work of God</td><td>Jackson</td><td>Alabama</td><td>2012-09-25</td></tr>
+<tr><td>268715124</td><td>GCN1QH</td><td>Goliath's Way Home</td><td>Marshall</td><td>Alabama</td><td>2012-09-25</td></tr>
+<tr><td>268865446</td><td>GCTMD4</td><td>Burn Rubber Baby</td><td>Morgan</td><td>Alabama</td><td>2012-09-26</td></tr>
+<tr><td>268869595</td><td>GC3H8E3</td><td>Sanders Tree</td><td>Lawrence</td><td>Alabama</td><td>2012-09-26</td></tr>
+<tr><td>268872399</td><td>GCHC2J</td><td>Subway Lights</td><td>Colbert</td><td>Alabama</td><td>2012-09-26</td></tr>
+<tr><td>268875118</td><td>GC36Y3M</td><td>Popes Tavern # 1</td><td>Lauderdale</td><td>Alabama</td><td>2012-09-26</td></tr>
+<tr><td>276179835</td><td>GC38R94</td><td>La Baranda de Guardia</td><td>Imperial</td><td>California</td><td>2012-10-28</td></tr>
+<tr><td>278014974</td><td>GC3R2N4</td><td>Pirate Attack! Blow Me Down!</td><td>Jefferson</td><td>Alabama</td><td>2012-11-05</td></tr>
+<tr><td>278017650</td><td>GC20XR5</td><td>ONEeighty</td><td>St. Clair</td><td>Alabama</td><td>2012-11-05</td></tr>
+<tr><td>278021168</td><td>GC1RDPK</td><td>Bring on the Rain!</td><td>Blount</td><td>Alabama</td><td>2012-11-05</td></tr>
+<tr><td>278364293</td><td>GC1ZK4P</td><td>Duck River Valley NGRR - Ewing</td><td>Marshall</td><td>Tennessee</td><td>2012-11-08</td></tr>
+<tr><td>278365634</td><td>GC3K831</td><td>HWY-50-10</td><td>Maury</td><td>Tennessee</td><td>2012-11-08</td></tr>
+<tr><td>278369039</td><td>GC1F2P0</td><td>L-A-N ~Exit 30: Thompsons Station</td><td>Williamson</td><td>Tennessee</td><td>2012-11-08</td></tr>
+<tr><td>278376669</td><td>GCTGF0</td><td>Geo MoJo #6 in the Shadow of the TITANS</td><td>Davidson</td><td>Tennessee</td><td>2012-11-08</td></tr>
+<tr><td>278381796</td><td>GCRYCH</td><td>Drug Stores</td><td>Robertson</td><td>Tennessee</td><td>2012-11-08</td></tr>
+<tr><td>278386934</td><td>GC19802</td><td>LINKUMPINCH</td><td>Simpson</td><td>Kentucky</td><td>2012-11-08</td></tr>
+<tr><td>278388958</td><td>GC355Q4</td><td>More Power to Us</td><td>Sumner</td><td>Tennessee</td><td>2012-11-08</td></tr>
+<tr><td>278391266</td><td>GCP830</td><td>Yield</td><td>Wilson</td><td>Tennessee</td><td>2012-11-08</td></tr>
+<tr><td>279249707</td><td>GC285AD</td><td>Walk the DOG</td><td>Adair</td><td>Iowa</td><td>2012-11-12</td></tr>
+<tr><td>279253047</td><td>GC1YV2G</td><td>Destination Menlo</td><td>Guthrie</td><td>Iowa</td><td>2012-11-12</td></tr>
+<tr><td>279260721</td><td>GCZPJG</td><td>Eagle's Landing</td><td>Audubon</td><td>Iowa</td><td>2012-11-12</td></tr>
+<tr><td>279261719</td><td>GC34GNP</td><td>America's Best Value Inn TB Sleep Over</td><td>Cass</td><td>Iowa</td><td>2012-11-12</td></tr>
+<tr><td>279264545</td><td>GC131WN</td><td>Which Way?</td><td>Shelby</td><td>Iowa</td><td>2012-11-12</td></tr>
+<tr><td>279280762</td><td>GCGY3K</td><td>Iowa - A Place To Grow</td><td>Pottawattamie</td><td>Iowa</td><td>2012-11-12</td></tr>
+<tr><td>283260264</td><td>GCZ615</td><td>Riftstone</td><td>New York</td><td>New York</td><td>2012-12-08</td></tr>
+<tr><td>286103501</td><td>GC15H7R</td><td>Mine your own business</td><td>Grant</td><td>Wisconsin</td><td>2012-12-29</td></tr>
+<tr><td>286111471</td><td>GC2Y5WK</td><td>Belmont Micro Trinket Trading Post</td><td>Lafayette</td><td>Wisconsin</td><td>2012-12-29</td></tr>
+<tr><td>286126839</td><td>GC2E1D1</td><td>WSQ St. Joseph Cemetery</td><td>Iowa</td><td>Wisconsin</td><td>2012-12-29</td></tr>
+<tr><td>286179613</td><td>GCNW0C</td><td>Walking And Talking</td><td>Dodge</td><td>Wisconsin</td><td>2012-12-29</td></tr>
+<tr><td>286497459</td><td>GCX42F</td><td>Gate Cacher</td><td>Brown</td><td>Wisconsin</td><td>2012-12-30</td></tr>
+<tr><td>286525953</td><td>GC1WJTV</td><td>Why not?</td><td>Outagamie</td><td>Wisconsin</td><td>2012-12-30</td></tr>
+<tr><td>286546725</td><td>GC1CB76</td><td>WSQ Floral Hill</td><td>Waupaca</td><td>Wisconsin</td><td>2012-12-30</td></tr>
+<tr><td>287034217</td><td>GC24MEP</td><td>ANDREAS HIDE</td><td>Columbia</td><td>Wisconsin</td><td>2013-01-01</td></tr>
+<tr><td>287068392</td><td>GC40GNT</td><td>Lake Ripley</td><td>Jefferson</td><td>Wisconsin</td><td>2013-01-01</td></tr>
+<tr><td>287071389</td><td>GC40GJC</td><td>Now this is Civil...</td><td>Dane</td><td>Wisconsin</td><td>2013-01-01</td></tr>
+<tr><td>287113629</td><td>GC2TMZ5</td><td>Almost To Bentonville</td><td>Green</td><td>Wisconsin</td><td>2013-01-01</td></tr>
+<tr><td>287120802</td><td>GC29WM7</td><td>A Moose On The Loose</td><td>Stephenson</td><td>Illinois</td><td>2013-01-01</td></tr>
+<tr><td>287130723</td><td>GC3W6X5</td><td>V-Neck Series #2  -- On the Borderline</td><td>Jo Daviess</td><td>Illinois</td><td>2013-01-01</td></tr>
+<tr><td>287144416</td><td>GC3N8GX</td><td>GRT 001: C.A.G.E.</td><td>Carroll</td><td>Illinois</td><td>2013-01-01</td></tr>
+<tr><td>287171262</td><td>GC2AQ8H</td><td>Y.A.R.N. it Tis</td><td>Marshall</td><td>Iowa</td><td>2013-01-01</td></tr>
+<tr><td>299440117</td><td>GC26AH6</td><td>Hope Chest</td><td>Brazos</td><td>Texas</td><td>2013-03-18</td></tr>
+<tr><td>299444363</td><td>GC2EWFW</td><td>Colt's Trackable Hostel</td><td>Burleson</td><td>Texas</td><td>2013-03-18</td></tr>
+<tr><td>299453742</td><td>GC3AJVW</td><td>Cut'N Corners</td><td>Grimes</td><td>Texas</td><td>2013-03-18</td></tr>
+<tr><td>299461474</td><td>GC18TME</td><td>Undercover At The Mall</td><td>Walker</td><td>Texas</td><td>2013-03-18</td></tr>
+<tr><td>299466801</td><td>GC1TV7C</td><td>Do You Have Your Ticket to the Gun Show?!</td><td>San Jacinto</td><td>Texas</td><td>2013-03-18</td></tr>
+<tr><td>299468981</td><td>GC35MWR</td><td>Wally World</td><td>Liberty</td><td>Texas</td><td>2013-03-18</td></tr>
+<tr><td>299470794</td><td>GC10P11</td><td>Trucks And Travelers Galore #6</td><td>Montgomery</td><td>Texas</td><td>2013-03-18</td></tr>
+<tr><td>299607925</td><td>GC16N34</td><td>RDPL #6</td><td>Chambers</td><td>Texas</td><td>2013-03-19</td></tr>
+<tr><td>299727687</td><td>GC42GK4</td><td>Where's Wally?</td><td>Brazoria</td><td>Texas</td><td>2013-03-20</td></tr>
+<tr><td>299946452</td><td>GC2BRZG</td><td>I Scream!</td><td>Fort Bend</td><td>Texas</td><td>2013-03-22</td></tr>
+<tr><td>299948780</td><td>GC18T1B</td><td>I-10 - Exit 737</td><td>Waller</td><td>Texas</td><td>2013-03-22</td></tr>
+<tr><td>299952297</td><td>GC46BMX</td><td>Rest Stop</td><td>Austin</td><td>Texas</td><td>2013-03-22</td></tr>
+<tr><td>299956567</td><td>GC4773G</td><td>Myrtle doesn't live here!</td><td>Wharton</td><td>Texas</td><td>2013-03-22</td></tr>
+<tr><td>299959295</td><td>GC47VXF</td><td>I'm Not A Nut!</td><td>Colorado</td><td>Texas</td><td>2013-03-22</td></tr>
+<tr><td>299965245</td><td>GC29968</td><td>I Have to Pee</td><td>Fayette</td><td>Texas</td><td>2013-03-22</td></tr>
+<tr><td>299966182</td><td>GC3N73V</td><td>MR#17 H2S LCR77D</td><td>Lavaca</td><td>Texas</td><td>2013-03-22</td></tr>
+<tr><td>299969941</td><td>GC41TD8</td><td>I-10 Cache in Gonzales County</td><td>Gonzales</td><td>Texas</td><td>2013-03-22</td></tr>
+<tr><td>299976832</td><td>GC1XADE</td><td>Jack’s Place</td><td>Guadalupe</td><td>Texas</td><td>2013-03-22</td></tr>
+<tr><td>299978726</td><td>GC43ARE</td><td>Welcome to LaVernia - Heritage Museum</td><td>Wilson</td><td>Texas</td><td>2013-03-22</td></tr>
+<tr><td>299989248</td><td>GCNR79</td><td>SB Riverwalk Cache #1</td><td>Bexar</td><td>Texas</td><td>2013-03-22</td></tr>
+<tr><td>300038109</td><td>GCPPFZ</td><td>For Kris, Missy, & Penny</td><td>Comal</td><td>Texas</td><td>2013-03-23</td></tr>
+<tr><td>300044034</td><td>GCPTPM</td><td>Blanco Speed Trap</td><td>Blanco</td><td>Texas</td><td>2013-03-23</td></tr>
+<tr><td>300050810</td><td>GC22TYA</td><td>At the Crossroads</td><td>Burnet</td><td>Texas</td><td>2013-03-23</td></tr>
+<tr><td>300053743</td><td>GC1GHVN</td><td>Hwy 71 Rest Area #1</td><td>Llano</td><td>Texas</td><td>2013-03-23</td></tr>
+<tr><td>300111418</td><td>GC1NVFV</td><td>TGT: Art</td><td>Mason</td><td>Texas</td><td>2013-03-23</td></tr>
+<tr><td>300115231</td><td>GC1M4Y2</td><td>TGT: Segovia</td><td>Kimble</td><td>Texas</td><td>2013-03-23</td></tr>
+<tr><td>300115945</td><td>GC36N8R</td><td>HI, welcome to Kerrville II</td><td>Kerr</td><td>Texas</td><td>2013-03-23</td></tr>
+<tr><td>300123667</td><td>GC2K9BQ</td><td>In Loving Memory...Cathy Jo</td><td>Gillespie</td><td>Texas</td><td>2013-03-23</td></tr>
+<tr><td>300132364</td><td>GC3QQP0</td><td>Gotta LOVE it.</td><td>Kendall</td><td>Texas</td><td>2013-03-23</td></tr>
+<tr><td>300143446</td><td>GC47QP6</td><td>Pipe Creek Vine Find</td><td>Bandera</td><td>Texas</td><td>2013-03-23</td></tr>
+<tr><td>300153490</td><td>GC2C8Q6</td><td>FM 1283 TB Hotel</td><td>Medina</td><td>Texas</td><td>2013-03-23</td></tr>
+<tr><td>305615394</td><td>GCJJRQ</td><td>Sun, Surf, and Fun</td><td>Mendocino</td><td>California</td><td>2013-04-13</td></tr>
+<tr><td>305668017</td><td>GC40W9C</td><td>Welcome to Blue Lakes</td><td>Lake</td><td>California</td><td>2013-04-13</td></tr>
+<tr><td>317046237</td><td>GC396YP</td><td>Keep Portland Weird</td><td>Multnomah</td><td>Oregon</td><td>2013-05-25</td></tr>
+<tr><td>317087743</td><td>GC28DXP</td><td>Just your local Burger Joint</td><td>Clark</td><td>Washington</td><td>2013-05-25</td></tr>
+<tr><td>317105553</td><td>GC3Z8HH</td><td>Happy Halloween~#17 in the I-5 Series</td><td>Cowlitz</td><td>Washington</td><td>2013-05-25</td></tr>
+<tr><td>317119184</td><td>GC38HM6</td><td>U Snus, U Lose - get Mooo-ving (a tiny tin cache)</td><td>Lewis</td><td>Washington</td><td>2013-05-25</td></tr>
+<tr><td>317122107</td><td>GC1RQWF</td><td>Scatter Creek Rest Stop</td><td>Thurston</td><td>Washington</td><td>2013-05-25</td></tr>
+<tr><td>317503345</td><td>GC3G2EH</td><td>John T. Williams memorial totem pole</td><td>King</td><td>Washington</td><td>2013-05-26</td></tr>
+<tr><td>317673233</td><td>GC2ERB4</td><td>Super Jack In The Box</td><td>Mason</td><td>Washington</td><td>2013-05-27</td></tr>
+<tr><td>317691999</td><td>GC1MT8N</td><td>Cow Cachin</td><td>Jefferson</td><td>Washington</td><td>2013-05-27</td></tr>
+<tr><td>317716959</td><td>GC1F4C1</td><td>Serenity in Port Angeles</td><td>Clallam</td><td>Washington</td><td>2013-05-27</td></tr>
+<tr><td>317874752</td><td>GC2MREQ</td><td>Micro Marketing</td><td>Kitsap</td><td>Washington</td><td>2013-05-27</td></tr>
+<tr><td>317879207</td><td>GCMZ37</td><td>Cache Depot</td><td>Pierce</td><td>Washington</td><td>2013-05-27</td></tr>
+<tr><td>320993904</td><td>GC161P9</td><td>A Drop in the Bucket</td><td>Lake</td><td>Indiana</td><td>2013-06-09</td></tr>
+<tr><td>321023178</td><td>GC14P3R</td><td>The Iron Brigade</td><td>Berrien</td><td>Michigan</td><td>2013-06-09</td></tr>
+<tr><td>321059838</td><td>GC1RM0R</td><td>Grab & Go #3</td><td>LaPorte</td><td>Indiana</td><td>2013-06-09</td></tr>
+<tr><td>321074368</td><td>GC1Y2J1</td><td>EF2</td><td>Porter</td><td>Indiana</td><td>2013-06-09</td></tr>
+<tr><td>347041834</td><td>GC4FJBZ</td><td>Reflections Lake Trail</td><td>Matanuska-Susitna</td><td>Alaska</td><td>2013-09-02</td></tr>
+<tr><td>347043958</td><td>GC4G27H</td><td>SUITES Not SWEETS</td><td>Anchorage</td><td>Alaska</td><td>2013-09-02</td></tr>
+<tr><td>347300523</td><td>GC8120</td><td>lilly's Lookout</td><td>Kenai Peninsula</td><td>Alaska</td><td>2013-09-03</td></tr>
+<tr><td>347493217</td><td>GCJM54</td><td>Hairy's Working Vacation</td><td>Valdez-Cordova</td><td>Alaska</td><td>2013-09-04</td></tr>
+<tr><td>357362387</td><td>GCG5ZV</td><td>The Eby Stomp</td><td>Plumas</td><td>California</td><td>2013-10-12</td></tr>
+<tr><td>357673777</td><td>GC30ZJN</td><td>C.A.F. Est. 1941</td><td>Tehama</td><td>California</td><td>2013-10-13</td></tr>
+<tr><td>357673796</td><td>GC3YWDW</td><td>LIBRARY BACKDROP</td><td>Lassen</td><td>California</td><td>2013-10-13</td></tr>
+<tr><td>358002036</td><td>GC3D45M</td><td>The Outback or The Outhouse?</td><td>Sierra</td><td>California</td><td>2013-10-14</td></tr>
+<tr><td>367829844</td><td>GC2Q15F</td><td>For A Great Night's Sleep</td><td>Webster</td><td>Iowa</td><td>2013-11-29</td></tr>
+<tr><td>367834801</td><td>GCQ92T</td><td>DC Monument</td><td>Humboldt</td><td>Iowa</td><td>2013-11-29</td></tr>
+<tr><td>367839526</td><td>GC495M5</td><td>Burnie Flames</td><td>Kossuth</td><td>Iowa</td><td>2013-11-29</td></tr>
+<tr><td>367846457</td><td>GC4137W</td><td>Mural Park</td><td>Palo Alto</td><td>Iowa</td><td>2013-11-29</td></tr>
+<tr><td>367855209</td><td>GC2HN50</td><td>Welcome to town</td><td>Clay</td><td>Iowa</td><td>2013-11-29</td></tr>
+<tr><td>367860577</td><td>GC1Q0ZD</td><td>The only Primghar in the World</td><td>O'Brien</td><td>Iowa</td><td>2013-11-29</td></tr>
+<tr><td>367871071</td><td>GC3HHX6</td><td>TOUCH DOWN in Hawarden</td><td>Sioux</td><td>Iowa</td><td>2013-11-29</td></tr>
+<tr><td>367873143</td><td>GCX2F0</td><td>Rudolf Miller Memorial Park Cache</td><td>Lincoln</td><td>South Dakota</td><td>2013-11-29</td></tr>
+<tr><td>367884084</td><td>GC1Q3Z2</td><td>Y R U Barking @ Me?</td><td>Lyon</td><td>Iowa</td><td>2013-11-29</td></tr>
+<tr><td>367888570</td><td>GC1P1MW</td><td>Hawkeye Point</td><td>Osceola</td><td>Iowa</td><td>2013-11-29</td></tr>
+<tr><td>367897222</td><td>GC3H2G9</td><td>Border Crossing</td><td>Dickinson</td><td>Iowa</td><td>2013-11-29</td></tr>
+<tr><td>367901099</td><td>GC371NM</td><td>Blue for You</td><td>Emmet</td><td>Iowa</td><td>2013-11-29</td></tr>
+<tr><td>367910988</td><td>GCMVCH</td><td>Palmer Amvets Post #95</td><td>Pocahontas</td><td>Iowa</td><td>2013-11-29</td></tr>
+<tr><td>369278046</td><td>GC38EVA</td><td>Long Island City Courthouse</td><td>Queens</td><td>New York</td><td>2013-12-08</td></tr>
+<tr><td>369278051</td><td>GC2KD0K</td><td>Steiner Studios</td><td>Kings</td><td>New York</td><td>2013-12-08</td></tr>
+<tr><td>369278054</td><td>GC2BWTY</td><td>A Small Park with a Big View</td><td>Richmond</td><td>New York</td><td>2013-12-08</td></tr>
+<tr><td>369278061</td><td>GC28QQP</td><td>The Crossroads of Historic Midtown Elizabeth, NJ</td><td>Union</td><td>New Jersey</td><td>2013-12-08</td></tr>
+<tr><td>369278062</td><td>GC27ZP7</td><td>Eye Spy:  Dragon, Eagle, A!</td><td>Essex</td><td>New Jersey</td><td>2013-12-08</td></tr>
+<tr><td>369278066</td><td>GC22Q1J</td><td>It's Spring, The Grass is Green...Let's Play Ball!</td><td>Hudson</td><td>New Jersey</td><td>2013-12-08</td></tr>
+<tr><td>369280547</td><td>GC25NH6</td><td>Dug's BCP Cache</td><td>Bergen</td><td>New Jersey</td><td>2013-12-08</td></tr>
+<tr><td>369297799</td><td>GC4N21T</td><td>I'm Hungry</td><td>Passaic</td><td>New Jersey</td><td>2013-12-08</td></tr>
+<tr><td>369310591</td><td>GC2PCTH</td><td>Cacher's Rx Series: They Can't Hold a Teddy Bear</td><td>Morris</td><td>New Jersey</td><td>2013-12-08</td></tr>
+<tr><td>369318912</td><td>GC4CFXZ</td><td>Byram P&Gs 7</td><td>Sussex</td><td>New Jersey</td><td>2013-12-08</td></tr>
+<tr><td>369330146</td><td>GC424AZ</td><td>Alphabet Soup: P is for PTBilly</td><td>Warren</td><td>New Jersey</td><td>2013-12-08</td></tr>
+<tr><td>369360712</td><td>GC44J43</td><td>DDD #1</td><td>Northampton</td><td>Pennsylvania</td><td>2013-12-08</td></tr>
+<tr><td>369360716</td><td>GC4T04H</td><td>---- the Roses  - Wonderland series</td><td>Hunterdon</td><td>New Jersey</td><td>2013-12-08</td></tr>
+<tr><td>369365309</td><td>GC44V2N</td><td>Who's Nelson...</td><td>Somerset</td><td>New Jersey</td><td>2013-12-08</td></tr>
+<tr><td>369420331</td><td>GC2GR4N</td><td>Turtle Bridge</td><td>Mercer</td><td>New Jersey</td><td>2013-12-09</td></tr>
+<tr><td>369424344</td><td>GC25ZVV</td><td>Manor Park South</td><td>Bucks</td><td>Pennsylvania</td><td>2013-12-09</td></tr>
+<tr><td>369428700</td><td>GC26DGV</td><td>Bowling Memories - Barclay</td><td>Camden</td><td>New Jersey</td><td>2013-12-09</td></tr>
+<tr><td>369432416</td><td>GC3XYXD</td><td>After 100... I gave back V2</td><td>Gloucester</td><td>New Jersey</td><td>2013-12-09</td></tr>
+<tr><td>369440310</td><td>GC2J5GF</td><td>Enjoy Your Park</td><td>Salem</td><td>New Jersey</td><td>2013-12-09</td></tr>
+<tr><td>369453473</td><td>GC4M312</td><td>A Stroll in the Park</td><td>Cumberland</td><td>New Jersey</td><td>2013-12-09</td></tr>
+<tr><td>369459229</td><td>GCXA1R</td><td>Cape May Seashore Lines-Tuckahoe</td><td>Cape May</td><td>New Jersey</td><td>2013-12-09</td></tr>
+<tr><td>369460570</td><td>GC3FPCB</td><td>HAPPY EASTER</td><td>Atlantic</td><td>New Jersey</td><td>2013-12-09</td></tr>
+<tr><td>369467937</td><td>GC4GJ2Z</td><td>Team Turkalina Targets M.O.I. & T.D.K.</td><td>Ocean</td><td>New Jersey</td><td>2013-12-09</td></tr>
+<tr><td>369477826</td><td>GC137QV</td><td>Timanus</td><td>Monmouth</td><td>New Jersey</td><td>2013-12-09</td></tr>
+<tr><td>369481154</td><td>GC2FTVN</td><td>Rest-Full Area</td><td>Middlesex</td><td>New Jersey</td><td>2013-12-09</td></tr>
+<tr><td>372465777</td><td>GC1BH76</td><td>Asbury</td><td>Clark</td><td>Missouri</td><td>2013-12-28</td></tr>
+<tr><td>372493028</td><td>GC3WJ3H</td><td>old railway dock</td><td>Scotland</td><td>Missouri</td><td>2013-12-28</td></tr>
+<tr><td>373121175</td><td>GC2JR4V</td><td>Memories of Biggsville-Old School</td><td>Henderson</td><td>Illinois</td><td>2013-12-30</td></tr>
+<tr><td>373121271</td><td>GC159Q6</td><td>Goose Crossing</td><td>Warren</td><td>Illinois</td><td>2013-12-30</td></tr>
+<tr><td>373134774</td><td>GC3288M</td><td>Mt. Vernon Cemetery-Illinois Spirit Quest #153</td><td>Mercer</td><td>Illinois</td><td>2013-12-30</td></tr>
+<tr><td>373141037</td><td>GC1D3Z4</td><td>Low Clearance Ahead</td><td>Knox</td><td>Illinois</td><td>2013-12-30</td></tr>
+<tr><td>373144260</td><td>GC4J531</td><td>Cornerstone</td><td>Henry</td><td>Illinois</td><td>2013-12-30</td></tr>
+<tr><td>373161320</td><td>GC1XEGC</td><td>Surprised - Stark Raving Mad^ch</td><td>Stark</td><td>Illinois</td><td>2013-12-30</td></tr>
+<tr><td>373169640</td><td>GC26ZKB</td><td>Mound Cemetery</td><td>Bureau</td><td>Illinois</td><td>2013-12-30</td></tr>
+<tr><td>373174272</td><td>GC1N0D8</td><td>Putnam County Cache Craze - Welcome West</td><td>Putnam</td><td>Illinois</td><td>2013-12-30</td></tr>
+<tr><td>373181972</td><td>GC2TY9V</td><td>IL River Byway Keep the Light on at Perdew</td><td>Marshall</td><td>Illinois</td><td>2013-12-30</td></tr>
+<tr><td>373191222</td><td>GC2D50Y</td><td>Free Parking, Its not Monopoly!</td><td>LaSalle</td><td>Illinois</td><td>2013-12-30</td></tr>
+<tr><td>373200398</td><td>GC3VKTT</td><td>Livingston Co. Spirit Quest #21 Moon Point</td><td>Livingston</td><td>Illinois</td><td>2013-12-30</td></tr>
+<tr><td>373221177</td><td>GC3E6VH</td><td>Big Brother, Little Brother: PV-2 Harpoon</td><td>Grundy</td><td>Illinois</td><td>2013-12-30</td></tr>
+<tr><td>373233259</td><td>GC1NKGY</td><td>Bandstand</td><td>DeKalb</td><td>Illinois</td><td>2013-12-30</td></tr>
+<tr><td>373237693</td><td>GC4TB9G</td><td>Rollback</td><td>Kendall</td><td>Illinois</td><td>2013-12-30</td></tr>
+<tr><td>373261296</td><td>GC43AR1</td><td>Symbiosis</td><td>Kane</td><td>Illinois</td><td>2013-12-30</td></tr>
+<tr><td>373266369</td><td>GC1NWKF</td><td>I'll take a Grande...</td><td>DuPage</td><td>Illinois</td><td>2013-12-30</td></tr>
+<tr><td>373268663</td><td>GC1H6CC</td><td>Droppin' G's</td><td>Will</td><td>Illinois</td><td>2013-12-30</td></tr>
+<tr><td>374033599</td><td>GC1WVXC</td><td>WSQ Cornerstone</td><td>Sauk</td><td>Wisconsin</td><td>2014-01-02</td></tr>
+<tr><td>374033603</td><td>GC4PJQA</td><td>LazySheriff's Ranch Cache</td><td>Richland</td><td>Wisconsin</td><td>2014-01-02</td></tr>
+<tr><td>374033605</td><td>GC4JKVC</td><td>R-town River Rat</td><td>Vernon</td><td>Wisconsin</td><td>2014-01-02</td></tr>
+<tr><td>374036857</td><td>GC2D3HZ</td><td>Yim</td><td>Crawford</td><td>Wisconsin</td><td>2014-01-02</td></tr>
+<tr><td>382857086</td><td>GCBDC2</td><td>Orlando Airport TB Hotel</td><td>Orange</td><td>Florida</td><td>2014-02-18</td></tr>
+<tr><td>382866394</td><td>GC2JBM2</td><td>Stop -n- Grab</td><td>Lake</td><td>Florida</td><td>2014-02-18</td></tr>
+<tr><td>382875282</td><td>GC2TY7X</td><td>TCE: Okahumpka TB Hotel</td><td>Sumter</td><td>Florida</td><td>2014-02-18</td></tr>
+<tr><td>382880734</td><td>GC2RJF8</td><td>Which Corner</td><td>Marion</td><td>Florida</td><td>2014-02-18</td></tr>
+<tr><td>382888385</td><td>GCR1G4</td><td>Boat Ramp 44</td><td>Citrus</td><td>Florida</td><td>2014-02-18</td></tr>
+<tr><td>382896780</td><td>GC1H07Y</td><td>Vet Magnet</td><td>Hernando</td><td>Florida</td><td>2014-02-18</td></tr>
+<tr><td>382907236</td><td>GC1GW3Q</td><td>Odessa at GZ</td><td>Pasco</td><td>Florida</td><td>2014-02-18</td></tr>
+<tr><td>382912244</td><td>GC2V14D</td><td>Beware of Buffalo 2</td><td>Pinellas</td><td>Florida</td><td>2014-02-18</td></tr>
+<tr><td>382926850</td><td>GC45K4K</td><td>Cemetery Series: Orange You Glad!</td><td>Hillsborough</td><td>Florida</td><td>2014-02-18</td></tr>
+<tr><td>382930099</td><td>GC151RH</td><td>Take a Break</td><td>Polk</td><td>Florida</td><td>2014-02-18</td></tr>
+<tr><td>382947418</td><td>GC3KZ12</td><td>On the way to Artisan Park 1 - from the Northeast</td><td>Osceola</td><td>Florida</td><td>2014-02-18</td></tr>
+<tr><td>382951281</td><td>GCGKWJ</td><td>Off Your Rocker</td><td>Brevard</td><td>Florida</td><td>2014-02-19</td></tr>
+<tr><td>383095928</td><td>GC415PC</td><td>Interesting Find</td><td>Volusia</td><td>Florida</td><td>2014-02-19</td></tr>
+<tr><td>383096560</td><td>GC3PWEQ</td><td>No More Shuttle Launches.</td><td>Seminole</td><td>Florida</td><td>2014-02-19</td></tr>
+<tr><td>384554295</td><td>GC3PEX8</td><td>SATURDAY NITE AT THE DRIVE IN, PART V- BORDERTOWN</td><td>El Paso</td><td>Texas</td><td>2014-02-25</td></tr>
+<tr><td>384560073</td><td>GC3HJK2</td><td>Soap Weed forest</td><td>Hudspeth</td><td>Texas</td><td>2014-02-25</td></tr>
+<tr><td>384931054</td><td>GC3P57Z</td><td>Right Light</td><td>Sierra</td><td>New Mexico</td><td>2014-02-28</td></tr>
+<tr><td>384993131</td><td>GCVFH1</td><td>On the Way to Oma and Poppy's House, San Antonio</td><td>Socorro</td><td>New Mexico</td><td>2014-02-28</td></tr>
+<tr><td>385003963</td><td>GC39HC9</td><td>P.O.R. (pile of rocks)</td><td>Valencia</td><td>New Mexico</td><td>2014-02-28</td></tr>
+<tr><td>385009415</td><td>GC277ZG</td><td>EXIT 126. micro,BC THE ORIGINAL TB HOTEL is gone.</td><td>Cibola</td><td>New Mexico</td><td>2014-02-28</td></tr>
+<tr><td>385011540</td><td>GCDB5F</td><td>Rio Puerco Bridge - - -  I-40 & Route 66</td><td>Bernalillo</td><td>New Mexico</td><td>2014-02-28</td></tr>
+<tr><td>385017186</td><td>GC1NT2G</td><td>Burried on HILL</td><td>Sandoval</td><td>New Mexico</td><td>2014-02-28</td></tr>
+<tr><td>385021049</td><td>GC2NTCN</td><td>Right Off The Beaten Path</td><td>Santa Fe</td><td>New Mexico</td><td>2014-02-28</td></tr>
+<tr><td>388129354</td><td>GC4TE3F</td><td>BPTX 14: All Aboard!</td><td>Washington</td><td>Texas</td><td>2014-03-12</td></tr>
+<tr><td>388139879</td><td>GC4K89T</td><td>Lexington Gazebo</td><td>Lee</td><td>Texas</td><td>2014-03-12</td></tr>
+<tr><td>388145685</td><td>GC1G7ZB</td><td>Pleasant Retreat</td><td>Milam</td><td>Texas</td><td>2014-03-12</td></tr>
+<tr><td>388171066</td><td>GC3RBB7</td><td>Ronald Who?</td><td>Williamson</td><td>Texas</td><td>2014-03-12</td></tr>
+<tr><td>388192856</td><td>GC13KDM</td><td>Jeremy's Cache</td><td>Lampasas</td><td>Texas</td><td>2014-03-12</td></tr>
+<tr><td>395284631</td><td>GC44G8A</td><td>No. 1 - 100 Flagler Facts Numbers Run</td><td>Flagler</td><td>Florida</td><td>2014-04-08</td></tr>
+<tr><td>395735747</td><td>GC277BJ</td><td>What the heck!?!</td><td>Indian River</td><td>Florida</td><td>2014-04-11</td></tr>
+<tr><td>395741758</td><td>GC3KBAX</td><td>Like to Bike? #1</td><td>St. Lucie</td><td>Florida</td><td>2014-04-11</td></tr>
+<tr><td>395747046</td><td>GC10QN0</td><td>Gwawver Bushes</td><td>Okeechobee</td><td>Florida</td><td>2014-04-11</td></tr>
+<tr><td>395751382</td><td>GCHCZY</td><td>Brighton</td><td>Highlands</td><td>Florida</td><td>2014-04-11</td></tr>
+<tr><td>395752753</td><td>GCRCNX</td><td>"Th' Rez"</td><td>Glades</td><td>Florida</td><td>2014-04-11</td></tr>
+<tr><td>395761217</td><td>GC2QCKW</td><td>Chikin's Nuggets in Cow Country</td><td>Martin</td><td>Florida</td><td>2014-04-11</td></tr>
+<tr><td>395894194</td><td>GC3YR67</td><td>play ball</td><td>Gwinnett</td><td>Georgia</td><td>2014-04-11</td></tr>
+<tr><td>395899324</td><td>GC354GK</td><td>Gerbils Bolt When Scared</td><td>DeKalb</td><td>Georgia</td><td>2014-04-11</td></tr>
+<tr><td>395901657</td><td>GC428W0</td><td>Milk, Eggs, Cache</td><td>Forsyth</td><td>Georgia</td><td>2014-04-11</td></tr>
+<tr><td>395950191</td><td>GC3Q00X</td><td>By By Blockbuster</td><td>Barrow</td><td>Georgia</td><td>2014-04-12</td></tr>
+<tr><td>395952262</td><td>GC2NHBF</td><td>Impromptu Cache</td><td>Hall</td><td>Georgia</td><td>2014-04-12</td></tr>
+<tr><td>395955424</td><td>GC3NR1H</td><td>ROW Line</td><td>Jackson</td><td>Georgia</td><td>2014-04-12</td></tr>
+<tr><td>395959592</td><td>GC2V6J0</td><td>Between a Shack and a General</td><td>Banks</td><td>Georgia</td><td>2014-04-12</td></tr>
+<tr><td>395965166</td><td>GC3CA1E</td><td>I-85 EXIT 177 - Old Light *Archived 7-14-14*</td><td>Hart</td><td>Georgia</td><td>2014-04-12</td></tr>
+<tr><td>395968838</td><td>GC433MY</td><td>Lakeview Welcome at the Welcome Center</td><td>Oconee</td><td>South Carolina</td><td>2014-04-12</td></tr>
+<tr><td>395971774</td><td>GC4JGMX</td><td>A WELCOME GA REST</td><td>Franklin</td><td>Georgia</td><td>2014-04-12</td></tr>
+<tr><td>396007351</td><td>GC25FGV</td><td>Wishing for Breakfast in Bed</td><td>Stephens</td><td>Georgia</td><td>2014-04-12</td></tr>
+<tr><td>396007354</td><td>GC2QP31</td><td>Not for Vampires</td><td>Habersham</td><td>Georgia</td><td>2014-04-12</td></tr>
+<tr><td>396007360</td><td>GC23584</td><td>CATCH THE SPIRIT</td><td>White</td><td>Georgia</td><td>2014-04-12</td></tr>
+<tr><td>396013036</td><td>GC45KW3</td><td>FF at FnF</td><td>Lumpkin</td><td>Georgia</td><td>2014-04-12</td></tr>
+<tr><td>396051553</td><td>GC3R4BH</td><td>OLD RED</td><td>Gilmer</td><td>Georgia</td><td>2014-04-12</td></tr>
+<tr><td>396052108</td><td>GC25VY7</td><td>Amicalola Falls State Park and Lodge</td><td>Dawson</td><td>Georgia</td><td>2014-04-12</td></tr>
+<tr><td>396065950</td><td>GC2FMFY</td><td>Smiley in Jasper</td><td>Pickens</td><td>Georgia</td><td>2014-04-12</td></tr>
+<tr><td>396091766</td><td>GCMQFE</td><td>Old Federal Road #4-Forks in the Road</td><td>Murray</td><td>Georgia</td><td>2014-04-12</td></tr>
+<tr><td>396104859</td><td>GCGY5R</td><td>Steel Horse Hideaway</td><td>Gordon</td><td>Georgia</td><td>2014-04-12</td></tr>
+<tr><td>396114553</td><td>GC4XHKW</td><td>Save Your Quarter - On The Way To White</td><td>Bartow</td><td>Georgia</td><td>2014-04-12</td></tr>
+<tr><td>396126772</td><td>GC44PW9</td><td>E-Z P&G</td><td>Cobb</td><td>Georgia</td><td>2014-04-12</td></tr>
+<tr><td>396136142</td><td>GCVDFQ</td><td>The Word # 14</td><td>Cherokee</td><td>Georgia</td><td>2014-04-12</td></tr>
+<tr><td>396187424</td><td>GC263PJ</td><td>High Five</td><td>Fulton</td><td>Georgia</td><td>2014-04-12</td></tr>
+<tr><td>396269894</td><td>GC47XDQ</td><td>Dead End Series #6</td><td>Fayette</td><td>Georgia</td><td>2014-04-12</td></tr>
+<tr><td>396271644</td><td>GC44GBZ</td><td>Save Your Quarter!</td><td>Coweta</td><td>Georgia</td><td>2014-04-12</td></tr>
+<tr><td>396274923</td><td>GC3ET56</td><td>I185 Exit 46 – Upper Big Springs Road</td><td>Troup</td><td>Georgia</td><td>2014-04-12</td></tr>
+<tr><td>396276594</td><td>GC3ETAY</td><td>I185 Exit 30 – Hopewell Church Road</td><td>Harris</td><td>Georgia</td><td>2014-04-12</td></tr>
+<tr><td>396352288</td><td>GC3K5MR</td><td>Blue Landings</td><td>Muscogee</td><td>Georgia</td><td>2014-04-13</td></tr>
+<tr><td>396359040</td><td>GC4BE34</td><td>Keepin' it Clean</td><td>Chattahoochee</td><td>Georgia</td><td>2014-04-13</td></tr>
+<tr><td>396395889</td><td>GC3AEBN</td><td>Lannahassee</td><td>Webster</td><td>Georgia</td><td>2014-04-13</td></tr>
+<tr><td>396468499</td><td>GCTZMP</td><td>Presidential Way</td><td>Sumter</td><td>Georgia</td><td>2014-04-13</td></tr>
+<tr><td>396545679</td><td>GCGMJY</td><td>Answered Prayers</td><td>Macon</td><td>Georgia</td><td>2014-04-13</td></tr>
+<tr><td>396579734</td><td>GC3D8C5</td><td>Welcome to Perrydise</td><td>Houston</td><td>Georgia</td><td>2014-04-13</td></tr>
+<tr><td>396591934</td><td>GC2R1X2</td><td>Travel Bug Treehouse</td><td>Peach</td><td>Georgia</td><td>2014-04-13</td></tr>
+<tr><td>396636801</td><td>GC357WR</td><td>Yarning for a Cache</td><td>Bibb</td><td>Georgia</td><td>2014-04-13</td></tr>
+<tr><td>396658319</td><td>GC1Z8MV</td><td>Enlighten</td><td>Monroe</td><td>Georgia</td><td>2014-04-13</td></tr>
+<tr><td>396670905</td><td>GC2F3HT</td><td>High Falls TB Hotel</td><td>Lamar</td><td>Georgia</td><td>2014-04-13</td></tr>
+<tr><td>396678243</td><td>GCMNYF</td><td>Surrounded By Trucks</td><td>Butts</td><td>Georgia</td><td>2014-04-13</td></tr>
+<tr><td>396688184</td><td>GC1J5RH</td><td>End of the Road</td><td>Spalding</td><td>Georgia</td><td>2014-04-13</td></tr>
+<tr><td>396704550</td><td>GC1M67T</td><td>Self Help Heaven - Equal Time</td><td>Henry</td><td>Georgia</td><td>2014-04-13</td></tr>
+<tr><td>399589618</td><td>GC51XWQ</td><td>Something Old, Something Blue</td><td>Rutherford</td><td>Tennessee</td><td>2014-04-21</td></tr>
+<tr><td>399654100</td><td>GC3K84R</td><td>HWY-43-71</td><td>Lawrence</td><td>Tennessee</td><td>2014-04-21</td></tr>
+<tr><td>399692865</td><td>GC3T9MC</td><td>Civil War Trail</td><td>Wayne</td><td>Tennessee</td><td>2014-04-21</td></tr>
+<tr><td>399765817</td><td>GC1F6KC</td><td>Catfish to Cannonballs #1</td><td>Hardin</td><td>Tennessee</td><td>2014-04-21</td></tr>
+<tr><td>399793983</td><td>GC3H8MG</td><td>Burning Bridges</td><td>McNairy</td><td>Tennessee</td><td>2014-04-21</td></tr>
+<tr><td>399824272</td><td>GC50KAY</td><td>battle of Corinth-Cache #2</td><td>Alcorn</td><td>Mississippi</td><td>2014-04-21</td></tr>
+<tr><td>399848402</td><td>GC269NV</td><td>home of the [ braves]</td><td>Tishomingo</td><td>Mississippi</td><td>2014-04-21</td></tr>
+<tr><td>401067479</td><td>GC393JD</td><td>Quick Gas-N-Go</td><td>Dade</td><td>Georgia</td><td>2014-04-25</td></tr>
+<tr><td>401105092</td><td>GCVNAN</td><td>Goody! The sign is on!</td><td>Hamilton</td><td>Tennessee</td><td>2014-04-25</td></tr>
+<tr><td>401441601</td><td>GC46EB1</td><td>On the edge</td><td>Marion</td><td>Tennessee</td><td>2014-04-25</td></tr>
+<tr><td>401441619</td><td>GC2AM0J</td><td>State Line Cache</td><td>Walker</td><td>Georgia</td><td>2014-04-25</td></tr>
+<tr><td>401441625</td><td>GC4264A</td><td>Almost Lucky</td><td>Catoosa</td><td>Georgia</td><td>2014-04-25</td></tr>
+<tr><td>405636855</td><td>GC53J00</td><td>Glinda Returns</td><td>St. Johns</td><td>Florida</td><td>2014-05-09</td></tr>
+<tr><td>405641118</td><td>GC2MV53</td><td>In Plain Sight</td><td>Duval</td><td>Florida</td><td>2014-05-09</td></tr>
+<tr><td>405642721</td><td>GC3VWGX</td><td>Geocacher Addict Step 12: Awakening</td><td>Clay</td><td>Florida</td><td>2014-05-09</td></tr>
+<tr><td>405647870</td><td>GC2KF1D</td><td>1 4 Da #'s-22</td><td>Nassau</td><td>Florida</td><td>2014-05-09</td></tr>
+<tr><td>405648760</td><td>GC2KKMN</td><td>1 4 Da #'s-29</td><td>Baker</td><td>Florida</td><td>2014-05-09</td></tr>
+<tr><td>405653675</td><td>GC32K9W</td><td>War1man and MiMi come to Union County</td><td>Union</td><td>Florida</td><td>2014-05-09</td></tr>
+<tr><td>405655005</td><td>GC10NTG</td><td>Conners Corner</td><td>Bradford</td><td>Florida</td><td>2014-05-09</td></tr>
+<tr><td>405660650</td><td>GC2ND06</td><td>Rocking out in Waldo</td><td>Alachua</td><td>Florida</td><td>2014-05-09</td></tr>
+<tr><td>405665283</td><td>GC3K5P5</td><td>#35 of 43 on 100 AKA Benji Run</td><td>Putnam</td><td>Florida</td><td>2014-05-09</td></tr>
+<tr><td>426899973</td><td>GCWTQ7</td><td>Is it a Pain or a Creak?</td><td>Hardee</td><td>Florida</td><td>2014-07-21</td></tr>
+<tr><td>426930669</td><td>GC4364N</td><td>Rest on 17 (redux)</td><td>DeSoto</td><td>Florida</td><td>2014-07-21</td></tr>
+<tr><td>426937117</td><td>GC21JKC</td><td>CattleCatcher 2</td><td>Charlotte</td><td>Florida</td><td>2014-07-21</td></tr>
+<tr><td>426957022</td><td>GC1QDMR</td><td>A Walk on the Prairie</td><td>Lee</td><td>Florida</td><td>2014-07-21</td></tr>
+<tr><td>426984307</td><td>GC3NCRY</td><td>Whodunit #8:  Jam Sandwich</td><td>Sarasota</td><td>Florida</td><td>2014-07-21</td></tr>
+<tr><td>426991978</td><td>GC4H8W2</td><td>Mini Midi Maxi in Texas?</td><td>Manatee</td><td>Florida</td><td>2014-07-21</td></tr>
+<tr><td>432580891</td><td>GC1ZQ8G</td><td>Drunken Troll</td><td>Mills</td><td>Iowa</td><td>2014-08-07</td></tr>
+<tr><td>432586695</td><td>GC4KE8X</td><td>Granny's Cache</td><td>Montgomery</td><td>Iowa</td><td>2014-08-07</td></tr>
+<tr><td>432590675</td><td>GC4DQ1H</td><td>Timberwolf Country</td><td>Adams</td><td>Iowa</td><td>2014-08-07</td></tr>
+<tr><td>432594881</td><td>GC59Q9Z</td><td>Phill 'er Up Motel</td><td>Union</td><td>Iowa</td><td>2014-08-07</td></tr>
+<tr><td>434370008</td><td>GC3N6CP</td><td>OLD BRIDGE TO NO WHERE</td><td>Ringgold</td><td>Iowa</td><td>2014-08-12</td></tr>
+<tr><td>434389733</td><td>GC4JHK5</td><td>CACHE</td><td>Taylor</td><td>Iowa</td><td>2014-08-12</td></tr>
+<tr><td>434401117</td><td>GC4GZFQ</td><td>Grandma's Baby</td><td>Page</td><td>Iowa</td><td>2014-08-12</td></tr>
+<tr><td>434420957</td><td>GC518AX</td><td>Rodeo Town USA</td><td>Fremont</td><td>Iowa</td><td>2014-08-12</td></tr>
+<tr><td>434451514</td><td>GC2VX72</td><td>Free Parking</td><td>Sarpy</td><td>Nebraska</td><td>2014-08-12</td></tr>
+<tr><td>434623983</td><td>GC1G8KG</td><td>A roadside cache</td><td>Harrison</td><td>Iowa</td><td>2014-08-13</td></tr>
+<tr><td>434667469</td><td>GC2Q935</td><td>see the light</td><td>Crawford</td><td>Iowa</td><td>2014-08-13</td></tr>
+<tr><td>434701312</td><td>GC58W6B</td><td>Monona - County Seat Challenge</td><td>Monona</td><td>Iowa</td><td>2014-08-13</td></tr>
+<tr><td>434724593</td><td>GC16K7N</td><td>Tekamah Libary Geocache</td><td>Burt</td><td>Nebraska</td><td>2014-08-13</td></tr>
+<tr><td>434734739</td><td>GC3ET9J</td><td>Blair Memorial</td><td>Washington</td><td>Nebraska</td><td>2014-08-13</td></tr>
+<tr><td>452583586</td><td>GC59JRW</td><td>End Of The Trail Willamette Falls 2014 Coin Chall</td><td>Clackamas</td><td>Oregon</td><td>2014-10-11</td></tr>
+<tr><td>452828089</td><td>GC2YY5A</td><td>Nassa Point</td><td>Wahkiakum</td><td>Washington</td><td>2014-10-12</td></tr>
+<tr><td>452973946</td><td>GC3C8KV</td><td>Kaity's Kache</td><td>Columbia</td><td>Oregon</td><td>2014-10-12</td></tr>
+<tr><td>453025853</td><td>GC28THA</td><td>Never Say Die!</td><td>Clatsop</td><td>Oregon</td><td>2014-10-12</td></tr>
+<tr><td>453054846</td><td>GCM69Q</td><td>Road Rage #12</td><td>Pacific</td><td>Washington</td><td>2014-10-12</td></tr>
+<tr><td>453131918</td><td>GC2CECJ</td><td>Say Cheese!</td><td>Tillamook</td><td>Oregon</td><td>2014-10-12</td></tr>
+<tr><td>453167163</td><td>GC56W33</td><td>Caching Cities Acrostic Challenge</td><td>Washington</td><td>Oregon</td><td>2014-10-12</td></tr>
+<tr><td>453332687</td><td>GC1A71E</td><td>BE KIND TO ONE ANOTHER</td><td>Hood River</td><td>Oregon</td><td>2014-10-13</td></tr>
+<tr><td>453336880</td><td>GC1018H</td><td>Are You Up For the Crest? Start of PCT Washington</td><td>Skamania</td><td>Washington</td><td>2014-10-13</td></tr>
+<tr><td>456003188</td><td>GC2MX0G</td><td>State Souvenir Challenge (Florida)</td><td>Palm Beach</td><td>Florida</td><td>2014-10-24</td></tr>
+<tr><td>456009075</td><td>GC56ZXP</td><td>Doctor-Doctor Travel Bug Motel</td><td>Broward</td><td>Florida</td><td>2014-10-24</td></tr>
+<tr><td>456017566</td><td>GC2K0J2</td><td>Miami Lakes Bookworm</td><td>Miami-Dade</td><td>Florida</td><td>2014-10-24</td></tr>
+<tr><td>456071805</td><td>GC2Z0EQ</td><td>Welcome to the Keys - SF Challenge Quest</td><td>Monroe</td><td>Florida</td><td>2014-10-25</td></tr>
+<tr><td>456109094</td><td>GCJ24W</td><td>Pine Hammock Meeting</td><td>Collier</td><td>Florida</td><td>2014-10-25</td></tr>
+<tr><td>456164371</td><td>GC1VQQJ</td><td>JP071 - Welcome to Hendry County</td><td>Hendry</td><td>Florida</td><td>2014-10-25</td></tr>
+<tr><td>463644558</td><td>GC55YZX</td><td>Sunnyview Nursing Home</td><td>Grundy</td><td>Missouri</td><td>2014-11-28</td></tr>
+<tr><td>463650506</td><td>GC1VDTA</td><td>wabash</td><td>Daviess</td><td>Missouri</td><td>2014-11-28</td></tr>
+<tr><td>463662714</td><td>GC50NW5</td><td>Kickin' It Old School</td><td>Clinton</td><td>Missouri</td><td>2014-11-28</td></tr>
+<tr><td>463664111</td><td>GC5BF7G</td><td>Sweet Treat</td><td>DeKalb</td><td>Missouri</td><td>2014-11-28</td></tr>
+<tr><td>463667806</td><td>GC5FCJW</td><td>Country Delight</td><td>Caldwell</td><td>Missouri</td><td>2014-11-28</td></tr>
+<tr><td>463672592</td><td>GC36N12</td><td>Never Stop Improving</td><td>Livingston</td><td>Missouri</td><td>2014-11-28</td></tr>
+<tr><td>463684512</td><td>GC1H2Z1</td><td>Cache Across America - Missouri</td><td>Linn</td><td>Missouri</td><td>2014-11-28</td></tr>
+<tr><td>463694012</td><td>GC48G8Y</td><td>Painting the County Yellow</td><td>Sullivan</td><td>Missouri</td><td>2014-11-28</td></tr>
+<tr><td>463701473</td><td>GC53JX5</td><td>Tree Fishin</td><td>Putnam</td><td>Missouri</td><td>2014-11-28</td></tr>
+<tr><td>465864559</td><td>GC12FTY</td><td>Marguerite's Foundation</td><td>Marlboro</td><td>South Carolina</td><td>2014-12-13</td></tr>
+<tr><td>465864799</td><td>GC47CA4</td><td>The Old Cotton Press</td><td>Dillon</td><td>South Carolina</td><td>2014-12-13</td></tr>
+<tr><td>465864999</td><td>GC19JJ2</td><td>The Hot Spot</td><td>Marion</td><td>South Carolina</td><td>2014-12-13</td></tr>
+<tr><td>465865136</td><td>GC2314C</td><td>McDarlington Cache</td><td>Darlington</td><td>South Carolina</td><td>2014-12-13</td></tr>
+<tr><td>465865472</td><td>GC4PHB6</td><td>A Little Birdie Told Me</td><td>Florence</td><td>South Carolina</td><td>2014-12-13</td></tr>
+<tr><td>467300206</td><td>GC57BR8</td><td>Denver International Airport Earthcache</td><td>Denver</td><td>Colorado</td><td>2014-12-22</td></tr>
+<tr><td>470364557</td><td>GC566K3</td><td>Atlanta's TB Hotel in the Sky</td><td>Clayton</td><td>Georgia</td><td>2015-01-04</td></tr>
+<tr><td>487159951</td><td>GC22765</td><td>West Memphis Welcomes You</td><td>Crittenden</td><td>Arkansas</td><td>2015-03-30</td></tr>
+<tr><td>487171259</td><td>GC5K24D</td><td>Office Space: Joanna</td><td>Shelby</td><td>Tennessee</td><td>2015-03-30</td></tr>
+<tr><td>487175375</td><td>GC3GQK5</td><td>Guest Parking</td><td>DeSoto</td><td>Mississippi</td><td>2015-03-30</td></tr>
+<tr><td>487182909</td><td>GC3YJ0E</td><td>Mississippi Blues Trail - Rufus Thomas</td><td>Marshall</td><td>Mississippi</td><td>2015-03-30</td></tr>
+<tr><td>487190768</td><td>GC1RE4H</td><td>Battle of Davis Mill</td><td>Benton</td><td>Mississippi</td><td>2015-03-30</td></tr>
+<tr><td>487193352</td><td>GC4ETGE</td><td>Grierson's Raid- Base Camp LaGrange TN</td><td>Fayette</td><td>Tennessee</td><td>2015-03-30</td></tr>
+<tr><td>487202300</td><td>GC3NXQC</td><td>C . C . K</td><td>Hardeman</td><td>Tennessee</td><td>2015-03-30</td></tr>
+<tr><td>487213444</td><td>GC2J4NF</td><td>Grierson's Raid-Ripley</td><td>Tippah</td><td>Mississippi</td><td>2015-03-30</td></tr>
+<tr><td>487221016</td><td>GCM31H</td><td>Unknown Convict</td><td>Union</td><td>Mississippi</td><td>2015-03-30</td></tr>
+<tr><td>487228055</td><td>GC1H2BQ</td><td>Welcome To Sherman</td><td>Pontotoc</td><td>Mississippi</td><td>2015-03-30</td></tr>
+<tr><td>487232598</td><td>GC3P4Q0</td><td>Black Belt</td><td>Lee</td><td>Mississippi</td><td>2015-03-30</td></tr>
+<tr><td>487257832</td><td>GC34370</td><td>Honey</td><td>Prentiss</td><td>Mississippi</td><td>2015-03-30</td></tr>
+<tr><td>487268457</td><td>GC8F1A</td><td>Donivan's Slough</td><td>Itawamba</td><td>Mississippi</td><td>2015-03-30</td></tr>
+<tr><td>487277132</td><td>GC3W9RD</td><td>This ones for you...</td><td>Franklin</td><td>Alabama</td><td>2015-03-30</td></tr>
+<tr><td>487280598</td><td>GC44M31</td><td>The Endless Power Trail #11 - Hackleburg, AL</td><td>Marion</td><td>Alabama</td><td>2015-03-30</td></tr>
+<tr><td>487283614</td><td>GCWH59</td><td>Honor Roll</td><td>Winston</td><td>Alabama</td><td>2015-03-30</td></tr>
+<tr><td>487981043</td><td>GC2771P</td><td>Jack Daniels Cache</td><td>Moore</td><td>Tennessee</td><td>2015-04-03</td></tr>
+<tr><td>488006408</td><td>GC1CYEV</td><td>T-A-B ~ TN 97: The Road to Geowoodstock 7</td><td>Bedford</td><td>Tennessee</td><td>2015-04-03</td></tr>
+<tr><td>488009972</td><td>GCCBD2</td><td>The 1st  BLUE RAIDER</td><td>Coffee</td><td>Tennessee</td><td>2015-04-03</td></tr>
+<tr><td>488033062</td><td>GC1X8VG</td><td>Strange Endings: 4 in Harmony</td><td>Cannon</td><td>Tennessee</td><td>2015-04-03</td></tr>
+<tr><td>488045556</td><td>GC5H901</td><td>East 70S Highway PT #15</td><td>Warren</td><td>Tennessee</td><td>2015-04-03</td></tr>
+<tr><td>488070739</td><td>GC1XY7A</td><td>Stuck at the 127</td><td>Grundy</td><td>Tennessee</td><td>2015-04-03</td></tr>
+<tr><td>488105097</td><td>GC575Z9</td><td>JTGT - Winchester Old Jail Museum</td><td>Franklin</td><td>Tennessee</td><td>2015-04-03</td></tr>
+<tr><td>492088957</td><td>GCH73C</td><td>Publix Enemy #10</td><td>Douglas</td><td>Georgia</td><td>2015-04-13</td></tr>
+<tr><td>492095659</td><td>GC37FMQ</td><td>Take me back to the movies</td><td>Paulding</td><td>Georgia</td><td>2015-04-13</td></tr>
+<tr><td>492106086</td><td>GC146HY</td><td>Rockin' Wally's World</td><td>Polk</td><td>Georgia</td><td>2015-04-13</td></tr>
+<tr><td>492124505</td><td>GC17FV2</td><td>Wally's Come & Gone???</td><td>Haralson</td><td>Georgia</td><td>2015-04-13</td></tr>
+<tr><td>492127707</td><td>GC1QNCZ</td><td>I-20 GA CB</td><td>Carroll</td><td>Georgia</td><td>2015-04-13</td></tr>
+<tr><td>492147707</td><td>GC33X9P</td><td>Stop by the Well</td><td>Heard</td><td>Georgia</td><td>2015-04-13</td></tr>
+<tr><td>492169234</td><td>GC3RYAJ</td><td>Henry's 431 #2</td><td>Randolph</td><td>Alabama</td><td>2015-04-13</td></tr>
+<tr><td>492172558</td><td>GC3RYAE</td><td>Henry's 431 #1</td><td>Cleburne</td><td>Alabama</td><td>2015-04-13</td></tr>
+<tr><td>492185231</td><td>GC55CP9</td><td>Three Geo-Art 01</td><td>Talladega</td><td>Alabama</td><td>2015-04-13</td></tr>
+<tr><td>492195270</td><td>GC4454F</td><td>All You Can Eat</td><td>Calhoun</td><td>Alabama</td><td>2015-04-13</td></tr>
+<tr><td>492206246</td><td>GC4B761</td><td>Plaza P&G</td><td>Etowah</td><td>Alabama</td><td>2015-04-13</td></tr>
+<tr><td>492219820</td><td>GC49BCM</td><td>What is your weight limit?</td><td>Cherokee</td><td>Alabama</td><td>2015-04-13</td></tr>
+<tr><td>492233110</td><td>GC22N8X</td><td>The light no longer has a Circuit</td><td>Floyd</td><td>Georgia</td><td>2015-04-13</td></tr>
+<tr><td>492237105</td><td>GC50PV3</td><td>Chattooga Lookout</td><td>Chattooga</td><td>Georgia</td><td>2015-04-13</td></tr>
+<tr><td>492240825</td><td>GC1F2Y9</td><td>Fraternal Brotherhood - Valley Head, AL</td><td>DeKalb</td><td>Alabama</td><td>2015-04-13</td></tr>
+<tr><td>492915565</td><td>GC50ZZQ</td><td>Well Guarded</td><td>Whitfield</td><td>Georgia</td><td>2015-04-16</td></tr>
+<tr><td>492917462</td><td>GC2TXCB</td><td>Eula Mae's Gold Cache</td><td>Bradley</td><td>Tennessee</td><td>2015-04-16</td></tr>
+<tr><td>493146587</td><td>GC45PKT</td><td>Seal Rock</td><td>Humboldt</td><td>California</td><td>2015-04-17</td></tr>
+<tr><td>508017404</td><td>GC4GAXQ</td><td>Book Worm</td><td>Gregg</td><td>Texas</td><td>2015-06-01</td></tr>
+<tr><td>508018311</td><td>GC3YKHR</td><td>KIS Cache</td><td>Rusk</td><td>Texas</td><td>2015-06-01</td></tr>
+<tr><td>508028709</td><td>GC18C5W</td><td>TTB 32</td><td>Harrison</td><td>Texas</td><td>2015-06-01</td></tr>
+<tr><td>508038688</td><td>GC21RCV</td><td>Bienvenue en Louisiane</td><td>Caddo Parish</td><td>Louisiana</td><td>2015-06-01</td></tr>
+<tr><td>508050842</td><td>GC2R27M</td><td>DeBerry Picnic Area</td><td>Panola</td><td>Texas</td><td>2015-06-01</td></tr>
+<tr><td>508070187</td><td>GC13EKR</td><td>Timpson MBC Cemetery</td><td>Shelby</td><td>Texas</td><td>2015-06-01</td></tr>
+<tr><td>508073194</td><td>GCPP9B</td><td>Greenwood Cemetary</td><td>Nacogdoches</td><td>Texas</td><td>2015-06-01</td></tr>
+<tr><td>508099372</td><td>GCNNVP</td><td>Santa Fe Park</td><td>San Augustine</td><td>Texas</td><td>2015-06-01</td></tr>
+<tr><td>508118555</td><td>GCR3PD</td><td>Bethel Chapel</td><td>Sabine</td><td>Texas</td><td>2015-06-01</td></tr>
+<tr><td>508123304</td><td>GC3CT4C</td><td>Community</td><td>Jasper</td><td>Texas</td><td>2015-06-01</td></tr>
+<tr><td>508143500</td><td>GCND4T</td><td>Pirate's Picnic</td><td>Newton</td><td>Texas</td><td>2015-06-01</td></tr>
+<tr><td>508147949</td><td>GC5DHPM</td><td>Do You Want Fries With That?</td><td>Orange</td><td>Texas</td><td>2015-06-01</td></tr>
+<tr><td>508150241</td><td>GC1E45J</td><td>TINSELTOWN</td><td>Jefferson</td><td>Texas</td><td>2015-06-01</td></tr>
+<tr><td>508868806</td><td>GC1VZ73</td><td>I'm a Big Fan</td><td>Matagorda</td><td>Texas</td><td>2015-06-04</td></tr>
+<tr><td>508874600</td><td>GC2BRBF</td><td>Weedhaven, Jackson County</td><td>Jackson</td><td>Texas</td><td>2015-06-04</td></tr>
+<tr><td>508876511</td><td>GC84D1</td><td>Half Moon Reef Lighthouse</td><td>Calhoun</td><td>Texas</td><td>2015-06-04</td></tr>
+<tr><td>508882004</td><td>GC4F3EW</td><td>Placedo</td><td>Victoria</td><td>Texas</td><td>2015-06-04</td></tr>
+<tr><td>508886244</td><td>GC48N9T</td><td>Postcard quote: "Where Everyday is a Holiday!"</td><td>Aransas</td><td>Texas</td><td>2015-06-04</td></tr>
+<tr><td>508889743</td><td>GC1CGPR</td><td>Snail Mail</td><td>Refugio</td><td>Texas</td><td>2015-06-04</td></tr>
+<tr><td>508890271</td><td>GC1DM5J</td><td>frozen</td><td>San Patricio</td><td>Texas</td><td>2015-06-04</td></tr>
+<tr><td>508947641</td><td>GC3AQC4</td><td>Wally World #5</td><td>Nueces</td><td>Texas</td><td>2015-06-05</td></tr>
+<tr><td>508954363</td><td>GC1GF9G</td><td>What-A-Cache "King"</td><td>Kleberg</td><td>Texas</td><td>2015-06-05</td></tr>
+<tr><td>508958269</td><td>GC26PYP</td><td>Kenedy County</td><td>Kenedy</td><td>Texas</td><td>2015-06-05</td></tr>
+<tr><td>508968929</td><td>GC48CXV</td><td>Farmland</td><td>Willacy</td><td>Texas</td><td>2015-06-05</td></tr>
+<tr><td>508975351</td><td>GC5KWEK</td><td>TNT 107 W Series --- #1</td><td>Cameron</td><td>Texas</td><td>2015-06-05</td></tr>
+<tr><td>508979338</td><td>GC5KXCT</td><td>TNT 107 W Series --- #10</td><td>Hidalgo</td><td>Texas</td><td>2015-06-05</td></tr>
+<tr><td>509007918</td><td>GC3N25N</td><td>Starr County Helper FM-1017 #2</td><td>Starr</td><td>Texas</td><td>2015-06-05</td></tr>
+<tr><td>509021016</td><td>GC43AK0</td><td>Boss Hogg aka J.D. Hogg</td><td>Jim Hogg</td><td>Texas</td><td>2015-06-05</td></tr>
+<tr><td>509021025</td><td>GC3N24W</td><td>Zapata County Helper TX-16 #2</td><td>Zapata</td><td>Texas</td><td>2015-06-05</td></tr>
+<tr><td>509030037</td><td>GC30KWX</td><td>Duval County Helper, Texas 359</td><td>Duval</td><td>Texas</td><td>2015-06-05</td></tr>
+<tr><td>509030042</td><td>GC30KWV</td><td>Webb County Helper, Texas 359</td><td>Webb</td><td>Texas</td><td>2015-06-05</td></tr>
+<tr><td>509044909</td><td>GC1D7NZ</td><td>What do you Need AGAIN??</td><td>Brooks</td><td>Texas</td><td>2015-06-05</td></tr>
+<tr><td>509063896</td><td>GC119XZ</td><td>Fasten Safety Belts - Jim Wells</td><td>Jim Wells</td><td>Texas</td><td>2015-06-05</td></tr>
+<tr><td>509080703</td><td>GC1T3NP</td><td>LCC-Loop #41</td><td>Live Oak</td><td>Texas</td><td>2015-06-05</td></tr>
+<tr><td>509087979</td><td>GC1XPPZ</td><td>Just abOve Hummer haNgout</td><td>Bee</td><td>Texas</td><td>2015-06-05</td></tr>
+<tr><td>522048063</td><td>GC1F2TY</td><td>Crossroads Shopping</td><td>Meigs</td><td>Tennessee</td><td>2015-07-20</td></tr>
+<tr><td>522048069</td><td>GCMPNH</td><td>Shiney Ride</td><td>Rhea</td><td>Tennessee</td><td>2015-07-20</td></tr>
+<tr><td>522061175</td><td>GCPQFP</td><td>Hixsons Deliverance</td><td>Bledsoe</td><td>Tennessee</td><td>2015-07-20</td></tr>
+<tr><td>522063707</td><td>GC143BT</td><td>Bison Corral Gate</td><td>Sequatchie</td><td>Tennessee</td><td>2015-07-20</td></tr>
+<tr><td>522073733</td><td>GC5J1V1</td><td>H111 #11 N - Will's Power Trail</td><td>Van Buren</td><td>Tennessee</td><td>2015-07-20</td></tr>
+<tr><td>522082622</td><td>GC2V8W2</td><td>History Rocks in White County #3 - Train Depot</td><td>White</td><td>Tennessee</td><td>2015-07-20</td></tr>
+<tr><td>522094497</td><td>GC2ZA9R</td><td>By the Runway</td><td>Cumberland</td><td>Tennessee</td><td>2015-07-20</td></tr>
+<tr><td>522113851</td><td>GCYGEA</td><td>LTL - 347 Mickey's Guard</td><td>Roane</td><td>Tennessee</td><td>2015-07-20</td></tr>
+<tr><td>522129417</td><td>GCVZQ1</td><td>smokey's tour</td><td>Morgan</td><td>Tennessee</td><td>2015-07-20</td></tr>
+<tr><td>522151101</td><td>GC39YPE</td><td>Earn Cache</td><td>Knox</td><td>Tennessee</td><td>2015-07-20</td></tr>
+<tr><td>522151137</td><td>GC5JPYG</td><td>Old School Texting</td><td>Anderson</td><td>Tennessee</td><td>2015-07-20</td></tr>
+<tr><td>522160351</td><td>GC5E4NG</td><td>ZEDERNHOLZ</td><td>Loudon</td><td>Tennessee</td><td>2015-07-20</td></tr>
+<tr><td>522246619</td><td>GC31EPR</td><td>SUM OF STARS Challenge - 100 Stars in 1 Day</td><td>Blount</td><td>Tennessee</td><td>2015-07-20</td></tr>
+<tr><td>522246620</td><td>GC54JM5</td><td>Pisces</td><td>Monroe</td><td>Tennessee</td><td>2015-07-20</td></tr>
+<tr><td>522246622</td><td>GC1F73Z</td><td>I Walk the Line</td><td>McMinn</td><td>Tennessee</td><td>2015-07-20</td></tr>
+<tr><td>522246623</td><td>GC5CDCJ</td><td>Welcome to Polk County</td><td>Polk</td><td>Tennessee</td><td>2015-07-20</td></tr>
+<tr><td>523350966</td><td>GC1M1KQ</td><td>Always Low Prices... Always</td><td>Lewis</td><td>Tennessee</td><td>2015-07-24</td></tr>
+<tr><td>523372809</td><td>GC3PCPK</td><td>Pleasantville Market</td><td>Hickman</td><td>Tennessee</td><td>2015-07-24</td></tr>
+<tr><td>523372818</td><td>GC26AYE</td><td>Viking River</td><td>Perry</td><td>Tennessee</td><td>2015-07-24</td></tr>
+<tr><td>523383954</td><td>GCX9GN</td><td>LTL - 143 - The Coal Miners "Digger"</td><td>Humphreys</td><td>Tennessee</td><td>2015-07-24</td></tr>
+<tr><td>523388984</td><td>GC5FRJ2</td><td>just an ole Stump !</td><td>Benton</td><td>Tennessee</td><td>2015-07-24</td></tr>
+<tr><td>523393638</td><td>GC171JF</td><td>Headless Horseman Rides, Again!</td><td>Decatur</td><td>Tennessee</td><td>2015-07-24</td></tr>
+<tr><td>523400361</td><td>GC3BBBK</td><td>104N</td><td>Henderson</td><td>Tennessee</td><td>2015-07-24</td></tr>
+<tr><td>523409436</td><td>GC143A4</td><td>Church Bell</td><td>Chester</td><td>Tennessee</td><td>2015-07-24</td></tr>
+<tr><td>523442319</td><td>GC58G9Q</td><td>Go Generals</td><td>Madison</td><td>Tennessee</td><td>2015-07-24</td></tr>
+<tr><td>523516483</td><td>GC2YWYB</td><td>United States Armed Services Cache</td><td>Carroll</td><td>Tennessee</td><td>2015-07-25</td></tr>
+<tr><td>523516523</td><td>GC4Y2FK</td><td>Jackson to Milan Power Trail #13</td><td>Gibson</td><td>Tennessee</td><td>2015-07-25</td></tr>
+<tr><td>523518901</td><td>GC4V2N1</td><td>Signs, signs, everywhere there's signs II</td><td>Henry</td><td>Tennessee</td><td>2015-07-25</td></tr>
+<tr><td>523520214</td><td>GC4BQQ0</td><td>How much wood would a woodchuck chuck?</td><td>Weakley</td><td>Tennessee</td><td>2015-07-25</td></tr>
+<tr><td>523529081</td><td>GC4M39B</td><td>UC Bound 1</td><td>Obion</td><td>Tennessee</td><td>2015-07-25</td></tr>
+<tr><td>523534007</td><td>GC4D570</td><td>Unbridled Spirit 239</td><td>Fulton</td><td>Kentucky</td><td>2015-07-25</td></tr>
+<tr><td>523551289</td><td>GC19T17</td><td>Hornridge Cemetery Cache</td><td>Lake</td><td>Tennessee</td><td>2015-07-25</td></tr>
+<tr><td>523557123</td><td>GC1RC8F</td><td>The Great River Road - Tennessee</td><td>Dyer</td><td>Tennessee</td><td>2015-07-25</td></tr>
+<tr><td>523563512</td><td>GC33X34</td><td>Learning to swim</td><td>Pemiscot</td><td>Missouri</td><td>2015-07-25</td></tr>
+<tr><td>523587393</td><td>GC18M7Q</td><td>My first hide</td><td>Lauderdale</td><td>Tennessee</td><td>2015-07-25</td></tr>
+<tr><td>523598257</td><td>GC1WG4A</td><td>Woah Now</td><td>Crockett</td><td>Tennessee</td><td>2015-07-25</td></tr>
+<tr><td>523623734</td><td>GC1M2NY</td><td>No Longer A Thru Street</td><td>Haywood</td><td>Tennessee</td><td>2015-07-25</td></tr>
+<tr><td>523636162</td><td>GC19DZB</td><td>Bozo the Clown</td><td>Tipton</td><td>Tennessee</td><td>2015-07-25</td></tr>
+<tr><td>535687464</td><td>GC5H8BD</td><td>Park n' Ride Nano</td><td>Columbia</td><td>Florida</td><td>2015-08-28</td></tr>
+<tr><td>535690229</td><td>GC50C88</td><td>This Little Piggy</td><td>Suwannee</td><td>Florida</td><td>2015-08-28</td></tr>
+<tr><td>535693375</td><td>GC1936G</td><td>White Sulpher Springs v2.0</td><td>Hamilton</td><td>Florida</td><td>2015-08-28</td></tr>
+<tr><td>535703209</td><td>GC3P3ZR</td><td>Little Red Time Capsule</td><td>Madison</td><td>Florida</td><td>2015-08-28</td></tr>
+<tr><td>535711231</td><td>GC48X98</td><td>Time For A Rest</td><td>Jefferson</td><td>Florida</td><td>2015-08-28</td></tr>
+<tr><td>535719819</td><td>GC1313B</td><td>To The Shrine</td><td>Taylor</td><td>Florida</td><td>2015-08-28</td></tr>
+<tr><td>535730158</td><td>GC1HTRB</td><td>Deer Hunter 3 "Majestic"</td><td>Lafayette</td><td>Florida</td><td>2015-08-28</td></tr>
+<tr><td>535748784</td><td>GC49P29</td><td>Ridin' The Rails Thru XC #4</td><td>Dixie</td><td>Florida</td><td>2015-08-28</td></tr>
+<tr><td>535757422</td><td>GCKT5V</td><td>Benjamin Chaires Bridge</td><td>Levy</td><td>Florida</td><td>2015-08-28</td></tr>
+<tr><td>535762811</td><td>GC2GH6P</td><td>Micro in a Micro Town 2</td><td>Gilchrist</td><td>Florida</td><td>2015-08-28</td></tr>
+<tr><td>537657873</td><td>GC1NTX5</td><td>GREEN</td><td>Leon</td><td>Florida</td><td>2015-09-03</td></tr>
+<tr><td>537657878</td><td>GC1KMWD</td><td>Bob seems a little gassy today</td><td>Gadsden</td><td>Florida</td><td>2015-09-03</td></tr>
+<tr><td>537754924</td><td>GC10609</td><td>Always a Wally World</td><td>Wakulla</td><td>Florida</td><td>2015-09-03</td></tr>
+<tr><td>537819976</td><td>GC2E4VQ</td><td>Sumatra PO</td><td>Liberty</td><td>Florida</td><td>2015-09-04</td></tr>
+<tr><td>537819978</td><td>GC33HPT</td><td>Many Bumps</td><td>Calhoun</td><td>Florida</td><td>2015-09-04</td></tr>
+<tr><td>537828254</td><td>GC4E364</td><td>Half-million Mile Challenge</td><td>Jackson</td><td>Florida</td><td>2015-09-04</td></tr>
+<tr><td>537831273</td><td>GC25BKX</td><td>T S C</td><td>Washington</td><td>Florida</td><td>2015-09-04</td></tr>
+<tr><td>537833323</td><td>GC4E0MD</td><td>Bonifay's Hut!</td><td>Holmes</td><td>Florida</td><td>2015-09-04</td></tr>
+<tr><td>537840312</td><td>GC5JJ66</td><td>You're in NYC!!!</td><td>Walton</td><td>Florida</td><td>2015-09-04</td></tr>
+<tr><td>537844258</td><td>GC2C4RV</td><td>I-10 WB awake as a TB Hotel</td><td>Okaloosa</td><td>Florida</td><td>2015-09-04</td></tr>
+<tr><td>537851682</td><td>GC32EPD</td><td>Take One - Again!</td><td>Santa Rosa</td><td>Florida</td><td>2015-09-04</td></tr>
+<tr><td>537856205</td><td>GC62FJN</td><td>AGAIN...You CAN'T Buy a Steak Here!</td><td>Escambia</td><td>Florida</td><td>2015-09-04</td></tr>
+<tr><td>537890964</td><td>GC22J8T</td><td>AMERICAS DRIVE IN</td><td>Bay</td><td>Florida</td><td>2015-09-04</td></tr>
+<tr><td>537913927</td><td>GC559JW</td><td>ORGT: Constitution Convention Museum State Park</td><td>Gulf</td><td>Florida</td><td>2015-09-04</td></tr>
+<tr><td>537964685</td><td>GCZVGN</td><td>St. George Light Cache</td><td>Franklin</td><td>Florida</td><td>2015-09-04</td></tr>
+<tr><td>547868379</td><td>GC5GKDV</td><td>Decade Old Streak Challenge</td><td>Snohomish</td><td>Washington</td><td>2015-10-10</td></tr>
+<tr><td>547928650</td><td>GC1E057</td><td>Deception Pass Earthcache</td><td>Skagit</td><td>Washington</td><td>2015-10-10</td></tr>
+<tr><td>547929255</td><td>GC3V4TA</td><td>?Bug Inn?Bug Out?</td><td>Island</td><td>Washington</td><td>2015-10-10</td></tr>
+<tr><td>548006305</td><td>GC6159X</td><td>Uptown Funk</td><td>San Juan</td><td>Washington</td><td>2015-10-10</td></tr>
+<tr><td>548841327</td><td>GC3R270</td><td>Nulle Road Stop N Go</td><td>Whatcom</td><td>Washington</td><td>2015-10-12</td></tr>
+<tr><td>556325395</td><td>GC1DH5Y</td><td>I-5 Interstate Highway Challenge</td><td>Shasta</td><td>California</td><td>2015-11-11</td></tr>
+<tr><td>556325507</td><td>GC22VA0</td><td>COFFIN</td><td>Trinity</td><td>California</td><td>2015-11-11</td></tr>
+<tr><td>556326433</td><td>GC144G8</td><td>County Line - Modoc</td><td>Modoc</td><td>California</td><td>2015-11-11</td></tr>
+<tr><td>556327497</td><td>GC145CN</td><td>County Line - Siskiyou</td><td>Siskiyou</td><td>California</td><td>2015-11-11</td></tr>
+<tr><td>559262978</td><td>GC2FENN</td><td>Megan’s Cache</td><td>Butler</td><td>Iowa</td><td>2015-11-28</td></tr>
+<tr><td>559263074</td><td>GC4CBZF</td><td>Birthday Boy</td><td>Floyd</td><td>Iowa</td><td>2015-11-28</td></tr>
+<tr><td>559263198</td><td>GC2DR6A</td><td>The Great Pool Find</td><td>Mitchell</td><td>Iowa</td><td>2015-11-28</td></tr>
+<tr><td>559263266</td><td>GC2CM6J</td><td>The neighbors are kind of corny</td><td>Mower</td><td>Minnesota</td><td>2015-11-28</td></tr>
+<tr><td>559263312</td><td>GC1CHXB</td><td>State Line</td><td>Freeborn</td><td>Minnesota</td><td>2015-11-28</td></tr>
+<tr><td>559263424</td><td>GC2P1XR</td><td>Under the Blue</td><td>Worth</td><td>Iowa</td><td>2015-11-28</td></tr>
+<tr><td>559264125</td><td>GC4KNQW</td><td>Wedding Crasher</td><td>Cerro Gordo</td><td>Iowa</td><td>2015-11-28</td></tr>
+<tr><td>559264545</td><td>GC5FE6J</td><td>Abbey's Favorite</td><td>Winnebago</td><td>Iowa</td><td>2015-11-28</td></tr>
+<tr><td>559264568</td><td>GC4PAAZ</td><td>Garner Skirt P&G</td><td>Hancock</td><td>Iowa</td><td>2015-11-28</td></tr>
+<tr><td>559264643</td><td>GC5XCNF</td><td>Morgan Everts</td><td>Wright</td><td>Iowa</td><td>2015-11-28</td></tr>
+<tr><td>559264827</td><td>GC329YN</td><td>Summertime Sanctuary</td><td>Franklin</td><td>Iowa</td><td>2015-11-28</td></tr>
+<tr><td>564284336</td><td>GC5DD5</td><td>A Beautiful Place to Start (Nauvoo)</td><td>Hancock</td><td>Illinois</td><td>2015-12-27</td></tr>
+<tr><td>564284496</td><td>GC4BGYX</td><td>The Bee's Know Colchester</td><td>McDonough</td><td>Illinois</td><td>2015-12-27</td></tr>
+<tr><td>564284619</td><td>GC629CM</td><td>Huntsville Park</td><td>Schuyler</td><td>Illinois</td><td>2015-12-27</td></tr>
+<tr><td>564284673</td><td>GC6350K</td><td>Brown County Cemetery</td><td>Brown</td><td>Illinois</td><td>2015-12-27</td></tr>
+<tr><td>564284732</td><td>GC3282W</td><td>Adams County Townships - Camp Point</td><td>Adams</td><td>Illinois</td><td>2015-12-27</td></tr>
+<tr><td>564284782</td><td>GC51PZZ</td><td>18 Wheeler</td><td>Marion</td><td>Missouri</td><td>2015-12-27</td></tr>
+<tr><td>564284879</td><td>GC4E4N5</td><td>Red for a rainbow</td><td>Lewis</td><td>Missouri</td><td>2015-12-27</td></tr>
+<tr><td>569642372</td><td>GC3D31Z</td><td>Thank you Wilbur & Orville Wright!</td><td>Summit</td><td>Ohio</td><td>2016-01-21</td></tr>
+<tr><td>569642388</td><td>GC2G1FX</td><td>Sparkly Clean Quickie</td><td>Stark</td><td>Ohio</td><td>2016-01-21</td></tr>
+<tr><td>569642410</td><td>GC3PAYZ</td><td>RED</td><td>Portage</td><td>Ohio</td><td>2016-01-21</td></tr>
+<tr><td>569642795</td><td>GC5TKC8</td><td>PHAH: States</td><td>Medina</td><td>Ohio</td><td>2016-01-21</td></tr>
+<tr><td>569643091</td><td>GC1V39F</td><td>Size Mathers!</td><td>Cuyahoga</td><td>Ohio</td><td>2016-01-21</td></tr>
+<tr><td>569643875</td><td>GC1FFQJ</td><td>Microphobia - Kakorrhaphiophobia</td><td>Lake</td><td>Ohio</td><td>2016-01-21</td></tr>
+<tr><td>569643940</td><td>GCWPKN</td><td>YIACC in Thompson:  Dead Zone</td><td>Geauga</td><td>Ohio</td><td>2016-01-21</td></tr>
+<tr><td>569644085</td><td>GC2P9W1</td><td>Tour the world cities and stay in Ohio: Rome</td><td>Ashtabula</td><td>Ohio</td><td>2016-01-21</td></tr>
+<tr><td>569644113</td><td>GC62QQV</td><td>Bug #29</td><td>Trumbull</td><td>Ohio</td><td>2016-01-21</td></tr>
+<tr><td>569644137</td><td>GC1A47Z</td><td>Blue Light</td><td>Mahoning</td><td>Ohio</td><td>2016-01-21</td></tr>
+<tr><td>574504185</td><td>GC2FKCH</td><td>What's your favorite color</td><td>Shelby</td><td>Alabama</td><td>2016-02-16</td></tr>
+<tr><td>574504223</td><td>GC159GM</td><td>The Fast and the Furious</td><td>Bibb</td><td>Alabama</td><td>2016-02-16</td></tr>
+<tr><td>574504461</td><td>GC40N04</td><td>Crimson Tide Challenge</td><td>Tuscaloosa</td><td>Alabama</td><td>2016-02-16</td></tr>
+<tr><td>574504605</td><td>GC120EN</td><td>Gordo Discount Micro</td><td>Pickens</td><td>Alabama</td><td>2016-02-16</td></tr>
+<tr><td>574504656</td><td>GC4EYBE</td><td>Union Chapel Cemetery</td><td>Lamar</td><td>Alabama</td><td>2016-02-16</td></tr>
+<tr><td>574504690</td><td>GC3253J</td><td>Fayette Civic Center</td><td>Fayette</td><td>Alabama</td><td>2016-02-16</td></tr>
+<tr><td>574504731</td><td>GC2RFM6</td><td>home of the brave</td><td>Walker</td><td>Alabama</td><td>2016-02-16</td></tr>
+<tr><td>574504899</td><td>GCA19B</td><td>Bug Rest Stop</td><td>Cullman</td><td>Alabama</td><td>2016-02-16</td></tr>
+<tr><td>586869899</td><td>GC3391</td><td>Virtual Stamina</td><td>Del Norte</td><td>California</td><td>2016-04-01</td></tr>
+<tr><td>587458706</td><td>GC143NC</td><td>State of the Nation - Oregon</td><td>Curry</td><td>Oregon</td><td>2016-04-02</td></tr>
+<tr><td>597470531</td><td>GC1KT0X</td><td>Tour de Kona</td><td>Hawaii</td><td>Hawaii</td><td>2016-05-05</td></tr>
+<tr><td>599426410</td><td>GC5DB9</td><td>4 guys and a gal</td><td>Honolulu</td><td>Hawaii</td><td>2016-05-11</td></tr>
+<tr><td>620524950</td><td>GC6E2C2</td><td>The Power of Reading</td><td>Mecklenburg</td><td>North Carolina</td><td>2016-07-22</td></tr>
+<tr><td>620563462</td><td>GC435E1</td><td>Back to Nature III</td><td>Iredell</td><td>North Carolina</td><td>2016-07-22</td></tr>
+<tr><td>620597625</td><td>GC2FRTQ</td><td>Follow the Rainbow</td><td>Rowan</td><td>North Carolina</td><td>2016-07-22</td></tr>
+<tr><td>620607300</td><td>GC2ZY06</td><td>Pick-a-Flick Apples</td><td>Cabarrus</td><td>North Carolina</td><td>2016-07-22</td></tr>
+<tr><td>620916772</td><td>GC25RK6</td><td>"NFL Oakland Raiders " - Liberty 5 of 32</td><td>Gaston</td><td>North Carolina</td><td>2016-07-23</td></tr>
+<tr><td>620930898</td><td>GC1Z8JJ</td><td>#19 "Water Lynn Down!"</td><td>York</td><td>South Carolina</td><td>2016-07-23</td></tr>
+<tr><td>621644806</td><td>GCRR0C</td><td>Smell the Burning Hickory</td><td>Davidson</td><td>North Carolina</td><td>2016-07-25</td></tr>
+<tr><td>621670750</td><td>GC4ZM35</td><td>Randolph--Boundary Hunter#79</td><td>Randolph</td><td>North Carolina</td><td>2016-07-25</td></tr>
+<tr><td>621678070</td><td>GC37BHH</td><td>WTF? [Water Tower Find] - Uwharrie version</td><td>Montgomery</td><td>North Carolina</td><td>2016-07-25</td></tr>
+<tr><td>621691685</td><td>GC2BEZ6</td><td>Can You Hear Me Now?</td><td>Stanly</td><td>North Carolina</td><td>2016-07-25</td></tr>
+<tr><td>621716726</td><td>GC2QYFN</td><td>Boxers or "Brief" ?</td><td>Union</td><td>North Carolina</td><td>2016-07-25</td></tr>
+         </tbody>
+    </table>
+	<div id="footer">
+	<p>Credits: GSAK for county boundaries, d3.js, topojson</p></div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-1.12.3.js"></script>
 	<script src="d3.v3.min.js"></script>
 	<script src="http://d3js.org/d3.geo.projection.v0.min.js"></script>
 	<script src="queue.v1.min.js"></script>
 	<script src="topojson.v1.min.js"></script>
+	<script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
 	<script>
 
 	var width = 1000,
@@ -131,6 +941,27 @@ span {
 	      .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")scale(" + k + ")translate(" + -x + "," + -y + ")")
 	      .style("stroke-width", 1.5 / k + "px");
 	}
+
+	$(document).ready(function() {
+    	$('#caches').DataTable({
+    		"columnDefs": [
+    			{
+    				"targets":[0],
+    				"visible":false,
+    				"searchable":false
+    			},
+    			{
+    				"targets":[4],
+    				"orderData":[4,3]
+    			},
+    			{
+    				"targets":[5],
+    				"orderData":[5,0]
+    			}
+    		],
+    		"lengthMenu":[[50,100,-1],[50,100,"All"]]
+    	});
+	});
 	</script>
 </body>
 </html>
