@@ -1,4 +1,35 @@
 id	code	county	count
+51033	#a65628	Caroline, Virginia	1
+51510	#a65628	Alexandria City, Virginia	1
+51760	#a65628	Richmond City, Virginia	1
+51061	#a65628	Fauquier, Virginia	1
+51177	#a65628	Spotsylvania, Virginia	1
+51153	#a65628	Prince William, Virginia	1
+24033	#a65628	Prince George's, Maryland	1
+51685	#a65628	Manassas Park City, Virginia	1
+51047	#a65628	Culpeper, Virginia	1
+51683	#a65628	Manassas City, Virginia	1
+51003	#a65628	Albemarle, Virginia	1
+51059	#a65628	Fairfax, Virginia	1
+24017	#a65628	Charles, Maryland	1
+51013	#a65628	Arlington, Virginia	1
+51610	#a65628	Falls Church City, Virginia	1
+24009	#a65628	Calvert, Maryland	1
+51179	#a65628	Stafford, Virginia	1
+51540	#a65628	Charlottesville City, Virginia	1
+51113	#a65628	Madison, Virginia	1
+51107	#a65628	Loudoun, Virginia	1
+24037	#a65628	St. Mary's, Maryland	1
+51137	#a65628	Orange, Virginia	1
+51085	#a65628	Hanover, Virginia	1
+51079	#a65628	Greene, Virginia	1
+51087	#a65628	Henrico, Virginia	1
+51109	#a65628	Louisa, Virginia	1
+51065	#a65628	Fluvanna, Virginia	1
+51075	#a65628	Goochland, Virginia	1
+51099	#a65628	King George, Virginia	1
+51630	#a65628	Fredericksburg City, Virginia	1
+51157	#a65628	Rappahannock, Virginia	1
 37057	#a65628	Davidson, North Carolina	2
 37167	#a65628	Stanly, North Carolina	1
 37123	#a65628	Montgomery, North Carolina	1
@@ -564,12 +595,12 @@ id	code	county	count
 6029	#4daf4a	Kern, California	2
 6031	#4daf4a	Kings, California	2
 6107	#4daf4a	Tulare, California	2
-6001	#4daf4a	Alameda, California	172
-6013	#4daf4a	Contra Costa, California	30
+6001	#4daf4a	Alameda, California	176
+6013	#4daf4a	Contra Costa, California	73
 6087	#4daf4a	Santa Cruz, California	29
-6075	#4daf4a	San Francisco, California	265
-6081	#4daf4a	San Mateo, California	349
-6085	#4daf4a	Santa Clara, California	1092
+6075	#4daf4a	San Francisco, California	266
+6081	#4daf4a	San Mateo, California	359
+6085	#4daf4a	Santa Clara, California	1120
 19111	#4daf4a	Lee, Iowa	4
 17019	#4daf4a	Champaign, Illinois	3
 39049	#4daf4a	Franklin, Ohio	1
@@ -581,7 +612,7 @@ id	code	county	count
 42001	#4daf4a	Adams, Pennsylvania	1
 24005	#4daf4a	Baltimore, Maryland	1
 24013	#4daf4a	Carroll, Maryland	1
-11001	#4daf4a	District of Columbia, District of Columbia	14
+11001	#4daf4a	District of Columbia, District of Columbia	18
 24003	#4daf4a	Anne Arundel, Maryland	1
 10005	#4daf4a	Sussex, Delaware	1
 24510	#4daf4a	Baltimore City, Maryland	1
