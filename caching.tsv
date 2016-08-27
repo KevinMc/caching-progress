@@ -1,4 +1,24 @@
 id	code	county	count
+51199	#a65628	York, Virginia	2
+51830	#a65628	Williamsburg City, Virginia	2
+51115	#a65628	Mathews, Virginia	1
+51193	#a65628	Westmoreland, Virginia	1
+51073	#a65628	Gloucester, Virginia	1
+51095	#a65628	James City, Virginia	1
+51097	#a65628	King and Queen, Virginia	1
+51127	#a65628	New Kent, Virginia	1
+51159	#a65628	Richmond, Virginia	1
+51101	#a65628	King William, Virginia	1
+51103	#a65628	Lancaster, Virginia	1
+51735	#a65628	Poquoson City, Virginia	1
+51700	#a65628	Newport News City, Virginia	1
+51133	#a65628	Northumberland, Virginia	1
+51650	#a65628	Hampton City, Virginia	1
+51057	#a65628	Essex, Virginia	1
+51119	#a65628	Middlesex, Virginia	1
+24031	#a65628	Montgomery, Maryland	1
+51600	#a65628	Fairfax City, Virginia	1
+51013	#a65628	Arlington, Virginia	2
 51033	#a65628	Caroline, Virginia	1
 51510	#a65628	Alexandria City, Virginia	1
 51760	#a65628	Richmond City, Virginia	1
@@ -12,7 +32,6 @@ id	code	county	count
 51003	#a65628	Albemarle, Virginia	1
 51059	#a65628	Fairfax, Virginia	1
 24017	#a65628	Charles, Maryland	1
-51013	#a65628	Arlington, Virginia	1
 51610	#a65628	Falls Church City, Virginia	1
 24009	#a65628	Calvert, Maryland	1
 51179	#a65628	Stafford, Virginia	1
@@ -612,7 +631,7 @@ id	code	county	count
 42001	#4daf4a	Adams, Pennsylvania	1
 24005	#4daf4a	Baltimore, Maryland	1
 24013	#4daf4a	Carroll, Maryland	1
-11001	#4daf4a	District of Columbia, District of Columbia	18
+11001	#4daf4a	District of Columbia, District of Columbia	39
 24003	#4daf4a	Anne Arundel, Maryland	1
 10005	#4daf4a	Sussex, Delaware	1
 24510	#4daf4a	Baltimore City, Maryland	1
