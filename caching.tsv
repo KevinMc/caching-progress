@@ -1,4 +1,42 @@
 id	code	county	count
+1005	#a65628	Barbour, Alabama	2
+1061	#a65628	Geneva, Alabama	1
+1031	#a65628	Coffee, Alabama	1
+1123	#a65628	Tallapoosa, Alabama	1
+1051	#a65628	Elmore, Alabama	1
+1045	#a65628	Dale, Alabama	1
+1041	#a65628	Crenshaw, Alabama	1
+1027	#a65628	Clay, Alabama	1
+1069	#a65628	Houston, Alabama	1
+1113	#a65628	Russell, Alabama	1
+1081	#a65628	Lee, Alabama	1
+1037	#a65628	Coosa, Alabama	1
+1021	#a65628	Chilton, Alabama	1
+1011	#a65628	Bullock, Alabama	1
+1017	#a65628	Chambers, Alabama	1
+1039	#a65628	Covington, Alabama	1
+1109	#a65628	Pike, Alabama	1
+1087	#a65628	Macon, Alabama	1
+1067	#a65628	Henry, Alabama	1
+1001	#a65628	Autauga, Alabama	1
+1013	#a65628	Butler, Alabama	2
+1003	#a65628	Baldwin, Alabama	1
+1091	#a65628	Marengo, Alabama	1
+1047	#a65628	Dallas, Alabama	1
+1025	#a65628	Clarke, Alabama	1
+1101	#a65628	Montgomery, Alabama	1
+1053	#a65628	Escambia, Alabama	1
+1097	#a65628	Mobile, Alabama	1
+1119	#a65628	Sumter, Alabama	1
+1085	#a65628	Lowndes, Alabama	1
+1065	#a65628	Hale, Alabama	1
+1063	#a65628	Greene, Alabama	1
+1131	#a65628	Wilcox, Alabama	1
+1035	#a65628	Conecuh, Alabama	1
+1099	#a65628	Monroe, Alabama	1
+1129	#a65628	Washington, Alabama	1
+1023	#a65628	Choctaw, Alabama	1
+1105	#a65628	Perry, Alabama	1
 51199	#a65628	York, Virginia	2
 51830	#a65628	Williamsburg City, Virginia	2
 51115	#a65628	Mathews, Virginia	1
@@ -601,10 +639,10 @@ id	code	county	count
 6095	#4daf4a	Solano, California	9
 6055	#4daf4a	Napa, California	8
 6069	#4daf4a	San Benito, California	10
-6083	#4daf4a	Santa Barbara, California	26
+6083	#4daf4a	Santa Barbara, California	31
 6053	#4daf4a	Monterey, California	23
 6111	#4daf4a	Ventura, California	18
-6079	#4daf4a	San Luis Obispo, California	17
+6079	#4daf4a	San Luis Obispo, California	18
 6073	#4daf4a	San Diego, California	9
 6037	#4daf4a	Los Angeles, California	14
 6059	#4daf4a	Orange, California	11
@@ -617,9 +655,9 @@ id	code	county	count
 6001	#4daf4a	Alameda, California	176
 6013	#4daf4a	Contra Costa, California	73
 6087	#4daf4a	Santa Cruz, California	29
-6075	#4daf4a	San Francisco, California	266
-6081	#4daf4a	San Mateo, California	359
-6085	#4daf4a	Santa Clara, California	1120
+6075	#4daf4a	San Francisco, California	272
+6081	#4daf4a	San Mateo, California	361
+6085	#4daf4a	Santa Clara, California	1148
 19111	#4daf4a	Lee, Iowa	4
 17019	#4daf4a	Champaign, Illinois	3
 39049	#4daf4a	Franklin, Ohio	1
