@@ -1,8 +1,16 @@
 id	code	county	count
+19021	#a65628	Buena Vista, Iowa	2
+19193	#a65628	Woodbury, Iowa	2
+19027	#a65628	Carroll, Iowa	1
+19149	#a65628	Plymouth, Iowa	1
+19093	#a65628	Ida, Iowa	1
+19025	#a65628	Calhoun, Iowa	1
+19035	#a65628	Cherokee, Iowa	1
+19161	#a65628	Sac, Iowa	1
 1005	#a65628	Barbour, Alabama	2
+1123	#a65628	Tallapoosa, Alabama	2
 1061	#a65628	Geneva, Alabama	1
 1031	#a65628	Coffee, Alabama	1
-1123	#a65628	Tallapoosa, Alabama	1
 1051	#a65628	Elmore, Alabama	1
 1045	#a65628	Dale, Alabama	1
 1041	#a65628	Crenshaw, Alabama	1
@@ -19,12 +27,12 @@ id	code	county	count
 1087	#a65628	Macon, Alabama	1
 1067	#a65628	Henry, Alabama	1
 1001	#a65628	Autauga, Alabama	1
+1101	#a65628	Montgomery, Alabama	3
 1013	#a65628	Butler, Alabama	2
 1003	#a65628	Baldwin, Alabama	1
 1091	#a65628	Marengo, Alabama	1
 1047	#a65628	Dallas, Alabama	1
 1025	#a65628	Clarke, Alabama	1
-1101	#a65628	Montgomery, Alabama	1
 1053	#a65628	Escambia, Alabama	1
 1097	#a65628	Mobile, Alabama	1
 1119	#a65628	Sumter, Alabama	1
@@ -248,8 +256,8 @@ id	code	county	count
 6023	#f781bf	Humboldt, California	26
 13313	#f781bf	Whitfield, Georgia	1
 47011	#f781bf	Bradley, Tennessee	1
+1111	#f781bf	Randolph, Alabama	2
 13233	#f781bf	Polk, Georgia	2
-1111	#f781bf	Randolph, Alabama	1
 13223	#f781bf	Paulding, Georgia	1
 13149	#f781bf	Heard, Georgia	1
 1055	#f781bf	Etowah, Alabama	1
@@ -580,7 +588,7 @@ id	code	county	count
 47119	#4daf4a	Maury, Tennessee	1
 47189	#4daf4a	Wilson, Tennessee	1
 47117	#4daf4a	Marshall, Tennessee	1
-1073	#4daf4a	Jefferson, Alabama	2
+1073	#4daf4a	Jefferson, Alabama	7
 1115	#4daf4a	St. Clair, Alabama	1
 1009	#4daf4a	Blount, Alabama	1
 6025	#4daf4a	Imperial, California	1
@@ -590,7 +598,7 @@ id	code	county	count
 1077	#4daf4a	Lauderdale, Alabama	1
 1071	#4daf4a	Jackson, Alabama	4
 1095	#4daf4a	Marshall, Alabama	1
-1089	#4daf4a	Madison, Alabama	63
+1089	#4daf4a	Madison, Alabama	98
 1083	#4daf4a	Limestone, Alabama	2
 47103	#4daf4a	Lincoln, Tennessee	1
 47055	#4daf4a	Giles, Tennessee	1
@@ -635,16 +643,16 @@ id	code	county	count
 6003	#4daf4a	Alpine, California	1
 6041	#4daf4a	Marin, California	24
 6067	#4daf4a	Sacramento, California	14
-6097	#4daf4a	Sonoma, California	12
+6097	#4daf4a	Sonoma, California	13
 6095	#4daf4a	Solano, California	9
 6055	#4daf4a	Napa, California	8
 6069	#4daf4a	San Benito, California	10
 6083	#4daf4a	Santa Barbara, California	31
-6053	#4daf4a	Monterey, California	23
+6053	#4daf4a	Monterey, California	29
 6111	#4daf4a	Ventura, California	18
 6079	#4daf4a	San Luis Obispo, California	18
 6073	#4daf4a	San Diego, California	9
-6037	#4daf4a	Los Angeles, California	14
+6037	#4daf4a	Los Angeles, California	24
 6059	#4daf4a	Orange, California	11
 6047	#4daf4a	Merced, California	5
 6039	#4daf4a	Madera, California	4
@@ -652,12 +660,12 @@ id	code	county	count
 6029	#4daf4a	Kern, California	2
 6031	#4daf4a	Kings, California	2
 6107	#4daf4a	Tulare, California	2
-6001	#4daf4a	Alameda, California	176
-6013	#4daf4a	Contra Costa, California	73
+6001	#4daf4a	Alameda, California	189
+6013	#4daf4a	Contra Costa, California	81
 6087	#4daf4a	Santa Cruz, California	29
 6075	#4daf4a	San Francisco, California	272
-6081	#4daf4a	San Mateo, California	361
-6085	#4daf4a	Santa Clara, California	1148
+6081	#4daf4a	San Mateo, California	384
+6085	#4daf4a	Santa Clara, California	1213
 19111	#4daf4a	Lee, Iowa	4
 17019	#4daf4a	Champaign, Illinois	3
 39049	#4daf4a	Franklin, Ohio	1
@@ -789,7 +797,7 @@ id	code	county	count
 19103	#984ea3	Johnson, Iowa	3
 19157	#984ea3	Poweshiek, Iowa	2
 19183	#984ea3	Washington, Iowa	2
-19125	#984ea3	Marion, Iowa	35
+19125	#984ea3	Marion, Iowa	36
 19153	#984ea3	Polk, Iowa	26
 19015	#984ea3	Boone, Iowa	2
 19049	#984ea3	Dallas, Iowa	2
@@ -832,7 +840,7 @@ id	code	county	count
 6071	#984ea3	San Bernardino, California	5
 4027	#984ea3	Yuma, Arizona	4
 4015	#984ea3	Mohave, Arizona	1
-42003	#984ea3	Allegheny, Pennsylvania	420
+42003	#984ea3	Allegheny, Pennsylvania	436
 54069	#984ea3	Ohio, West Virginia	2
 49025	#984ea3	Kane, Utah	1
 42051	#984ea3	Fayette, Pennsylvania	3
