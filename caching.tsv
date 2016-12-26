@@ -1,4 +1,25 @@
 id	code	county	count
+18097	#a65628	Marion, Indiana	3
+18177	#a65628	Wayne, Indiana	1
+39013	#a65628	Belmont, Ohio	1
+39089	#a65628	Licking, Ohio	1
+39059	#a65628	Guernsey, Ohio	1
+39127	#a65628	Perry, Ohio	1
+39113	#a65628	Montgomery, Ohio	1
+39057	#a65628	Greene, Ohio	1
+18065	#a65628	Henry, Indiana	1
+18063	#a65628	Hendricks, Indiana	1
+39023	#a65628	Clark, Ohio	1
+39045	#a65628	Fairfield, Ohio	1
+39097	#a65628	Madison, Ohio	1
+39109	#a65628	Miami, Ohio	1
+18107	#a65628	Montgomery, Indiana	2
+17147	#a65628	Piatt, Illinois	1
+17113	#a65628	McLean, Illinois	1
+17183	#a65628	Vermilion, Illinois	1
+17143	#a65628	Peoria, Illinois	1
+18045	#a65628	Fountain, Indiana	1
+17179	#a65628	Tazewell, Illinois	1
 19021	#a65628	Buena Vista, Iowa	2
 19193	#a65628	Woodbury, Iowa	2
 19027	#a65628	Carroll, Iowa	1
@@ -427,10 +448,10 @@ id	code	county	count
 35001	#e41a1c	Bernalillo, New Mexico	1
 48141	#e41a1c	El Paso, Texas	2
 48229	#e41a1c	Hudspeth, Texas	2
-12009	#e41a1c	Brevard, Florida	147
+12009	#e41a1c	Brevard, Florida	149
 12127	#e41a1c	Volusia, Florida	4
 12117	#e41a1c	Seminole, Florida	2
-12095	#e41a1c	Orange, Florida	22
+12095	#e41a1c	Orange, Florida	25
 12105	#e41a1c	Polk, Florida	6
 12083	#e41a1c	Marion, Florida	4
 12069	#e41a1c	Lake, Florida	4
@@ -445,8 +466,8 @@ id	code	county	count
 55103	#e41a1c	Richland, Wisconsin	1
 55123	#e41a1c	Vernon, Wisconsin	1
 55023	#e41a1c	Crawford, Wisconsin	1
+17095	#377eb8	Knox, Illinois	2
 17089	#377eb8	Kane, Illinois	1
-17095	#377eb8	Knox, Illinois	1
 17063	#377eb8	Grundy, Illinois	1
 17073	#377eb8	Henry, Illinois	1
 17105	#377eb8	Livingston, Illinois	1
@@ -660,12 +681,12 @@ id	code	county	count
 6029	#4daf4a	Kern, California	2
 6031	#4daf4a	Kings, California	2
 6107	#4daf4a	Tulare, California	2
-6001	#4daf4a	Alameda, California	189
+6001	#4daf4a	Alameda, California	194
 6013	#4daf4a	Contra Costa, California	81
 6087	#4daf4a	Santa Cruz, California	29
-6075	#4daf4a	San Francisco, California	272
-6081	#4daf4a	San Mateo, California	384
-6085	#4daf4a	Santa Clara, California	1213
+6075	#4daf4a	San Francisco, California	275
+6081	#4daf4a	San Mateo, California	387
+6085	#4daf4a	Santa Clara, California	1225
 19111	#4daf4a	Lee, Iowa	4
 17019	#4daf4a	Champaign, Illinois	3
 39049	#4daf4a	Franklin, Ohio	1
@@ -768,7 +789,7 @@ id	code	county	count
 55127	#984ea3	Walworth, Wisconsin	1
 55059	#984ea3	Kenosha, Wisconsin	1
 17103	#984ea3	Lee, Illinois	1
-19177	#984ea3	Van Buren, Iowa	2
+19177	#984ea3	Van Buren, Iowa	5
 19007	#984ea3	Appanoose, Iowa	20
 19051	#984ea3	Davis, Iowa	13
 17031	#984ea3	Cook, Illinois	13
@@ -797,7 +818,7 @@ id	code	county	count
 19103	#984ea3	Johnson, Iowa	3
 19157	#984ea3	Poweshiek, Iowa	2
 19183	#984ea3	Washington, Iowa	2
-19125	#984ea3	Marion, Iowa	36
+19125	#984ea3	Marion, Iowa	37
 19153	#984ea3	Polk, Iowa	26
 19015	#984ea3	Boone, Iowa	2
 19049	#984ea3	Dallas, Iowa	2
@@ -858,8 +879,8 @@ id	code	county	count
 19181	#ff7f00	Warren, Iowa	2
 19123	#ff7f00	Mahaska, Iowa	8
 19169	#ff7f00	Story, Iowa	5
-19099	#ff7f00	Jasper, Iowa	1
-19179	#ff7f00	Wapello, Iowa	238
+19099	#ff7f00	Jasper, Iowa	2
+19179	#ff7f00	Wapello, Iowa	306
 4005	#ff7f00	Coconino, Arizona	26
 4025	#ff7f00	Yavapai, Arizona	10
 4019	#ff7f00	Pima, Arizona	2
