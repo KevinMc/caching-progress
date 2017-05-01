@@ -1,4 +1,41 @@
 id	code	county	count
+47083	#FFFF7F	Houston, Tennessee	3
+47141	#FFFF7F	Putnam, Tennessee	2
+21013	#FFFF7F	Bell, Kentucky	2
+47169	#FFFF7F	Trousdale, Tennessee	2
+47043	#FFFF7F	Dickson, Tennessee	2
+47087	#FFFF7F	Jackson, Tennessee	1
+47133	#FFFF7F	Overton, Tennessee	1
+47125	#FFFF7F	Montgomery, Tennessee	1
+47151	#FFFF7F	Scott, Tennessee	1
+47111	#FFFF7F	Macon, Tennessee	1
+47057	#FFFF7F	Grainger, Tennessee	1
+47067	#FFFF7F	Hancock, Tennessee	1
+47027	#FFFF7F	Clay, Tennessee	1
+47161	#FFFF7F	Stewart, Tennessee	1
+47137	#FFFF7F	Pickett, Tennessee	1
+47049	#FFFF7F	Fentress, Tennessee	1
+47025	#FFFF7F	Claiborne, Tennessee	1
+47041	#FFFF7F	DeKalb, Tennessee	1
+47021	#FFFF7F	Cheatham, Tennessee	1
+47173	#FFFF7F	Union, Tennessee	1
+51105	#FFFF7F	Lee, Virginia	1
+47159	#FFFF7F	Smith, Tennessee	1
+47073	#FFFF7F	Hawkins, Tennessee	1
+47013	#FFFF7F	Campbell, Tennessee	1
+47163	#FFFF7F	Sullivan, Tennessee	2
+51169	#FFFF7F	Scott, Virginia	1
+47089	#FFFF7F	Jefferson, Tennessee	1
+47171	#FFFF7F	Unicoi, Tennessee	1
+47059	#FFFF7F	Greene, Tennessee	1
+47063	#FFFF7F	Hamblen, Tennessee	1
+47019	#FFFF7F	Carter, Tennessee	1
+47029	#FFFF7F	Cocke, Tennessee	1
+47091	#FFFF7F	Johnson, Tennessee	1
+51520	#FFFF7F	Bristol City, Virginia	1
+51191	#FFFF7F	Washington, Virginia	1
+47155	#FFFF7F	Sevier, Tennessee	1
+47179	#FFFF7F	Washington, Tennessee	1
 18097	#a65628	Marion, Indiana	3
 18177	#a65628	Wayne, Indiana	1
 39013	#a65628	Belmont, Ohio	1
@@ -223,10 +260,10 @@ id	code	county	count
 47135	#f781bf	Perry, Tennessee	1
 47081	#f781bf	Hickman, Tennessee	1
 47101	#f781bf	Lewis, Tennessee	1
+47107	#f781bf	McMinn, Tennessee	2
 47145	#f781bf	Roane, Tennessee	1
 47153	#f781bf	Sequatchie, Tennessee	1
 47123	#f781bf	Monroe, Tennessee	1
-47107	#f781bf	McMinn, Tennessee	1
 47139	#f781bf	Polk, Tennessee	1
 47129	#f781bf	Morgan, Tennessee	1
 47009	#f781bf	Blount, Tennessee	1
@@ -546,8 +583,8 @@ id	code	county	count
 53067	#377eb8	Thurston, Washington	1
 53011	#377eb8	Clark, Washington	1
 53041	#377eb8	Lewis, Washington	1
-6045	#377eb8	Mendocino, California	11
-6033	#377eb8	Lake, California	1
+6045	#377eb8	Mendocino, California	15
+6033	#377eb8	Lake, California	8
 48053	#377eb8	Burnet, Texas	2
 48299	#377eb8	Llano, Texas	1
 48019	#377eb8	Bandera, Texas	1
@@ -648,7 +685,7 @@ id	code	county	count
 6101	#4daf4a	Sutter, California	5
 6021	#4daf4a	Glenn, California	4
 6115	#4daf4a	Yuba, California	2
-6061	#4daf4a	Placer, California	22
+6061	#4daf4a	Placer, California	27
 6017	#4daf4a	El Dorado, California	11
 6057	#4daf4a	Nevada, California	4
 6009	#4daf4a	Calaveras, California	3
@@ -663,9 +700,9 @@ id	code	county	count
 32510	#4daf4a	Carson City, Nevada	1
 6003	#4daf4a	Alpine, California	1
 6041	#4daf4a	Marin, California	24
+6097	#4daf4a	Sonoma, California	14
 6067	#4daf4a	Sacramento, California	14
-6097	#4daf4a	Sonoma, California	13
-6095	#4daf4a	Solano, California	9
+6095	#4daf4a	Solano, California	10
 6055	#4daf4a	Napa, California	8
 6069	#4daf4a	San Benito, California	10
 6083	#4daf4a	Santa Barbara, California	31
@@ -675,18 +712,18 @@ id	code	county	count
 6073	#4daf4a	San Diego, California	9
 6037	#4daf4a	Los Angeles, California	24
 6059	#4daf4a	Orange, California	11
+6031	#4daf4a	Kings, California	8
+6019	#4daf4a	Fresno, California	6
+6107	#4daf4a	Tulare, California	6
 6047	#4daf4a	Merced, California	5
 6039	#4daf4a	Madera, California	4
-6019	#4daf4a	Fresno, California	3
 6029	#4daf4a	Kern, California	2
-6031	#4daf4a	Kings, California	2
-6107	#4daf4a	Tulare, California	2
-6001	#4daf4a	Alameda, California	194
+6001	#4daf4a	Alameda, California	201
 6013	#4daf4a	Contra Costa, California	81
 6087	#4daf4a	Santa Cruz, California	29
-6075	#4daf4a	San Francisco, California	275
-6081	#4daf4a	San Mateo, California	387
-6085	#4daf4a	Santa Clara, California	1225
+6075	#4daf4a	San Francisco, California	289
+6081	#4daf4a	San Mateo, California	414
+6085	#4daf4a	Santa Clara, California	1278
 19111	#4daf4a	Lee, Iowa	4
 17019	#4daf4a	Champaign, Illinois	3
 39049	#4daf4a	Franklin, Ohio	1
@@ -861,7 +898,7 @@ id	code	county	count
 6071	#984ea3	San Bernardino, California	5
 4027	#984ea3	Yuma, Arizona	4
 4015	#984ea3	Mohave, Arizona	1
-42003	#984ea3	Allegheny, Pennsylvania	436
+42003	#984ea3	Allegheny, Pennsylvania	456
 54069	#984ea3	Ohio, West Virginia	2
 49025	#984ea3	Kane, Utah	1
 42051	#984ea3	Fayette, Pennsylvania	3
