@@ -1,4 +1,16 @@
 id	code	county	count
+37109	#FFFF7F	Lincoln, North Carolina	1
+37035	#FFFF7F	Catawba, North Carolina	1
+36027	#FFFF7F	Dutchess, New York	1
+36079	#FFFF7F	Putnam, New York	1
+36119	#FFFF7F	Westchester, New York	1
+36111	#FFFF7F	Ulster, New York	4
+25003	#FFFF7F	Berkshire, Massachusetts	2
+36021	#FFFF7F	Columbia, New York	1
+36039	#FFFF7F	Greene, New York	1
+9005	#FFFF7F	Litchfield, Connecticut	3
+9001	#FFFF7F	Fairfield, Connecticut	2
+9009	#FFFF7F	New Haven, Connecticut	2
 47083	#FFFF7F	Houston, Tennessee	3
 47141	#FFFF7F	Putnam, Tennessee	2
 21013	#FFFF7F	Bell, Kentucky	2
@@ -160,7 +172,7 @@ id	code	county	count
 37179	#a65628	Union, North Carolina	1
 45091	#a65628	York, South Carolina	1
 37071	#a65628	Gaston, North Carolina	1
-37119	#a65628	Mecklenburg, North Carolina	8
+37119	#a65628	Mecklenburg, North Carolina	10
 37097	#a65628	Iredell, North Carolina	1
 37159	#a65628	Rowan, North Carolina	1
 37025	#a65628	Cabarrus, North Carolina	1
@@ -533,6 +545,7 @@ id	code	county	count
 34009	#377eb8	Cape May, New Jersey	1
 34015	#377eb8	Gloucester, New Jersey	1
 34023	#377eb8	Middlesex, New Jersey	1
+36081	#377eb8	Queens, New York	3
 42095	#377eb8	Northampton, Pennsylvania	1
 34035	#377eb8	Somerset, New Jersey	1
 34017	#377eb8	Hudson, New Jersey	1
@@ -542,7 +555,6 @@ id	code	county	count
 34037	#377eb8	Sussex, New Jersey	1
 34013	#377eb8	Essex, New Jersey	1
 36047	#377eb8	Kings, New York	1
-36081	#377eb8	Queens, New York	1
 34039	#377eb8	Union, New Jersey	1
 34027	#377eb8	Morris, New Jersey	1
 36085	#377eb8	Richmond, New York	1
@@ -631,7 +643,7 @@ id	code	county	count
 55065	#4daf4a	Lafayette, Wisconsin	1
 55049	#4daf4a	Iowa, Wisconsin	1
 55027	#4daf4a	Dodge, Wisconsin	1
-36061	#4daf4a	New York, New York	5
+36061	#4daf4a	New York, New York	12
 19155	#4daf4a	Pottawattamie, Iowa	3
 19165	#4daf4a	Shelby, Iowa	1
 19009	#4daf4a	Audubon, Iowa	1
@@ -656,7 +668,7 @@ id	code	county	count
 1077	#4daf4a	Lauderdale, Alabama	1
 1071	#4daf4a	Jackson, Alabama	4
 1095	#4daf4a	Marshall, Alabama	1
-1089	#4daf4a	Madison, Alabama	98
+1089	#4daf4a	Madison, Alabama	111
 1083	#4daf4a	Limestone, Alabama	2
 47103	#4daf4a	Lincoln, Tennessee	1
 47055	#4daf4a	Giles, Tennessee	1
@@ -723,7 +735,7 @@ id	code	county	count
 6087	#4daf4a	Santa Cruz, California	29
 6075	#4daf4a	San Francisco, California	289
 6081	#4daf4a	San Mateo, California	414
-6085	#4daf4a	Santa Clara, California	1278
+6085	#4daf4a	Santa Clara, California	1282
 19111	#4daf4a	Lee, Iowa	4
 17019	#4daf4a	Champaign, Illinois	3
 39049	#4daf4a	Franklin, Ohio	1
@@ -917,7 +929,7 @@ id	code	county	count
 19123	#ff7f00	Mahaska, Iowa	8
 19169	#ff7f00	Story, Iowa	5
 19099	#ff7f00	Jasper, Iowa	2
-19179	#ff7f00	Wapello, Iowa	306
+19179	#ff7f00	Wapello, Iowa	309
 4005	#ff7f00	Coconino, Arizona	26
 4025	#ff7f00	Yavapai, Arizona	10
 4019	#ff7f00	Pima, Arizona	2
