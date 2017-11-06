@@ -1,4 +1,8 @@
 id	code	county	count
+25013	#FFFF7F	Hampden, Massachusetts	2
+9003	#FFFF7F	Hartford, Connecticut	1
+25011	#FFFF7F	Franklin, Massachusetts	1
+25015	#FFFF7F	Hampshire, Massachusetts	1
 27053	#FFFF7F	Hennepin, Minnesota	5
 38077	#FFFF7F	Richland, North Dakota	3
 38017	#FFFF7F	Cass, North Dakota	2
@@ -746,7 +750,7 @@ id	code	county	count
 6079	#4daf4a	San Luis Obispo, California	18
 6073	#4daf4a	San Diego, California	9
 6037	#4daf4a	Los Angeles, California	24
-6059	#4daf4a	Orange, California	11
+6059	#4daf4a	Orange, California	22
 6031	#4daf4a	Kings, California	8
 6019	#4daf4a	Fresno, California	6
 6107	#4daf4a	Tulare, California	6
@@ -755,10 +759,10 @@ id	code	county	count
 6029	#4daf4a	Kern, California	2
 6001	#4daf4a	Alameda, California	232
 6013	#4daf4a	Contra Costa, California	81
-6087	#4daf4a	Santa Cruz, California	29
+6087	#4daf4a	Santa Cruz, California	33
 6075	#4daf4a	San Francisco, California	289
-6081	#4daf4a	San Mateo, California	416
-6085	#4daf4a	Santa Clara, California	1298
+6081	#4daf4a	San Mateo, California	437
+6085	#4daf4a	Santa Clara, California	1308
 19111	#4daf4a	Lee, Iowa	4
 17019	#4daf4a	Champaign, Illinois	3
 39049	#4daf4a	Franklin, Ohio	1
@@ -933,7 +937,7 @@ id	code	county	count
 6071	#984ea3	San Bernardino, California	5
 4027	#984ea3	Yuma, Arizona	4
 4015	#984ea3	Mohave, Arizona	1
-42003	#984ea3	Allegheny, Pennsylvania	473
+42003	#984ea3	Allegheny, Pennsylvania	478
 54069	#984ea3	Ohio, West Virginia	2
 49025	#984ea3	Kane, Utah	1
 42051	#984ea3	Fayette, Pennsylvania	3
