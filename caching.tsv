@@ -1,4 +1,14 @@
 id	code	county	count
+36005	#ADD8E6	Bronx, New York	1
+42033	#FFFF7F	Clearfield, Pennsylvania	2
+42093	#FFFF7F	Montour, Pennsylvania	1
+42035	#FFFF7F	Clinton, Pennsylvania	1
+42119	#FFFF7F	Union, Pennsylvania	1
+42057	#FFFF7F	Fulton, Pennsylvania	1
+42027	#FFFF7F	Centre, Pennsylvania	1
+42109	#FFFF7F	Snyder, Pennsylvania	1
+42097	#FFFF7F	Northumberland, Pennsylvania	1
+48113	#FFFF7F	Dallas, Texas	1
 25013	#FFFF7F	Hampden, Massachusetts	2
 9003	#FFFF7F	Hartford, Connecticut	1
 25011	#FFFF7F	Franklin, Massachusetts	1
@@ -670,7 +680,7 @@ id	code	county	count
 55065	#4daf4a	Lafayette, Wisconsin	1
 55049	#4daf4a	Iowa, Wisconsin	1
 55027	#4daf4a	Dodge, Wisconsin	1
-36061	#4daf4a	New York, New York	12
+36061	#4daf4a	New York, New York	18
 19155	#4daf4a	Pottawattamie, Iowa	3
 19165	#4daf4a	Shelby, Iowa	1
 19009	#4daf4a	Audubon, Iowa	1
@@ -724,13 +734,13 @@ id	code	county	count
 6101	#4daf4a	Sutter, California	5
 6021	#4daf4a	Glenn, California	4
 6115	#4daf4a	Yuba, California	2
-6061	#4daf4a	Placer, California	27
+6061	#4daf4a	Placer, California	31
 6017	#4daf4a	El Dorado, California	11
-6057	#4daf4a	Nevada, California	4
+6057	#4daf4a	Nevada, California	7
 6009	#4daf4a	Calaveras, California	3
 6005	#4daf4a	Amador, California	2
 6043	#4daf4a	Mariposa, California	17
-32031	#4daf4a	Washoe, Nevada	12
+32031	#4daf4a	Washoe, Nevada	13
 6109	#4daf4a	Tuolumne, California	9
 6077	#4daf4a	San Joaquin, California	7
 6051	#4daf4a	Mono, California	4
@@ -739,8 +749,8 @@ id	code	county	count
 32510	#4daf4a	Carson City, Nevada	1
 6003	#4daf4a	Alpine, California	1
 6041	#4daf4a	Marin, California	24
+6067	#4daf4a	Sacramento, California	15
 6097	#4daf4a	Sonoma, California	14
-6067	#4daf4a	Sacramento, California	14
 6095	#4daf4a	Solano, California	10
 6055	#4daf4a	Napa, California	8
 6069	#4daf4a	San Benito, California	10
@@ -749,20 +759,20 @@ id	code	county	count
 6111	#4daf4a	Ventura, California	18
 6079	#4daf4a	San Luis Obispo, California	18
 6073	#4daf4a	San Diego, California	9
-6037	#4daf4a	Los Angeles, California	24
+6037	#4daf4a	Los Angeles, California	60
 6059	#4daf4a	Orange, California	22
+6029	#4daf4a	Kern, California	8
 6031	#4daf4a	Kings, California	8
 6019	#4daf4a	Fresno, California	6
 6107	#4daf4a	Tulare, California	6
 6047	#4daf4a	Merced, California	5
 6039	#4daf4a	Madera, California	4
-6029	#4daf4a	Kern, California	2
 6001	#4daf4a	Alameda, California	232
 6013	#4daf4a	Contra Costa, California	81
 6087	#4daf4a	Santa Cruz, California	33
-6075	#4daf4a	San Francisco, California	289
-6081	#4daf4a	San Mateo, California	437
-6085	#4daf4a	Santa Clara, California	1308
+6075	#4daf4a	San Francisco, California	302
+6081	#4daf4a	San Mateo, California	438
+6085	#4daf4a	Santa Clara, California	1312
 19111	#4daf4a	Lee, Iowa	4
 17019	#4daf4a	Champaign, Illinois	3
 39049	#4daf4a	Franklin, Ohio	1
@@ -795,7 +805,7 @@ id	code	county	count
 42029	#4daf4a	Chester, Pennsylvania	1
 42075	#4daf4a	Lebanon, Pennsylvania	1
 42041	#4daf4a	Cumberland, Pennsylvania	1
-42009	#4daf4a	Bedford, Pennsylvania	1
+42009	#4daf4a	Bedford, Pennsylvania	3
 42049	#4daf4a	Erie, Pennsylvania	11
 42123	#4daf4a	Warren, Pennsylvania	5
 42083	#4daf4a	McKean, Pennsylvania	3
@@ -865,7 +875,7 @@ id	code	county	count
 55127	#984ea3	Walworth, Wisconsin	1
 55059	#984ea3	Kenosha, Wisconsin	1
 17103	#984ea3	Lee, Illinois	1
-19177	#984ea3	Van Buren, Iowa	5
+19177	#984ea3	Van Buren, Iowa	7
 19007	#984ea3	Appanoose, Iowa	20
 19051	#984ea3	Davis, Iowa	13
 17031	#984ea3	Cook, Illinois	13
@@ -895,7 +905,7 @@ id	code	county	count
 19157	#984ea3	Poweshiek, Iowa	2
 19183	#984ea3	Washington, Iowa	2
 19125	#984ea3	Marion, Iowa	37
-19153	#984ea3	Polk, Iowa	26
+19153	#984ea3	Polk, Iowa	28
 19015	#984ea3	Boone, Iowa	2
 19049	#984ea3	Dallas, Iowa	2
 19073	#984ea3	Greene, Iowa	1
@@ -933,11 +943,11 @@ id	code	county	count
 35029	#984ea3	Luna, New Mexico	1
 35023	#984ea3	Hidalgo, New Mexico	1
 4012	#984ea3	La Paz, Arizona	19
-6065	#984ea3	Riverside, California	15
-6071	#984ea3	San Bernardino, California	5
+6065	#984ea3	Riverside, California	16
+6071	#984ea3	San Bernardino, California	8
 4027	#984ea3	Yuma, Arizona	4
 4015	#984ea3	Mohave, Arizona	1
-42003	#984ea3	Allegheny, Pennsylvania	478
+42003	#984ea3	Allegheny, Pennsylvania	492
 54069	#984ea3	Ohio, West Virginia	2
 49025	#984ea3	Kane, Utah	1
 42051	#984ea3	Fayette, Pennsylvania	3
@@ -956,7 +966,7 @@ id	code	county	count
 19123	#ff7f00	Mahaska, Iowa	8
 19169	#ff7f00	Story, Iowa	5
 19099	#ff7f00	Jasper, Iowa	2
-19179	#ff7f00	Wapello, Iowa	309
+19179	#ff7f00	Wapello, Iowa	363
 4005	#ff7f00	Coconino, Arizona	26
 4025	#ff7f00	Yavapai, Arizona	10
 4019	#ff7f00	Pima, Arizona	2
