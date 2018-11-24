@@ -1,4 +1,17 @@
 id	code	county	count
+39041	#ADD8E6	Delaware, Ohio	2
+39067	#ADD8E6	Harrison, Ohio	2
+39139	#ADD8E6	Richland, Ohio	1
+39033	#ADD8E6	Crawford, Ohio	1
+39031	#ADD8E6	Coshocton, Ohio	1
+39019	#ADD8E6	Carroll, Ohio	1
+39157	#ADD8E6	Tuscarawas, Ohio	1
+39169	#ADD8E6	Wayne, Ohio	1
+39005	#ADD8E6	Ashland, Ohio	1
+39101	#ADD8E6	Marion, Ohio	1
+39083	#ADD8E6	Knox, Ohio	1
+39075	#ADD8E6	Holmes, Ohio	1
+39117	#ADD8E6	Morrow, Ohio	1
 23021	#ADD8E6	Piscataquis, Maine	2
 23011	#ADD8E6	Kennebec, Maine	2
 23017	#ADD8E6	Oxford, Maine	1
@@ -961,16 +974,16 @@ id	code	county	count
 6071	#984ea3	San Bernardino, California	8
 4027	#984ea3	Yuma, Arizona	4
 4015	#984ea3	Mohave, Arizona	1
-42003	#984ea3	Allegheny, Pennsylvania	492
+42003	#984ea3	Allegheny, Pennsylvania	504
 54069	#984ea3	Ohio, West Virginia	2
 49025	#984ea3	Kane, Utah	1
 42051	#984ea3	Fayette, Pennsylvania	3
 42125	#984ea3	Washington, Pennsylvania	2
 42007	#984ea3	Beaver, Pennsylvania	11
+39081	#984ea3	Jefferson, Ohio	2
 54029	#984ea3	Hancock, West Virginia	2
-39081	#984ea3	Jefferson, Ohio	1
+54009	#984ea3	Brooke, West Virginia	2
 39029	#984ea3	Columbiana, Ohio	1
-54009	#984ea3	Brooke, West Virginia	1
 32003	#ff7f00	Clark, Nevada	40
 6027	#ff7f00	Inyo, California	7
 32023	#ff7f00	Nye, Nevada	4
