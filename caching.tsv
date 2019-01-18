@@ -1,4 +1,58 @@
 id	code	county	count
+20209	#ADD8E6	Wyandotte, Kansas	3
+20091	#ADD8E6	Johnson, Kansas	1
+29047	#ADD8E6	Clay, Missouri	1
+29121	#ADD8E6	Macon, Missouri	1
+29165	#ADD8E6	Platte, Missouri	1
+29041	#ADD8E6	Chariton, Missouri	1
+29175	#ADD8E6	Randolph, Missouri	1
+29129	#ADD8E6	Mercer, Missouri	1
+29177	#ADD8E6	Ray, Missouri	1
+29107	#ADD8E6	Lafayette, Missouri	1
+29033	#ADD8E6	Carroll, Missouri	1
+48003	#ADD8E6	Andrews, Texas	2
+48431	#ADD8E6	Sterling, Texas	1
+48417	#ADD8E6	Shackelford, Texas	1
+48207	#ADD8E6	Haskell, Texas	1
+48433	#ADD8E6	Stonewall, Texas	1
+48227	#ADD8E6	Howard, Texas	1
+48353	#ADD8E6	Nolan, Texas	1
+48445	#ADD8E6	Terry, Texas	1
+48305	#ADD8E6	Lynn, Texas	1
+48253	#ADD8E6	Jones, Texas	1
+48335	#ADD8E6	Mitchell, Texas	1
+48165	#ADD8E6	Gaines, Texas	1
+48219	#ADD8E6	Hockley, Texas	1
+48501	#ADD8E6	Yoakum, Texas	1
+48033	#ADD8E6	Borden, Texas	1
+48151	#ADD8E6	Fisher, Texas	1
+48115	#ADD8E6	Dawson, Texas	1
+48263	#ADD8E6	Kent, Texas	1
+48441	#ADD8E6	Taylor, Texas	1
+48415	#ADD8E6	Scurry, Texas	1
+48169	#ADD8E6	Garza, Texas	1
+48059	#ADD8E6	Callahan, Texas	1
+48243	#ADD8E6	Jeff Davis, Texas	5
+48105	#ADD8E6	Crockett, Texas	2
+48371	#ADD8E6	Pecos, Texas	2
+48301	#ADD8E6	Loving, Texas	2
+48435	#ADD8E6	Sutton, Texas	1
+48383	#ADD8E6	Reagan, Texas	1
+48109	#ADD8E6	Culberson, Texas	1
+48475	#ADD8E6	Ward, Texas	1
+48495	#ADD8E6	Winkler, Texas	1
+48377	#ADD8E6	Presidio, Texas	1
+48103	#ADD8E6	Crane, Texas	1
+48413	#ADD8E6	Schleicher, Texas	1
+48443	#ADD8E6	Terrell, Texas	1
+48043	#ADD8E6	Brewster, Texas	1
+48461	#ADD8E6	Upton, Texas	1
+48389	#ADD8E6	Reeves, Texas	1
+48235	#ADD8E6	Irion, Texas	1
+48329	#ADD8E6	Midland, Texas	3
+48135	#ADD8E6	Ector, Texas	1
+48317	#ADD8E6	Martin, Texas	1
+48173	#ADD8E6	Glasscock, Texas	1
 39041	#ADD8E6	Delaware, Ohio	2
 39067	#ADD8E6	Harrison, Ohio	2
 39139	#ADD8E6	Richland, Ohio	1
@@ -797,9 +851,9 @@ id	code	county	count
 6001	#4daf4a	Alameda, California	240
 6013	#4daf4a	Contra Costa, California	85
 6087	#4daf4a	Santa Cruz, California	39
-6075	#4daf4a	San Francisco, California	310
+6075	#4daf4a	San Francisco, California	311
 6081	#4daf4a	San Mateo, California	458
-6085	#4daf4a	Santa Clara, California	1347
+6085	#4daf4a	Santa Clara, California	1351
 19111	#4daf4a	Lee, Iowa	4
 17019	#4daf4a	Champaign, Illinois	3
 39049	#4daf4a	Franklin, Ohio	1
@@ -905,7 +959,7 @@ id	code	county	count
 19177	#984ea3	Van Buren, Iowa	7
 19007	#984ea3	Appanoose, Iowa	20
 19051	#984ea3	Davis, Iowa	13
-17031	#984ea3	Cook, Illinois	13
+17031	#984ea3	Cook, Illinois	25
 19031	#984ea3	Cedar, Iowa	4
 19045	#984ea3	Clinton, Iowa	2
 19163	#984ea3	Scott, Iowa	2
@@ -932,20 +986,20 @@ id	code	county	count
 19157	#984ea3	Poweshiek, Iowa	2
 19183	#984ea3	Washington, Iowa	2
 19125	#984ea3	Marion, Iowa	37
-19153	#984ea3	Polk, Iowa	28
+19153	#984ea3	Polk, Iowa	29
 19015	#984ea3	Boone, Iowa	2
 19049	#984ea3	Dallas, Iowa	2
 19073	#984ea3	Greene, Iowa	1
 19013	#984ea3	Black Hawk, Iowa	5
 19075	#984ea3	Grundy, Iowa	1
 19083	#984ea3	Hardin, Iowa	1
+29095	#984ea3	Jackson, Missouri	9
 19135	#984ea3	Monroe, Iowa	6
 19117	#984ea3	Lucas, Iowa	3
 19053	#984ea3	Decatur, Iowa	2
 29013	#984ea3	Bates, Missouri	1
 19039	#984ea3	Clarke, Iowa	1
 40081	#984ea3	Lincoln, Oklahoma	1
-29095	#984ea3	Jackson, Missouri	1
 29097	#984ea3	Jasper, Missouri	1
 35015	#984ea3	Eddy, New Mexico	1
 40057	#984ea3	Harmon, Oklahoma	1
@@ -993,7 +1047,7 @@ id	code	county	count
 19123	#ff7f00	Mahaska, Iowa	8
 19169	#ff7f00	Story, Iowa	5
 19099	#ff7f00	Jasper, Iowa	2
-19179	#ff7f00	Wapello, Iowa	363
+19179	#ff7f00	Wapello, Iowa	377
 4005	#ff7f00	Coconino, Arizona	26
 4025	#ff7f00	Yavapai, Arizona	10
 4019	#ff7f00	Pima, Arizona	2
