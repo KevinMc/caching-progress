@@ -1,4 +1,69 @@
 id	code	county	count
+28045	#ffff33	Hancock, Mississippi	1
+28047	#ffff33	Harrison, Mississippi	1
+22087	#ffff33	St. Bernard Parish, Louisiana	1
+22103	#ffff33	St. Tammany Parish, Louisiana	1
+22053	#ffff33	Jefferson Parish, Louisiana	1
+28059	#ffff33	Jackson, Mississippi	1
+22075	#ffff33	Plaquemines Parish, Louisiana	1
+22071	#ffff33	Orleans Parish, Louisiana	11
+48363	#ffff33	Palo Pinto, Texas	2
+48139	#ffff33	Ellis, Texas	1
+48143	#ffff33	Erath, Texas	1
+48425	#ffff33	Somervell, Texas	1
+48313	#ffff33	Madison, Texas	1
+48349	#ffff33	Navarro, Texas	1
+48161	#ffff33	Freestone, Texas	1
+48121	#ffff33	Denton, Texas	1
+48293	#ffff33	Limestone, Texas	1
+48221	#ffff33	Hood, Texas	1
+48439	#ffff33	Tarrant, Texas	1
+48367	#ffff33	Parker, Texas	1
+48097	#ffff33	Cooke, Texas	1
+48337	#ffff33	Montague, Texas	1
+48395	#ffff33	Robertson, Texas	1
+48289	#ffff33	Leon, Texas	1
+48447	#ffff33	Throckmorton, Texas	1
+48497	#ffff33	Wise, Texas	1
+48217	#ffff33	Hill, Texas	1
+48237	#ffff33	Jack, Texas	1
+48503	#ffff33	Young, Texas	1
+48251	#ffff33	Johnson, Texas	1
+48133	#ffff33	Eastland, Texas	1
+48077	#ffff33	Clay, Texas	1
+48429	#ffff33	Stephens, Texas	1
+48387	#ffff33	Red River, Texas	1
+48373	#ffff33	Polk, Texas	1
+48277	#ffff33	Lamar, Texas	1
+48449	#ffff33	Titus, Texas	1
+48159	#ffff33	Franklin, Texas	1
+48467	#ffff33	Van Zandt, Texas	1
+48085	#ffff33	Collin, Texas	1
+48005	#ffff33	Angelina, Texas	1
+48001	#ffff33	Anderson, Texas	1
+48063	#ffff33	Camp, Texas	1
+48423	#ffff33	Smith, Texas	1
+48257	#ffff33	Kaufman, Texas	1
+48037	#ffff33	Bowie, Texas	1
+48379	#ffff33	Rains, Texas	1
+48223	#ffff33	Hopkins, Texas	1
+48231	#ffff33	Hunt, Texas	1
+48199	#ffff33	Hardin, Texas	1
+48225	#ffff33	Houston, Texas	1
+48315	#ffff33	Marion, Texas	1
+48073	#ffff33	Cherokee, Texas	1
+48119	#ffff33	Delta, Texas	1
+48147	#ffff33	Fannin, Texas	1
+48067	#ffff33	Cass, Texas	1
+48459	#ffff33	Upshur, Texas	1
+48343	#ffff33	Morris, Texas	1
+48455	#ffff33	Trinity, Texas	1
+48397	#ffff33	Rockwall, Texas	1
+48181	#ffff33	Grayson, Texas	1
+48499	#ffff33	Wood, Texas	1
+48457	#ffff33	Tyler, Texas	1
+48213	#ffff33	Henderson, Texas	1
+15009	#ffff33	Maui, Hawaii	37
 20209	#ADD8E6	Wyandotte, Kansas	3
 20091	#ADD8E6	Johnson, Kansas	1
 29047	#ADD8E6	Clay, Missouri	1
@@ -615,7 +680,7 @@ id	code	county	count
 35001	#e41a1c	Bernalillo, New Mexico	1
 48141	#e41a1c	El Paso, Texas	2
 48229	#e41a1c	Hudspeth, Texas	2
-12009	#e41a1c	Brevard, Florida	153
+12009	#e41a1c	Brevard, Florida	154
 12127	#e41a1c	Volusia, Florida	4
 12117	#e41a1c	Seminole, Florida	2
 12095	#e41a1c	Orange, Florida	25
@@ -698,8 +763,8 @@ id	code	county	count
 2122	#377eb8	Kenai Peninsula, Alaska	7
 2020	#377eb8	Anchorage, Alaska	10
 2170	#377eb8	Matanuska-Susitna, Alaska	7
+18127	#377eb8	Porter, Indiana	2
 26021	#377eb8	Berrien, Michigan	2
-18127	#377eb8	Porter, Indiana	1
 18089	#377eb8	Lake, Indiana	1
 18091	#377eb8	LaPorte, Indiana	1
 53009	#377eb8	Clallam, Washington	2
@@ -780,14 +845,14 @@ id	code	county	count
 1115	#4daf4a	St. Clair, Alabama	1
 1009	#4daf4a	Blount, Alabama	1
 6025	#4daf4a	Imperial, California	1
+1103	#4daf4a	Morgan, Alabama	2
 1079	#4daf4a	Lawrence, Alabama	1
-1103	#4daf4a	Morgan, Alabama	1
 1033	#4daf4a	Colbert, Alabama	1
 1077	#4daf4a	Lauderdale, Alabama	1
 1071	#4daf4a	Jackson, Alabama	4
 1095	#4daf4a	Marshall, Alabama	1
-1089	#4daf4a	Madison, Alabama	111
-1083	#4daf4a	Limestone, Alabama	2
+1089	#4daf4a	Madison, Alabama	112
+1083	#4daf4a	Limestone, Alabama	3
 47103	#4daf4a	Lincoln, Tennessee	1
 47055	#4daf4a	Giles, Tennessee	1
 51121	#4daf4a	Montgomery, Virginia	2
@@ -815,7 +880,7 @@ id	code	county	count
 6101	#4daf4a	Sutter, California	5
 6021	#4daf4a	Glenn, California	4
 6115	#4daf4a	Yuba, California	2
-6061	#4daf4a	Placer, California	31
+6061	#4daf4a	Placer, California	33
 6017	#4daf4a	El Dorado, California	11
 6057	#4daf4a	Nevada, California	7
 6009	#4daf4a	Calaveras, California	3
@@ -830,30 +895,30 @@ id	code	county	count
 32510	#4daf4a	Carson City, Nevada	1
 6003	#4daf4a	Alpine, California	1
 6067	#4daf4a	Sacramento, California	102
+6095	#4daf4a	Solano, California	36
 6041	#4daf4a	Marin, California	28
 6097	#4daf4a	Sonoma, California	17
-6095	#4daf4a	Solano, California	10
 6055	#4daf4a	Napa, California	9
 6069	#4daf4a	San Benito, California	10
+6073	#4daf4a	San Diego, California	33
+6053	#4daf4a	Monterey, California	31
 6083	#4daf4a	Santa Barbara, California	31
-6053	#4daf4a	Monterey, California	29
 6111	#4daf4a	Ventura, California	18
 6079	#4daf4a	San Luis Obispo, California	18
-6073	#4daf4a	San Diego, California	9
-6037	#4daf4a	Los Angeles, California	75
+6037	#4daf4a	Los Angeles, California	85
+6029	#4daf4a	Kern, California	25
 6059	#4daf4a	Orange, California	22
-6047	#4daf4a	Merced, California	10
-6029	#4daf4a	Kern, California	8
-6031	#4daf4a	Kings, California	8
+6047	#4daf4a	Merced, California	11
+6031	#4daf4a	Kings, California	9
 6019	#4daf4a	Fresno, California	6
 6107	#4daf4a	Tulare, California	6
 6039	#4daf4a	Madera, California	4
-6001	#4daf4a	Alameda, California	240
-6013	#4daf4a	Contra Costa, California	85
+6001	#4daf4a	Alameda, California	245
+6013	#4daf4a	Contra Costa, California	87
 6087	#4daf4a	Santa Cruz, California	39
-6075	#4daf4a	San Francisco, California	311
-6081	#4daf4a	San Mateo, California	458
-6085	#4daf4a	Santa Clara, California	1351
+6075	#4daf4a	San Francisco, California	313
+6081	#4daf4a	San Mateo, California	462
+6085	#4daf4a	Santa Clara, California	1374
 19111	#4daf4a	Lee, Iowa	4
 17019	#4daf4a	Champaign, Illinois	3
 39049	#4daf4a	Franklin, Ohio	1
@@ -912,8 +977,8 @@ id	code	county	count
 48021	#4daf4a	Bastrop, Texas	3
 48209	#4daf4a	Hays, Texas	1
 48453	#4daf4a	Travis, Texas	9
-48167	#4daf4a	Galveston, Texas	11
-48201	#4daf4a	Harris, Texas	40
+48167	#4daf4a	Galveston, Texas	27
+48201	#4daf4a	Harris, Texas	70
 29001	#4daf4a	Adair, Missouri	1
 29197	#4daf4a	Schuyler, Missouri	1
 19017	#4daf4a	Bremer, Iowa	4
@@ -941,7 +1006,8 @@ id	code	county	count
 55117	#4daf4a	Sheboygan, Wisconsin	1
 55015	#4daf4a	Calumet, Wisconsin	1
 55039	#4daf4a	Fond du Lac, Wisconsin	1
-55079	#984ea3	Milwaukee, Wisconsin	12
+55079	#984ea3	Milwaukee, Wisconsin	13
+17097	#984ea3	Lake, Illinois	2
 17141	#984ea3	Ogle, Illinois	2
 17201	#984ea3	Winnebago, Illinois	1
 55131	#984ea3	Washington, Wisconsin	1
@@ -949,7 +1015,6 @@ id	code	county	count
 17007	#984ea3	Boone, Illinois	1
 55089	#984ea3	Ozaukee, Wisconsin	1
 17111	#984ea3	McHenry, Illinois	1
-17097	#984ea3	Lake, Illinois	1
 55105	#984ea3	Rock, Wisconsin	1
 17195	#984ea3	Whiteside, Illinois	1
 55101	#984ea3	Racine, Wisconsin	1
@@ -959,7 +1024,7 @@ id	code	county	count
 19177	#984ea3	Van Buren, Iowa	7
 19007	#984ea3	Appanoose, Iowa	20
 19051	#984ea3	Davis, Iowa	13
-17031	#984ea3	Cook, Illinois	25
+17031	#984ea3	Cook, Illinois	27
 19031	#984ea3	Cedar, Iowa	4
 19045	#984ea3	Clinton, Iowa	2
 19163	#984ea3	Scott, Iowa	2
@@ -1023,9 +1088,9 @@ id	code	county	count
 35017	#984ea3	Grant, New Mexico	1
 35029	#984ea3	Luna, New Mexico	1
 35023	#984ea3	Hidalgo, New Mexico	1
+6065	#984ea3	Riverside, California	41
 4012	#984ea3	La Paz, Arizona	19
-6065	#984ea3	Riverside, California	16
-6071	#984ea3	San Bernardino, California	8
+6071	#984ea3	San Bernardino, California	18
 4027	#984ea3	Yuma, Arizona	4
 4015	#984ea3	Mohave, Arizona	1
 42003	#984ea3	Allegheny, Pennsylvania	504
@@ -1052,4 +1117,4 @@ id	code	county	count
 4025	#ff7f00	Yavapai, Arizona	10
 4019	#ff7f00	Pima, Arizona	2
 20193	#ff7f00	Thomas, Kansas	1
-4013	#ffff33	Maricopa, Arizona	354
+4013	#dddddd	Maricopa, Arizona	354
